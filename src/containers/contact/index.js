@@ -67,49 +67,27 @@ function Contact() {
                                 Class="contact-dec"
                                 Name="+1 123 - 456 - 7890"
                             />
-                            <div className="form">
-                                <Form method="POST">
-                                    <FormGroup>
-                                        <Title Class="form-label" Name="Name *" />
-                                        <InputBox
-                                            Type="text"
-                                            Name="name"
-                                            PlaceHolder="John Doe"
-                                            value={name}
-                                            ChangeValue={setName}
-                                            Class={errors && errors.name && 'error'}
-                                        />
-                                    </FormGroup>
-                                    <FormGroup>
-                                        <Title Class="form-label" Name="Email *" />
-                                        <InputBox
-                                            Type="text"
-                                            Name="email"
-                                            PlaceHolder="example@gmail.com"
-                                            value={email}
-                                            ChangeValue={setEmail}
-                                            Class={errors && errors.email && 'error'}
-                                        />
-                                    </FormGroup>
-                                    <FormGroup>
-                                        <Title Class="form-label" Name="Message *" />
-                                        <InputBox
-                                            Type="textarea"
-                                            Name="text"
-                                            PlaceHolder="write your message"
-                                            Class={`textbox ${errors && errors.message && 'error'}`}
-                                            value={message}
-                                            ChangeValue={setMessage}
-                                        />
-                                    </FormGroup>
-                                </Form>
-                            </div>
+                        
                             <Button
                                 Class="button1 btn button2 gradient-color"
-                                Name="SUBMIT"
+                                Name="BOOK NOW"
                                 Clickble={handelSubmit}
                                 BtnIcon="btn-icon"
                             />
+                            <br /><br />
+                            <Subtitle
+                                Class="sitemain-subtitle"
+                                Name="Office Hours"
+                            />
+
+                            <div className="contact-time">
+                                Mon: 7am-4pm<br />
+                                Tue: 10am-7pm<br />
+                                Wed: Closed<br />
+                                Thur: 7am-4pm<br />
+                                Fri: 10am-7pm<br />
+                                Sat: 9am-3pm
+                            </div>
                         </div>
                     </Col>
                 </Row>

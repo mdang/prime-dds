@@ -19,6 +19,15 @@
       font-weight: 400;
       position: relative;
       margin-bottom: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+      color: $color-black;
+    }
+    .contact-time {
+      font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+      font-weight: 400;
+      position: relative;
+      margin-bottom: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+      color: $color-black;
+      line-height: 1.5;
     }
     .form {
       .form-label {
