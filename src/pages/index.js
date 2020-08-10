@@ -6,16 +6,11 @@ import Banner from "../containers/banner"
 import Service from "../containers/service"
 import About from "../containers/about"
 import Blog from "../containers/blog"
-import Video from "../containers/video"
-import Skills from "../containers/skills"
-import Project from "../containers/project"
-import Portfolio from '../containers/portfolio'
 import Testimonial from '../containers/testimonial'
 import Contact from '../containers/contact'
 import Brand from '../containers/brands'
 import Footer from '../containers/footer'
 import CopyRight from '../containers/copyright_text'
-import ThemeColor from '../containers/themecolor'
 import "../assets/scss/style.scss"
 
 const IndexPage = () => {
