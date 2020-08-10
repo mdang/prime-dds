@@ -14,12 +14,6 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        minify: false, // Breaks styles if not set to false
-      },
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -43,58 +37,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Roboto`,
-            variants: [
-              `100`,
-              `100i`,
-              `300`,
-              `300i`,
-              `400`,
-              `400i`,
-              `500`,
-              `500i`,
-              `700`,
-              `700i`,
-              `900`,
-              `900i`,
-            ],
-          },
-          {
-            family: `Poppins`,
-            variants: [`300`, `400`, `500`, `600`, `700`],
-          },
-          {
-            family: `Lato`,
-            variants: [`300`, `400`, `700`],
-          },
-          {
-            family: `Open Sans`,
-            variants: [`300`, `400`, `600`, `700`, `800`],
-          },
-          {
-            family: `Raleway`,
-            variants: [`500`, `600`],
-          },
-          {
-            family: `Heebo`,
-            variants: [`300`, `400`, `500`, `600`, `700`, `800`],
-          },
-          {
-            family: `B612`,
-            variants: [`400`, `400i`, `700`, `700i`],
-          },
-          {
-            family: `DM Sans`,
-            variants: [`400`, `400i`, `500`, `500i`, `700`, `700i`],
-          },
-        ],
-      },
-    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
