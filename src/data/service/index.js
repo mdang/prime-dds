@@ -1,16 +1,16 @@
-import { suitcase, objectGroup, areaChart, trophy } from 'react-icons-kit/fa'
+import { smileO, clockO, commenting, trophy } from 'react-icons-kit/fa'
 
 const Servicedata = [
   {
     id: 1,
-    Icon: suitcase,
-    title: 'Business Strategy',
+    Icon: smileO,
+    title: 'Teeth Cleaning',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel consectetur sem, vel iaculis turpis.'
   },
   {
     id: 2,
-    Icon: objectGroup,
-    title: 'Financial Analysis',
+    Icon: clockO,
+    title: 'Lorem ipsum',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel consectetur sem, vel iaculis turpis.'
   }
 ]
@@ -18,8 +18,8 @@ const Servicedata = [
 const Servicedata1 = [
   {
     id: 1,
-    Icon: areaChart,
-    title: 'Conduct Negotiation',
+    Icon: commenting,
+    title: 'Consectetur adipiscing',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel consectetur sem, vel iaculis turpis.'
   },
   {

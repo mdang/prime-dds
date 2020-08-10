@@ -15,7 +15,7 @@ function Service() {
                         <div className="service-content-1 main-title-wrapper">
                             <Titlespan2
                                 Class="sitemain-subtitle"
-                                Name="Business"
+                                Name="Dentals"
                                 Label="Solutions"
                             />
                             <Subtitle

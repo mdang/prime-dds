@@ -50,42 +50,6 @@ function Navbar() {
                         </Col>
                         <Col sm={6} className="right-block">
                             <div className="search-menu-account-wrapper">
-                                <div className="menu-right-1">
-                                    <div className="account-wrapper">
-                                        <div className="account-icon" onClick={loginClick}>
-                                            <PreviewIcon icon={user} />
-                                        </div>
-                                        <div className={`login-register-wrapper ${login ? 'open' : ''}`}>
-                                            <Login Click={loginClick} />
-                                        </div>
-                                    </div>
-                                    <div className="search-wrapper">
-                                        <div className="search-header" onClick={searchClick}>
-                                            <PreviewIcon icon={search} />
-                                        </div>
-
-                                        <div className={`search-outer-wrapper ${searchValue ? 'open' : ''}`}>
-                                            <div className="search-close gradient-color" onClick={searchClick}>
-                                                <PreviewIcon icon={x} />
-                                            </div>
-                                            <div className="search-title-box">
-                                                <Title Class="search-title" Name="Search Panel" />
-                                                <div className="search-box">
-                                                    <FormGroup>
-                                                        <InputBox
-                                                            Type="text"
-                                                            Name="search"
-                                                            PlaceHolder="Search items"
-                                                        />
-                                                    </FormGroup>
-                                                    <span className="search-icon">
-                                                        <PreviewIcon icon={search} />
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                                 <Menu />
                             </div>
                         </Col>

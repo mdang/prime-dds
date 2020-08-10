@@ -15,7 +15,7 @@ function About() {
                         <div className="about-content-block main-title-wrapper">
                             <Subtitle
                                 Class="sitemain-subtitle"
-                                Name="Business solution"
+                                Name="Dental solutions"
                             />
                             <Subtitle
                                 Class="site-subtitle2"

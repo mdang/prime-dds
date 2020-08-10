@@ -16,7 +16,6 @@ import Brand from '../containers/brands'
 import Footer from '../containers/footer'
 import CopyRight from '../containers/copyright_text'
 import ThemeColor from '../containers/themecolor'
-import ThemeOption from '../containers/themeoptions'
 import "../assets/scss/style.scss"
 
 const IndexPage = () => {
@@ -37,17 +36,11 @@ const IndexPage = () => {
                     <Service />
                     <About />
                     <Blog />
-                    <Video />
-                    <Skills />
-                    <Project />
-                    <Portfolio />
                     <Testimonial />
                     <Contact />
                     <Brand />
                     <Footer />
                     <CopyRight />
-                    <ThemeColor />
-                    <ThemeOption />
                 </div>
             </div>
             :

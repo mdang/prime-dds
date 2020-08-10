@@ -61,6 +61,7 @@ function Brand() {
     return (
         <section className="brand-slider">
             <Container>
+                <h4>Visit our sister clinics</h4>
                 <Slider {...settings}>
                     {Branddata.allDataJson.edges[0].node.brands.map((data) => (
                         <div className="brand-item" key={data.id}>

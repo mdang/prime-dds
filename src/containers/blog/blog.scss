@@ -84,9 +84,6 @@
 
 .blog-2 {
   margin: 0 auto;
-  img {
-    filter: grayscale(0.9);
-  }
 }
 
 .blog-first-block {
@@ -127,6 +124,13 @@
       text-transform: capitalize;
       margin: 0;
     }
+  }
+}
+
+.blog-content {
+  img {
+    max-width: 200px;
+    clip-path: circle(48%);
   }
 }
 /* responsive css */

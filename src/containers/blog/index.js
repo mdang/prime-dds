@@ -13,12 +13,12 @@ function Blog() {
                 <div className="main-title-wrapper">
                     <Subtitle
                         Class="site-subtitle"
-                        Name="OUR MAIN MISSIONS"
+                        Name="MEET OUR SPECIALISTS"
                     />
                     <Titlespan2
                         Class="sitemain-subtitle"
-                        Name="Build Smart & Effective"
-                        Label="Management"
+                        Name="Quality Dental Care"
+                        Label=""
                     />
 
                     <Description
@@ -34,11 +34,6 @@ function Blog() {
                                     <img src={data.img} alt="" title="" />
                                 </div>
                                 <div className="blog-second-block">
-                                    <div className="blog-left-content">
-                                        <div className="blog-icon">
-                                            <span><PreviewIcon icon={data.Icon} /></span>
-                                        </div>
-                                    </div>
                                     <div className="blog-right-content">
                                         <Title
                                             Class="blog-title"

@@ -27,6 +27,7 @@
       padding-right: calc(0px + (80 - 0) * ((100vw - 320px) / (1920 - 320)));
       .footer-logo {
         margin-bottom: calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
+        max-width: 175px;
       }
       .footer-dec {
         color: $color-white;
