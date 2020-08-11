@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import 'bootstrap/dist/css/bootstrap.css'
 import { RingSpinner } from "react-spinners-kit";
+
 import Navbar from '../containers/navbar'
 import Banner from "../containers/banner"
 import Service from "../containers/service"
@@ -13,7 +14,24 @@ import Footer from '../containers/footer'
 import CopyRight from '../containers/copyright_text'
 import "../assets/scss/style.scss"
 
+// import NavbarPage from "../containers/theme2/Navbar/Navbar_Page";
+// import Section from './section';
+// import Service from "../containers/theme2/Service/service";
+// import AboutUs from "../containers/theme2/AboutUs/AboutUs";
+// import WebsiteDesc from "../containers/theme2/WebsiteDesc/WebsiteDesc";
+// import Pricing from "../containers/theme2/Pricing/pricing";
+// import Team from '../containers/theme2/Team/Team';
+// import Process from "../containers/theme2/Process/Process";
+// import Testimonials from "../containers/theme2/Testimonials/Testimonials"
+// import GetStart from "../containers/theme2/GetStart/GetStart"
+// import Blog from "../containers/theme2/Blog/Blog"
+// import Contact from "../containers/theme2/Contact/Contact";
+// import Social from "../containers/theme2/Social/Social";
+// import Footer from "../containers/theme2/Footer/footer";
+// import "../assets/scss/style2.scss"
+
 const IndexPage = () => {
+
     const [loader, setLoader] = useState(false)
     useEffect(() => {
         const interval = setInterval(() => {
@@ -38,10 +56,27 @@ const IndexPage = () => {
                     <CopyRight />
                 </div>
             </div>
+
+            // <React.Fragment>
+            //     <NavbarPage />
+            //     <Section/>
+            //     <Service  sectionClass="pt-5"/>
+            //     <AboutUs/>
+            //     <WebsiteDesc/>
+            //     <Pricing/>
+            //     <Team/>
+            //     <Process/>
+            //     <Testimonials/>
+            //     <GetStart/>
+            //     <Blog/>
+            //     <Contact/>
+            //     <Social />
+            //     <Footer/>
+            // </React.Fragment>
             :
 
             <div className="theme-loader">
-                <RingSpinner size={80} color="#e100ff" loading={!loader} />
+                <RingSpinner size={80} color="#3366ff" loading={!loader} />
 
             </div>
     )
