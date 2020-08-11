@@ -26,6 +26,14 @@
     npm run develop
     ```
 
+1.  **Building the project**
+
+    To do a complete build:
+
+    ```shell
+    npm run build
+    ```
+
 1.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
