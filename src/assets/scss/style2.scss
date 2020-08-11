@@ -498,6 +498,11 @@ iframe {
     bottom: 0px;
     left: 0px;
     right: 0px;
+    background: url(../images/dorsin/bg-pattern.png);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+    height:50px;
 }
 
 .bg-pattern-effect img {
@@ -739,7 +744,12 @@ iframe {
 
 .features-img {
 	max-width: 500px;
-	margin: 0 0 0 auto;
+  margin: 0 0 0 auto;
+  img {
+    width: 100%;
+    box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+    padding: 10px;
+  }
 }
 
 /*=====================================
@@ -795,6 +805,7 @@ iframe {
 
 .team-box {
     border-bottom: 1px solid #ecf0f5;
+    margin-right: 10px;
 }
 
 .team-name {
@@ -806,6 +817,14 @@ iframe {
 .team-designation {
     font-size: 13px;
     color: #a8aeb4;
+}
+
+.team-member {
+  img {
+    max-width: 240px;
+    box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+    padding: 10px;
+  }
 }
 
 
@@ -873,7 +892,7 @@ iframe {
 }
 
 .testimonial-decs p {
-    padding: 60px 25px 30px;
+    padding: 30px 25px 30px;
     line-height: 24px;
     font-style: italic;
 }
@@ -1172,7 +1191,7 @@ textarea.form-control {
         line-height: 48px;
     }
     .vertical-content {
-        display: inherit;
+        display: flex;
     }
     .team-box {
         margin-top: 45px;
@@ -1353,6 +1372,8 @@ ul.pattern .color8 {
 
 .map-img {
   max-height: 420px;
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+  padding: 10px;
 }
 
 

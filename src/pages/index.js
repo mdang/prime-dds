@@ -25,7 +25,6 @@ import "../assets/scss/style.scss"
 // import Contact from "../containers/theme2/Contact/Contact";
 // import Social from "../containers/theme2/Social/Social";
 // import Footer from "../containers/theme2/Footer/footer";
-
 // import "../assets/scss/style2.scss"
 
 const IndexPage = () => {

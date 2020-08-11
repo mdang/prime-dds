@@ -9,7 +9,6 @@ class TestimonialsBox extends Component {
                     this.props.clients.map((client, key) =>
                         <Col lg={4} key={key}>
                             <div className="testimonial-box hover-effect margin-t-30">
-                                <img src={client.image} alt="client" className="img-fluid d-block img-thumbnail rounded-circle"/>
                                 <div className="testimonial-decs">
                                     <p className="text-muted text-center mb-0">“{client.desc}” </p>
                                 </div>

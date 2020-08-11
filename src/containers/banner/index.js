@@ -38,8 +38,8 @@ function Banner(props) {
                             <div className="banner-content">
                                 <Titlespan
                                     Class="banner-main-title"
-                                    Label="Creating smile"
-                                    Name="in White Rock/Dallas!"
+                                    Label="White Smiles"
+                                    Name="in White Rock Lake!"
                                 />
                                 <Description
                                     Class="banner-dec"

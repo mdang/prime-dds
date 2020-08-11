@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Col } from "reactstrap";
+import Image from '../../../components/image/index';
 
 class TeamBox extends Component {
     render() {
@@ -11,7 +12,7 @@ class TeamBox extends Component {
                             <div className="team-box text-center hover-effect">
                                 <div  className="team-wrapper">
                                     <div  className="team-member">
-                                        <img alt="team" src={team.image}  className="img-fluid rounded"/>
+                                        <Image Path={team.image} Class="img-fluid rounded" />
                                     </div>
                                 </div>
                                 <h4  className="team-name">{team.title}</h4>

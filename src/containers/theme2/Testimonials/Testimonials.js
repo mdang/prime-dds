@@ -23,7 +23,7 @@ class Testimonials extends Component {
                 <section className="section" id="testi">
             <Container>
                 {/* section title */}
-                <SectionTitle title="WHAT THEY'VE SAID" desc="The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli." />
+                <SectionTitle title="WHAT THEY'VE SAID" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque condimentum interdum est, eget iaculis neque tempus et." />
 
                 <Row className="margin-t-50">
                     <TestimonialsBox clients={this.state.clients} />

@@ -51,7 +51,7 @@ class Footer extends Component {
                     <Col lg={3} className="margin-t-20">
                         <h4>Subscribe</h4>
                         <div className="text-muted margin-t-20">
-                            <p>In an ideal world this text wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts.</p>
+                            <p>Cras risus nulla, consectetur et nunc convallis, accumsan condimentum arcu. Fusce placerat lectus ac turpis lacinia blandit. </p>
                         </div>
                         <Form className="subscribe">
                             <input placeholder="Email" className="form-control" required />

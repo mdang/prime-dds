@@ -10,15 +10,13 @@ class WebsiteDesc extends Component {
                     <Container>
                         <Row>
                             <Col lg={12} className="text-center">
-                                <h2 className="text-white">Build your dream website today</h2>
-                                <p className="padding-t-15 home-desc">But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her.</p>
-                                <a href="#" className="btn btn-bg-white margin-t-30 waves-effect waves-light mb-5">View Plan & Pricing</a>
+                                <h2 className="text-white">Aliquam consequat metus vitae ligula porttitor mollis.</h2>
+                                <p className="padding-t-15 home-desc">Sed ullamcorper mi porta consequat fermentum. Curabitur aliquam lectus non faucibus dictum. Suspendisse imperdiet metus molestie iaculis sollicitudin.</p>
+                                <a href="#" className="btn btn-bg-white margin-t-30 waves-effect waves-light mb-5">View Plans</a>
                             </Col>
                         </Row>
                     </Container>
-                    <div className="bg-pattern-effect">
-                        <img src="assets/images/bg-pattern.png" alt="dorsin"/>
-                    </div>
+                    <div className="bg-pattern-effect"></div>
                 </section>
             </React.Fragment>
         );

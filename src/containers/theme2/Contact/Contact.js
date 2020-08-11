@@ -24,9 +24,8 @@ class Features extends Component {
                 <Row>
                     <Col lg={4}>
                         <div className="mt-4 pt-4">
-                            <p className="mt-4"><span className="h5">Office Address 1:</span><br/> <span className="text-muted d-block mt-2">4461 Cedar Street Moro, AR 72368</span></p>
-                            <p className="mt-4"><span className="h5">Office Address 2:</span><br/> <span className="text-muted d-block mt-2">2467 Swick Hill Street <br/>New Orleans, LA 70171</span></p>
-                            <p className="mt-4"><span className="h5">Working Hours:</span><br/> <span className="text-muted d-block mt-2">9:00AM To 6:00PM</span></p>
+                            <p className="mt-4"><span className="h5">Office Address 1:</span><br/> <span className="text-muted d-block mt-2">7324 Gaston Ave, Suite 121, Dallas, TX, 75214</span></p>
+                            <p className="mt-4"><span className="h5">Working Hours:</span><br/> <span className="text-muted d-block mt-2">Mon: 7am-4pm</span><span className="text-muted d-block mt-2">Tues: 10am-7pm</span><span className="text-muted d-block mt-2">Wed: Clsoed</span><span className="text-muted d-block mt-2">Thur: 10am-7pm</span><span className="text-muted d-block mt-2">Fri: 10am-7pm</span><span className="text-muted d-block mt-2">Sat: 9am-3pm</span></p>
                         </div>
                     </Col>
                     <Col lg={8}>

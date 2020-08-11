@@ -16,7 +16,7 @@ class Social extends Component {
                         </ul>
                     </Col>
                     <Col lg={3} className="margin-t-30">
-                        <p className="margin-b-0 contact-title"><i className="pe-7s-call"></i> &nbsp;+91 123 4556 789</p>
+                        <p className="margin-b-0 contact-title"><i className="pe-7s-call"></i> &nbsp;(214) 348-2320</p>
                     </Col>
                     <Col lg={3} className="margin-t-30 text-right">
                         <p className="contact-title"><i className="pe-7s-mail-open"></i>&nbsp; Support@info.com</p>

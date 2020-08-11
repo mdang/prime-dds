@@ -11,14 +11,12 @@ class GetStart extends Component {
                     <Col lg={{size : 8, offset:2}} className="text-center">
                         <h1 className="get-started-title text-white">Let's Get Started</h1>
                         <div className="section-title-border margin-t-20 bg-white"></div>
-                        <p className="section-subtitle font-secondary text-white text-center padding-t-30">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                        <p className="section-subtitle font-secondary text-white text-center padding-t-30">Suspendisse imperdiet metus molestie iaculis sollicitudin. Aliquam ac sem orci. Cras risus nulla, consectetur et nunc convallis, accumsan condimentum arcu.</p>
                         <a href="#" className="btn btn-bg-white waves-effect margin-t-20 mb-4">Get Started <i className="mdi mdi-arrow-right"></i> </a>
                     </Col>
                 </Row>
             </Container>
-            <div className="bg-pattern-effect">
-                <img src="assets/images/bg-pattern-light.png" alt="pattern"/>
-            </div>
+            <div className="bg-pattern-effect"></div>
         </section>
         );
     }
