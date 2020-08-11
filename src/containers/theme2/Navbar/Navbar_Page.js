@@ -4,8 +4,6 @@ import {
     Nav,
     NavbarBrand,
     NavbarToggler,
-    NavItem,
-    NavLink,
     Container,
     Collapse,
     Button

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, FormGroup } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
+import Image from '../../../components/image/index';
+import map from '../../../assets/images/dorsin/map.png';
 
 //Import Section Title
 import SectionTitle from "../common/section-title";
@@ -29,41 +31,7 @@ class Features extends Component {
                     </Col>
                     <Col lg={8}>
                         <div className="custom-form mt-4 pt-4">
-                            <div id="message"></div>
-                            {/* <AvForm name="contact-form" id="contact-form">
-                                <Row>
-                                    <Col lg={6}>
-                                        <FormGroup className="mt-2">
-                                            <AvField required  name="name" id="name" type="text" className="form-control" placeholder="Your name*" />
-                                        </FormGroup>
-                                    </Col>
-                                    <Col lg={6}>
-                                        <FormGroup className="mt-2">
-                                            <AvField required  name="email" id="email" type="email" className="form-control" placeholder="Your email*" />
-                                        </FormGroup>
-                                    </Col>                                
-                                </Row>
-                                <Row>
-                                    <Col lg={12}>
-                                        <FormGroup className="mt-2">
-                                            <AvField required name="subject" type="text" className="form-control" id="subject" placeholder="Your Subject.." />
-                                        </FormGroup>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col lg={12}>
-                                        <FormGroup className="mt-2">
-                                            <textarea name="comments" id="comments" rows="4" className="form-control" placeholder="Your message..."></textarea>
-                                        </FormGroup>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col lg={12} className="text-right">
-                                        <input type="submit" id="submit" name="send" className="submitBnt btn btn-custom" value="Send Message"/>
-                                        <div id="simple-msg"></div>
-                                    </Col>
-                                </Row>
-                            </AvForm> */}
+                            <Image Path={map} Class="map-img" />
                         </div>  
                     </Col>
                 </Row>

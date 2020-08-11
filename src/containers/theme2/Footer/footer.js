@@ -7,7 +7,7 @@ import FooterLinks from "./footer-links";
 class Footer extends Component {
     state = {
         links : [
-            { title : "DORSIN",
+            { title : "White Rock Dental",
                 child : [
                     { link : "#", title : "Home" },
                     { link : "#", title : "About us" },
@@ -22,13 +22,6 @@ class Footer extends Component {
                     { link : "#", title : "Jobs" },
                     { link : "#", title : "Bookmarks" },
                 ]
-            },
-            { title : "Support",
-                child : [
-                    { link : "#", title : "FAQ" },
-                    { link : "#", title : "Contact" },
-                    { link : "#", title : "Disscusion" },
-                ]
             }
         ],
     }
@@ -40,7 +33,7 @@ class Footer extends Component {
                 <Row>
                     {
                         this.state.links.map((fLink, key) =>
-                            <Col key={key} lg={3} className="margin-t-20">
+                            <Col key={key} lg={2} className="margin-t-20">
                                 <h4>{fLink.title}</h4>
                                 <div className="text-muted margin-t-20">
                                     <ul className="list-unstyled footer-list">

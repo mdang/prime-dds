@@ -13,10 +13,9 @@ class Clients extends Component {
         super(props);
         this.state = {
             teams : [
-                { image : "assets/images/team/img-1.jpg", title : "Frank Johnson", desc : "CEO" },
-                { image : "assets/images/team/img-2.jpg", title : "Elaine Stclair", desc : "DESIGNER" },
-                { image : "assets/images/team/img-3.jpg", title : "Wanda Arthur", desc : "DEVELOPER" },
-                { image : "assets/images/team/img-4.jpg", title : "Joshua Stemple", desc : "MANAGER" },
+                { image : "assets/images/team/img-1.jpg", title : "Dr. An Le", desc : "Dentist" },
+                { image : "assets/images/team/img-2.jpg", title : "Dr. Jake Moon", desc : "Dentist" },
+                { image : "assets/images/team/img-3.jpg", title : "Dr. Tim Whatley", desc : "Dentist" }
             ]
         }
     }
@@ -28,7 +27,7 @@ class Clients extends Component {
             <Container>
 
                 {/* section title */}
-                <SectionTitle title="BEHIND THE PEOPLE" desc="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout." />
+                <SectionTitle title="BEHIND THE PEOPLE" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed dui nec ipsum mollis venenatis nec id dui." />
 
                 <Row className="margin-t-50">
                     {/* team box */}

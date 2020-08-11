@@ -13,8 +13,6 @@ class Social extends Component {
                             <li className="list-inline-item"><a href="#" className="social-icon"><i className="mdi mdi-facebook"></i></a></li>
                             <li className="list-inline-item"><a href="#" className="social-icon"><i className="mdi mdi-twitter"></i></a></li>
                             <li className="list-inline-item"><a href="#" className="social-icon"><i className="mdi mdi-linkedin"></i></a></li>
-                            <li className="list-inline-item"><a href="#" className="social-icon"><i className="mdi mdi-google-plus"></i></a></li>
-                            <li className="list-inline-item"><a href="#" className="social-icon"><i className="mdi mdi-dribbble"></i></a></li>
                         </ul>
                     </Col>
                     <Col lg={3} className="margin-t-30">

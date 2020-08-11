@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 
 //Importing Modal
 // import ModalSection from '../../components/common/ModalSection';
@@ -27,9 +27,9 @@ class Section extends Component {
                     <Container>
                         <Row>
                             <Col lg={{size:8, offset :2}}  className="col-lg-8 offset-lg-2 text-white text-center">
-                                <h1 className="home-title">We help startups launch their products</h1>
+                                <h1 className="home-title">White Teeth in White Rock Dental</h1>
                                 <p className="padding-t-15 home-desc">Etiam sed.Interdum consequat proin vestibulum class at.</p>
-                                <p className="play-shadow margin-t-30 margin-l-r-auto"><a href="#" onClick={this.callModal} className="play-btn video-play-icon"><i className="mdi mdi-play text-center"></i></a></p>  
+                                <p className="margin-t-30 margin-l-r-auto"><Button color="none" type="button" className="btn-custom navbar-btn btn-rounded waves-effect waves-light">Book Now</Button></p>  
                             </Col>
                         </Row>
                     </Container>
