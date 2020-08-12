@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from "react"
-import 'bootstrap/dist/css/bootstrap.css'
-import { RingSpinner } from "react-spinners-kit";
+import React from "react"
+import "bootstrap/dist/css/bootstrap.css"
 
-import Navbar from '../containers/navbar'
+import Navbar from "../containers/navbar"
 import Banner from "../containers/banner"
 import Service from "../containers/service"
 import About from "../containers/about"
 import Blog from "../containers/blog"
-import Contact from '../containers/contact'
-import Footer from '../containers/footer'
-import CopyRight from '../containers/copyright_text'
+import Contact from "../containers/contact"
+import Footer from "../containers/footer"
+import CopyRight from "../containers/copyright_text"
 import "../assets/scss/style.scss"
 
 // import NavbarPage from "../containers/theme2/Navbar/Navbar_Page";
@@ -25,51 +24,33 @@ import "../assets/scss/style.scss"
 // import "../assets/scss/style2.scss"
 
 const IndexPage = () => {
-
-    const [loader, setLoader] = useState(false)
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setLoader(true)
-        }, 2000);
-        return () => clearInterval(interval);
-    }, [])
-
-    return (
-        loader ?
-            <div className="main-wrapper">
-                <Navbar />
-                <div id="main-content">
-                    <Banner ChangeClass={'demo1'} />
-                    <Service />
-                    <About />
-                    <Blog />
-                    <Testimonial />
-                    <Contact />
-                    <Brand />
-                    <Footer />
-                    <CopyRight />
-                </div>
-            </div>
-            // <React.Fragment>
-            //     <NavbarPage />
-            //     <Section/>
-            //     <Service  sectionClass="pt-5"/>
-            //     <AboutUs/>
-            //     <WebsiteDesc/>
-            //     <Team/>
-            //     <Testimonials/>
-            //     <GetStart/>
-            //     <Contact/>
-            //     <Social />
-            //     <Footer/>
-            // </React.Fragment>
-            :
-
-            <div className="theme-loader">
-                <RingSpinner size={80} color="#3366ff" loading={!loader} />
-
-            </div>
-    )
+  return (
+    <div className="main-wrapper">
+      <Navbar />
+      <div id="main-content">
+        <Banner ChangeClass={"demo1"} />
+        <Service />
+        <About />
+        <Blog />
+        <Contact />
+        <Footer />
+        <CopyRight />
+      </div>
+    </div>
+    // <React.Fragment>
+    //     <NavbarPage />
+    //     <Section/>
+    //     <Service  sectionClass="pt-5"/>
+    //     <AboutUs/>
+    //     <WebsiteDesc/>
+    //     <Team/>
+    //     <Testimonials/>
+    //     <GetStart/>
+    //     <Contact/>
+    //     <Social />
+    //     <Footer/>
+    // </React.Fragment>
+  )
 }
 
 export default IndexPage
