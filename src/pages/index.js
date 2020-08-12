@@ -7,9 +7,7 @@ import Banner from "../containers/banner"
 import Service from "../containers/service"
 import About from "../containers/about"
 import Blog from "../containers/blog"
-import Testimonial from '../containers/testimonial'
 import Contact from '../containers/contact'
-import Brand from '../containers/brands'
 import Footer from '../containers/footer'
 import CopyRight from '../containers/copyright_text'
 import "../assets/scss/style.scss"
@@ -20,7 +18,6 @@ import "../assets/scss/style.scss"
 // import AboutUs from "../containers/theme2/AboutUs/AboutUs";
 // import WebsiteDesc from "../containers/theme2/WebsiteDesc/WebsiteDesc";
 // import Team from '../containers/theme2/Team/Team';
-// import Testimonials from "../containers/theme2/Testimonials/Testimonials"
 // import GetStart from "../containers/theme2/GetStart/GetStart"
 // import Contact from "../containers/theme2/Contact/Contact";
 // import Social from "../containers/theme2/Social/Social";
