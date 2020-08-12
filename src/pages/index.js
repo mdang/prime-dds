@@ -44,7 +44,6 @@ const IndexPage = () => {
     //     <AboutUs/>
     //     <WebsiteDesc/>
     //     <Team/>
-    //     <Testimonials/>
     //     <GetStart/>
     //     <Contact/>
     //     <Social />
