@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React, { useState, Fragment } from "react"
 import {
   Navbar,
   Nav,
@@ -15,41 +15,35 @@ import logo from "../../../assets/images/logo.png"
 import "react-sticky-header/styles.css"
 import StickyHeader from "react-sticky-header"
 
-class NavbarPage extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isOpenMenu: false,
-    }
-  }
+function NavbarPage(props) {
+  const [isOpenMenu, setIsOpen] = useState(false);
 
-  toggle = () => {
-    this.setState({ isOpenMenu: !this.state.isOpenMenu })
-  }
+  const toggle = () => setIsOpen(!isOpenMenu);
 
-  render() {
-    return (
-      <React.Fragment>
+  console.log('props ', props);
+
+  return (
+    <Fragment>
         <StickyHeader
           header={
             <Navbar
               expand="lg"
               fixed="top"
               className={
-                "navbar-custom sticky sticky-dark " + this.props.navClass
+                "navbar-custom sticky sticky-dark " + props.navClass
               }
             >
               <Container>
                 <NavbarBrand className="logo text-uppercase" href="/">
                   <Image Path={logo} Class="logo-img" />
                 </NavbarBrand>
-                <NavbarToggler onClick={this.toggle}>
+                <NavbarToggler onClick={toggle}>
                   <i className="mdi mdi-menu"></i>
                 </NavbarToggler>
 
                 <Collapse
                   id="navbarCollapse"
-                  isOpen={this.state.isOpenMenu}
+                  isOpen={isOpenMenu}
                   navbar
                 >
                   <Nav navbar className="navbar-center" id="mySidenav"></Nav>
@@ -72,9 +66,8 @@ class NavbarPage extends Component {
           }
           stickyOffset={-100}
         ></StickyHeader>
-      </React.Fragment>
-    )
-  }
+      </Fragment>
+  )
 }
 
 export default NavbarPage
