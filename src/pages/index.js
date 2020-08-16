@@ -1,16 +1,6 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 
-// import Navbar from "../containers/navbar"
-// import Banner from "../containers/banner"
-// import Service from "../containers/service"
-// import About from "../containers/about"
-// import Blog from "../containers/blog"
-// import Contact from "../containers/contact"
-// import Footer from "../containers/footer"
-// import CopyRight from "../containers/copyright_text"
-// import "../assets/scss/style.scss"
-
 import NavbarPage from "../containers/Navbar";
 import Section from './section';
 import Service from "../containers/Service";
