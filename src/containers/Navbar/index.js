@@ -8,8 +8,8 @@ import {
   Collapse,
   Button,
 } from "reactstrap"
-import Image from "../../../components/image/index"
-import logo from "../../../assets/images/logo.png"
+import Image from "../../components/image/index"
+import logo from "../../assets/images/logo.png"
 
 //stickey header
 import "react-sticky-header/styles.css"
@@ -19,8 +19,6 @@ function NavbarPage(props) {
   const [isOpenMenu, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpenMenu);
-
-  console.log('props ', props);
 
   return (
     <Fragment>

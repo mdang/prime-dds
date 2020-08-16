@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Container, Row, Col } from "reactstrap"
-import Image from "../../../components/image/index"
-import map from "../../../assets/images/dorsin/map.png"
+import Image from "../../components/image/index"
+import map from "../../assets/images/dorsin/map.png"
 
 //Import Section Title
 import SectionTitle from "../common/section-title"

@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Container, Row, Col } from "reactstrap"
-import Image from "../../../components/image/index"
-import about from "../../../assets/images/dorsin/about-img.png"
+import Image from "../../components/image/index"
+import about from "../../assets/images/dorsin/about-img.png"
 
 class AboutUs extends Component {
   render() {

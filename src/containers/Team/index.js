@@ -1,9 +1,9 @@
 import React, { Component } from "react"
 import { Container, Row } from "reactstrap"
-import Image from "../../../components/image/index"
-import team1 from "../../../assets/images/dorsin/team/img-1.jpg"
-import team2 from "../../../assets/images/dorsin/team/img-2.jpg"
-import team3 from "../../../assets/images/dorsin/team/img-3.jpg"
+import Image from "../../components/image/index"
+import team1 from "../../assets/images/dorsin/team/img-1.jpg"
+import team2 from "../../assets/images/dorsin/team/img-2.jpg"
+import team3 from "../../assets/images/dorsin/team/img-3.jpg"
 
 //Import Section Title
 import SectionTitle from "../common/section-title"
