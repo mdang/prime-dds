@@ -1,4 +1,5 @@
 import React, { useState, Fragment } from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import {
   Navbar,
   Nav,
@@ -16,6 +17,22 @@ import "react-sticky-header/styles.css"
 import StickyHeader from "react-sticky-header"
 
 function NavbarPage(props) {
+  const NavbarData = useStaticQuery(graphql`
+  query NavbarQuery {
+    allDataJson {
+      edges {
+        node {
+          navbar {
+            id
+            title
+          }
+        }
+      }
+    }
+  }
+`);
+const NavbarDataPrefix = NavbarData.allDataJson.edges[0].node.navbar;
+
   const [isOpenMenu, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpenMenu);
@@ -33,7 +50,7 @@ function NavbarPage(props) {
             >
               <Container>
                 <NavbarBrand className="logo text-uppercase" href="/">
-                  <Image Path={logo} Class="logo-img" />
+                  <Image Path={logo} Class="logo-img" Alt={NavbarDataPrefix[0].title} />
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle}>
                   <i className="mdi mdi-menu"></i>
@@ -53,7 +70,7 @@ function NavbarPage(props) {
                           type="button"
                           className="btn-custom navbar-btn btn-rounded waves-effect waves-light"
                         >
-                          Book Now
+                          {NavbarDataPrefix[1].title}
                         </Button>
                       </li>
                     </Nav>

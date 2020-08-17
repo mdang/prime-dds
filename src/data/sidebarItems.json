@@ -1,4 +1,28 @@
 {
+  "navbar": [
+    {
+      "id": 1,
+      "title": "White Rock Dental Implants & Orthodontics"
+    },
+    {
+      "id": 2,
+      "title": "Book Now"
+    }
+  ],
+  "section": [ 
+    {
+      "id": 1,
+      "title": "White Smiles in White Rock Lake"
+    },
+    {
+      "id": 2,
+      "title": "Etiam sed.Interdum consequat proin vestibulum class at."
+    },
+    {
+      "id": 3,
+      "title": "Book Now"
+    }
+  ],
   "sidebar": [
     {
       "id": 1,

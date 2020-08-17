@@ -1,7 +1,23 @@
 import React, { Fragment } from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import { Container, Row, Col, Button } from "reactstrap"
 
 function Section() {
+  const SectionData = useStaticQuery(graphql`
+    query SectionQuery {
+      allDataJson {
+        edges {
+          node {
+            section {
+              id
+              title
+            }
+          }
+        }
+      }
+    }
+  `);
+  const SectionDataPrefix = SectionData.allDataJson.edges[0].node.section;
   return (
     <Fragment>
       <section
@@ -19,10 +35,10 @@ function Section() {
                   className="col-lg-8 offset-lg-2 text-white text-center"
                 >
                   <h1 className="home-title">
-                    White Smiles in White Rock Lake
+                    {SectionDataPrefix[0].title}
                   </h1>
                   <p className="padding-t-15 home-desc">
-                    Etiam sed.Interdum consequat proin vestibulum class at.
+                    {SectionDataPrefix[1].title}
                   </p>
                   <p className="margin-t-30 margin-l-r-auto">
                     <Button
@@ -30,7 +46,7 @@ function Section() {
                       type="button"
                       className="btn-custom navbar-btn btn-rounded waves-effect waves-light"
                     >
-                      Book Now
+                      {SectionDataPrefix[2].title}
                     </Button>
                   </p>
                 </Col>
