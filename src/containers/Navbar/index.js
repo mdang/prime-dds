@@ -10,7 +10,7 @@ import {
   Button,
 } from "reactstrap"
 import Image from "../../components/image/index"
-import logo from "../assets/images/logo.png"
+import logo from "../../assets/images/Logo.png"
 
 //stickey header
 import "react-sticky-header/styles.css"
