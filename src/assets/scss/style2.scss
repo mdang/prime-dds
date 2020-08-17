@@ -2,64 +2,7 @@
 @import "./materialdesignicons.min.scss";
 @import "./pe-icon-7-stroke.scss";
 @import "./blue.scss";
-
-//colors
-$color_shark_approx: #272a33;
-$black_10: rgba(0, 0, 0, .1);
-$white: #fff;
-$color_bright_gray_approx: #393f4f;
-$color_royal_blue_approx: #3366ff;
-$color_picton_blue_approx: #33ccff;
-$black_50: rgba(0, 0, 0, 0.5);
-$color_wild_sand_approx: #f7f7f7;
-$color_selago_approx: #fafbfe;
-$color_gray_chateau_approx: #a8aeb4;
-$color_boulder_approx: #777;
-$color_mine_shaft_approx: #212121;
-$color_concrete_approx: #f3f3f3;
-$black: #000;
-$white_60: rgba(255, 255, 255, 0.6);
-$color_steel_blue_approx: #337ab7;
-$white_70: rgba(255, 255, 255, 0.7);
-$color_fiord_approx: #4c5667;
-$white_85: rgba(255, 255, 255, 0.85);
-$black_30: rgba(0, 0, 0, 0.3);
-$color_pale_sky_10_approx: rgba(108,118,134,.1);
-$color_coral_red_approx: #fb3e3e;
-$color_athens_gray_approx: #ecf0f5;
-$color_mercury_approx: #e0e0e0;
-$color_silver_approx: #ccc;
-$red: red;
-$color_bleach_white_approx: #fdf0d3;
-$color_aero_blue_approx: #c5ffdf;
-$color_malachite_approx: #0dba26;
-$color_iron_approx: #dadcdf;
-$color_link_water_approx: #dce6f3;
-$silver_chalice: #acacac;
-$color_daisy_bush_approx: #512da8;
-$color_plum_approx: #711e72;
-$black_8: rgba(0, 0, 0, 0.08);
-$color_cocoa_brown_approx: #2b2424;
-$color_mountain_meadow_approx: #1bbc9d;
-$color_brink_pink_approx: #f85f89;
-$color_bright_turquoise_approx: #00e6e6;
-$color_mariner_approx: #2762da;
-$color_tangerine_approx: #f09105;
-$color_bright_sun_approx: #f6cb42;
-
-//fonts
-$font_0: Rubik;
-$font_1: sans-serif;
-$font_2: Poppins;
-
-//urls
-$url_0: url(../images/dorsin/bg-home.png);
-$url_1: url(../images/dorsin/bg-pattern.png);
-$url_2: url(../images/dorsin/wave-shape/wave1.png);
-$url_3: url(../images/dorsin/wave-shape/wave2.png);
-$url_4: url(../images/dorsin/wave-shape/wave3.png);
-$url_5: url(../images/dorsin/img-1.jpg);
-$url_6: url(../images/dorsin/img-2.jpg);
+@import "./variable2.scss";
 
 .theme-loader {
 	position: relative;
