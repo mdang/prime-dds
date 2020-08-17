@@ -1,7 +1,24 @@
 import React, { Fragment } from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import { Container, Row, Col } from "reactstrap"
 
 function WebsiteDesc() {
+  const WebsiteDescData = useStaticQuery(graphql`
+    query WebsiteDescQuery {
+      allDataJson {
+        edges {
+          node {
+            websiteDesc {
+              id
+              title
+            }
+          }
+        }
+      }
+    }
+  `)
+  const WebsiteDescDataPrefix =
+    WebsiteDescData.allDataJson.edges[0].node.websiteDesc
   return (
     <Fragment>
       <section className="section section-lg bg-web-desc">
@@ -9,19 +26,15 @@ function WebsiteDesc() {
         <Container>
           <Row>
             <Col lg={12} className="text-center">
-              <h2 className="text-white">
-                Aliquam consequat metus vitae ligula porttitor mollis.
-              </h2>
+              <h2 className="text-white">{WebsiteDescDataPrefix[0].title}</h2>
               <p className="padding-t-15 home-desc">
-                Sed ullamcorper mi porta consequat fermentum. Curabitur aliquam
-                lectus non faucibus dictum. Suspendisse imperdiet metus molestie
-                iaculis sollicitudin.
+                {WebsiteDescDataPrefix[1].title}
               </p>
               <a
                 href="#"
                 className="btn btn-bg-white margin-t-30 waves-effect waves-light mb-5"
               >
-                View Plans
+                {WebsiteDescDataPrefix[2].title}
               </a>
             </Col>
           </Row>
