@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /
-Sitemap: https://primedds.com/sitemap.xml
-Host: https://primedds.com
+Sitemap: https://mdang.github.io/sitemap.xml
+Host: https://mdang.github.io
