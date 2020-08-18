@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/prime-dds`,
   siteMetadata: {
     title: "Prime DDS",
     author: "Prime DDS",
