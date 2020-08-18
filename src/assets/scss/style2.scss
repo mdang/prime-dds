@@ -517,27 +517,28 @@ iframe {
 	overflow: hidden;
 }
 .wave-one {
-	background-size: 50% 100px;
+	background-size: 100% 150px;
 	background: $url_2;
+	top: 20px;
 }
 .wave-anim {
 	.wave-one {
-		animation: move-wave 3s;
+		animation: move-wave 40s;
 		animation-delay: 1s;
 	}
 	.wave-two {
-		animation: move_wave 10s linear infinite;
+		animation: move_wave 90s linear infinite;
 	}
 	.wave-three {
-		animation: move_wave 15s linear infinite;
+		animation: move_wave 60s linear infinite;
 	}
 }
 .wave-two {
-	background-size: 50% 120px;
+	background-size: 100% 120px;
 	background: $url_3;
 }
 .wave-three {
-	background-size: 50% 100px;
+	background-size: 100% 100px;
 	background: $url_4;
 }
 @keyframes move_wave {
@@ -926,14 +927,17 @@ iframe {
 	}
 }
 @media(max-width: 768px) {
+	.wave-effect {
+		height: 50px;
+	}
 	.wave-one {
-		background-size: 50% 50px;
+		background-size: 70% 80px;
 	}
 	.wave-three {
-		background-size: 50% 50px;
+		background-size: 70% 80px;
 	}
 	.wave-two {
-		background-size: 50% 70px;
+		background-size: 70% 80px;
 	}
 	.bg-pattern-effect {
 		bottom: -7px;

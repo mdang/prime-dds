@@ -4,7 +4,7 @@ module.exports = {
     title: "Prime DDS",
     author: "Prime DDS",
     description: "Dentist offices",
-    siteUrl: "https://primedds.com/",
+    siteUrl: "https://mdang.github.io/prime-dds/",
   },
   plugins: [
     `gatsby-transformer-json`,
