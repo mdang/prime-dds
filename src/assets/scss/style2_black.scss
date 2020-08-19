@@ -1,7 +1,6 @@
 @import "./waves.scss";
 @import "./materialdesignicons.min.scss";
 @import "./pe-icon-7-stroke.scss";
-@import "./blue.scss";
 @import "./variable2.scss";
 
 .theme-loader {
@@ -92,7 +91,7 @@ b {
 	color: $white;
 }
 .margin-t-10 {
-	margin-top: 10px;
+	margin-top: 20px;
 }
 .margin-t-20 {
 	margin-top: 20px;
@@ -105,6 +104,9 @@ b {
 }
 .margin-b-0 {
 	margin-bottom: 0;
+}
+.padding-t-15 {
+	padding-top: 0;
 }
 .padding-t-15 {
 	padding-top: 15px;
@@ -125,7 +127,7 @@ b {
 	flex-direction: row;
 }
 .bg-overlay {
-	background: linear-gradient(to right, $color_royal_blue_approx, $color_picton_blue_approx);
+	background: linear-gradient(to right, $color_bright_gray_approx, $color_boulder_approx);
 	opacity: 0.9;
 	position: absolute;
 	height: 100%;
@@ -348,7 +350,7 @@ iframe {
 .home-title {
 	font-size: 64px;
 	line-height: 64px;
-	font-weight:bold;
+	font-weight: bold;
 }
 .display-table-cell {
 	display: table-cell;
@@ -1155,7 +1157,7 @@ ul.pattern {
 		background-color: $color_bright_turquoise_approx;
 	}
 	.color5 {
-		background-color: $color_royal_blue_approx;
+		background-color: $color_bright_gray_approx;
 	}
 	.color6 {
 		background-color: $color_mariner_approx;

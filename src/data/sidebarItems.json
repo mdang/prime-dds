@@ -9,18 +9,32 @@
       "title": "Book Now"
     }
   ],
-  "section": [ 
+  "navbarLinks": [
     {
       "id": 1,
-      "title": "White Smiles in White Rock Lake"
+      "title": "Locations"
     },
     {
       "id": 2,
-      "title": "Etiam sed.Interdum consequat proin vestibulum class at."
+      "title": "Services"
+    },
+    {
+      "id": 2,
+      "title": "Insurance & Financing"
+    }
+  ],
+  "section": [ 
+    {
+      "id": 1,
+      "title": "We're Open"
+    },
+    {
+      "id": 2,
+      "title": "It’s okay. Smile."
     },
     {
       "id": 3,
-      "title": "Book Now"
+      "title": "Find Your Nearest Location"
     }
   ],
   "service": [ 
@@ -36,19 +50,61 @@
   "serviceBox": [
     {
       "icon": "pe-7s-diamond",
-      "title": "Teeth Cleaning",
+      "title": "Braces & Orthodontics",
       "desc":
         "Aliquam consectetur, metus nec imperdiet faucibus, sem ligula ultricies metus, vitae interdum nunc massa quis nunc."
     },
     {
       "icon": "pe-7s-display2",
-      "title": "Braces",
+      "title": "Cosmetic Dentistry",
       "desc":
         "In feugiat tortor quam, ut scelerisque dui pretium vel. Nullam condimentum dapibus nisi, nec convallis ex pharetra sed. "
     },
     {
       "icon": "pe-7s-piggy",
-      "title": "Pulling Wisdom Teeth",
+      "title": "Dental Implants",
+      "desc":
+        "Nulla tempus tempus orci sed luctus. Cras dapibus ipsum ut ipsum tristique condimentum."
+    },
+    {
+      "icon": "pe-7s-diamond",
+      "title": "Dentures & Crowns",
+      "desc":
+        "Aliquam consectetur, metus nec imperdiet faucibus, sem ligula ultricies metus, vitae interdum nunc massa quis nunc."
+    },
+    {
+      "icon": "pe-7s-display2",
+      "title": "Emergency Dentistry",
+      "desc":
+        "In feugiat tortor quam, ut scelerisque dui pretium vel. Nullam condimentum dapibus nisi, nec convallis ex pharetra sed. "
+    },
+    {
+      "icon": "pe-7s-piggy",
+      "title": "General Dentistry",
+      "desc":
+        "Nulla tempus tempus orci sed luctus. Cras dapibus ipsum ut ipsum tristique condimentum."
+    },
+    {
+      "icon": "pe-7s-piggy",
+      "title": "Invisalign®",
+      "desc":
+        "Nulla tempus tempus orci sed luctus. Cras dapibus ipsum ut ipsum tristique condimentum."
+    },
+    {
+      "icon": "pe-7s-diamond",
+      "title": "Oral Surgery",
+      "desc":
+        "Aliquam consectetur, metus nec imperdiet faucibus, sem ligula ultricies metus, vitae interdum nunc massa quis nunc."
+    },
+    {
+      "icon": "pe-7s-display2",
+      "title": "Root Canals",
+      "desc":
+        "In feugiat tortor quam, ut scelerisque dui pretium vel. Nullam condimentum dapibus nisi, nec convallis ex pharetra sed. "
+    },
+    {
+      "icon": "pe-7s-piggy",
+      "title": "Teeth Whitening",
       "desc":
         "Nulla tempus tempus orci sed luctus. Cras dapibus ipsum ut ipsum tristique condimentum."
     }
@@ -56,15 +112,15 @@
   "websiteDesc": [
     {
       "id": 1,
-      "title": "Aliquam consequat metus vitae ligula porttitor mollis."
+      "title": "Staying safe."
     },
     {
       "id": 2,
-      "title": "Sed ullamcorper mi porta consequat fermentum. Curabitur aliquam lectus non faucibus dictum. Suspendisse imperdiet metus molestie iaculis sollicitudin."
+      "title": "Visiting our office has always been safe and now it’s safer than ever before. Learn about the enhanced safety measures we have put in place so you can feel comfortable visiting us."
     },
     {
       "id": 3,
-      "title": "View Plans"
+      "title": "Learn More"
     }
   ],
   "getStart": [

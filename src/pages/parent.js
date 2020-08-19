@@ -3,31 +3,29 @@ import "bootstrap/dist/css/bootstrap.css"
 
 import NavbarPage from "../containers/Navbar"
 import Section from "./section"
-import Service from "../containers/Service"
 import AboutUs from "../containers/AboutUs"
 import WebsiteDesc from "../containers/WebsiteDesc"
-import Team from "../containers/Team"
 import GetStart from "../containers/GetStart"
-import Contact from "../containers/Contact"
+import Location from "../containers/Location"
+import Service from "../containers/Service"
 import Social from "../containers/Social"
 import Footer from "../containers/Footer"
-import "../assets/scss/style2.scss"
+// import "../assets/scss/style2_black.scss"
 
-const IndexPage = () => {
+const ParentPage = () => {
   return (
     <React.Fragment>
-      <NavbarPage />
+      <NavbarPage typeOfPage="parent" />
       <Section />
-      <Service sectionClass="pt-5" />
       <AboutUs />
       <WebsiteDesc />
-      <Team />
+      <Location />
       <GetStart />
-      <Contact />
+      <Service sectionClass="pt-5" />
       <Social />
       <Footer />
     </React.Fragment>
   )
 }
 
-export default IndexPage
+export default ParentPage

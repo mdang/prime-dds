@@ -5,6 +5,8 @@ import {
   Nav,
   NavbarBrand,
   NavbarToggler,
+  NavItem,
+  NavLink,
   Container,
   Collapse,
   Button,
@@ -29,11 +31,24 @@ function NavbarPage(props) {
           }
         }
       }
+      allDataJson {
+        edges {
+          node {
+            navbarLinks {
+              id
+              title
+            }
+          }
+        }
+      }
     }
   `)
   const NavbarDataPrefix = NavbarData.allDataJson.edges[0].node.navbar
+  const NavbarLinksDataPrefix = NavbarData.allDataJson.edges[0].node.navbarLinks
 
   const [isOpenMenu, setIsOpen] = useState(false)
+
+  let [typeOfPage] = useState(props.typeOfPage)
 
   const toggle = () => setIsOpen(!isOpenMenu)
 
@@ -47,31 +62,61 @@ function NavbarPage(props) {
             className={"navbar-custom sticky sticky-dark " + props.navClass}
           >
             <Container>
-              <NavbarBrand className="logo text-uppercase" href="/">
-                <Image
-                  Path={logo}
-                  Class="logo-img"
-                  Alt={NavbarDataPrefix[0].title}
-                />
-              </NavbarBrand>
+              {typeOfPage === "parent" ? (
+                <NavbarBrand className="logo text-uppercase" href="/">
+                  <h1>Prime DDS</h1>
+                </NavbarBrand>
+              ) : (
+                <NavbarBrand className="logo text-uppercase" href="/">
+                  <Image
+                    Path={logo}
+                    Class="logo-img"
+                    Alt={NavbarDataPrefix[0].title}
+                  />
+                </NavbarBrand>
+              )}
               <NavbarToggler onClick={toggle}>
                 <i className="mdi mdi-menu"></i>
               </NavbarToggler>
 
               <Collapse id="navbarCollapse" isOpen={isOpenMenu} navbar>
-                <Nav navbar className="navbar-center" id="mySidenav"></Nav>
                 <div className="nav-button ml-auto">
-                  <Nav navbar className="navbar-right">
-                    <li>
-                      <Button
-                        color="none"
-                        type="button"
-                        className="btn-custom navbar-btn btn-rounded waves-effect waves-light"
-                      >
-                        {NavbarDataPrefix[1].title}
-                      </Button>
-                    </li>
-                  </Nav>
+                  {typeOfPage === "parent" ? (
+                    <Nav navbar className="navbar-right">
+                      {NavbarLinksDataPrefix.map((item, key) => (
+                        <NavItem
+                          key={key}
+                          className={item.title === "Home" ? "active" : ""}
+                        >
+                          <NavLink href={"#test" + item.id}>
+                            {" "}
+                            {item.title}
+                          </NavLink>
+                        </NavItem>
+                      ))}
+                      <li>
+                        <Button
+                          color="none"
+                          type="button"
+                          className="btn-custom navbar-btn btn-rounded waves-effect waves-light"
+                        >
+                          {NavbarDataPrefix[1].title}
+                        </Button>
+                      </li>
+                    </Nav>
+                  ) : (
+                    <Nav navbar className="navbar-right">
+                      <li>
+                        <Button
+                          color="none"
+                          type="button"
+                          className="btn-custom navbar-btn btn-rounded waves-effect waves-light"
+                        >
+                          {NavbarDataPrefix[1].title}
+                        </Button>
+                      </li>
+                    </Nav>
+                  )}
                 </div>
               </Collapse>
             </Container>

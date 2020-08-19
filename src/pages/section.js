@@ -37,7 +37,7 @@ function Section() {
                   <h1 className="home-title">
                     {SectionDataPrefix[0].title}
                   </h1>
-                  <p className="padding-t-15 home-desc">
+                  <p className="home-desc">
                     {SectionDataPrefix[1].title}
                   </p>
                   <p className="margin-t-30 margin-l-r-auto">

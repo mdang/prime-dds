@@ -26,8 +26,8 @@ function WebsiteDesc() {
         <Container>
           <Row>
             <Col lg={12} className="text-center">
-              <h2 className="text-white">{WebsiteDescDataPrefix[0].title}</h2>
-              <p className="padding-t-15 home-desc">
+              <h2 className="get-started-title text-white">{WebsiteDescDataPrefix[0].title}</h2>
+              <p className="section-subtitle font-secondary text-white text-center padding-t-30">
                 {WebsiteDescDataPrefix[1].title}
               </p>
               <a
