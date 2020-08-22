@@ -13,6 +13,7 @@ import {
 } from "reactstrap"
 import Image from "../../components/image/index"
 import logo from "../../assets/images/Logo.png"
+import logoPrimeDDS from '../../assets/images/logos/PrimeDental.svg'
 
 //stickey header
 import "react-sticky-header/styles.css"
@@ -64,7 +65,11 @@ function NavbarPage(props) {
             <Container>
               {typeOfPage === "parent" ? (
                 <NavbarBrand className="logo text-uppercase" href="/">
-                  <h1>Prime DDS</h1>
+                <Image
+                    Path={logoPrimeDDS}
+                    Class="logo-img"
+                    Alt={NavbarDataPrefix[0].title}
+                  />
                 </NavbarBrand>
               ) : (
                 <NavbarBrand className="logo text-uppercase" href="/">
@@ -73,7 +78,7 @@ function NavbarPage(props) {
                     Class="logo-img"
                     Alt={NavbarDataPrefix[0].title}
                   />
-                </NavbarBrand>
+                </NavbarBrand> 
               )}
               <NavbarToggler onClick={toggle}>
                 <i className="mdi mdi-menu"></i>
@@ -94,15 +99,6 @@ function NavbarPage(props) {
                           </NavLink>
                         </NavItem>
                       ))}
-                      <li>
-                        <Button
-                          color="none"
-                          type="button"
-                          className="btn-custom navbar-btn btn-rounded waves-effect waves-light"
-                        >
-                          {NavbarDataPrefix[1].title}
-                        </Button>
-                      </li>
                     </Nav>
                   ) : (
                     <Nav navbar className="navbar-right">

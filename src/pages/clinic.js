@@ -1,7 +1,7 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 
-import LayoutParent from "../containers/LayoutParent"
+import Layout from "../containers/Layout"
 import Content from "../containers/Content"
 import Section from "./section"
 import Service from "../containers/Service"
@@ -14,7 +14,7 @@ import Social from "../containers/Social"
 
 const IndexPage = () => {
   return (
-    <LayoutParent>
+    <Layout>
       <Content>
         <Section />
         <Service />
@@ -25,7 +25,7 @@ const IndexPage = () => {
         <Contact />
         <Social />
       </Content>
-    </LayoutParent>
+    </Layout>
   )
 }
 

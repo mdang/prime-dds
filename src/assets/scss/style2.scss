@@ -282,7 +282,8 @@ iframe {
 		height: auto;
 		font-family: $font_2, $font_1;
 		img {
-            max-width: 150px;
+			max-width: 150px;
+			width: 100%;
         }
 	}
 	.btn-custom {
