@@ -1,23 +1,16 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React, { useState } from "react"
+import GetStartDataPrimeDDS from "../../data/getStart/primeDDS"
+import GetStartDataWhiteRock from "../../data/getStart/whiteRock/index"
 import { Container, Row, Col } from "reactstrap"
 
-function GetStart() {
-  const GetStartData = useStaticQuery(graphql`
-    query GetStartQuery {
-      allDataJson {
-        edges {
-          node {
-            getStart {
-              id
-              title
-            }
-          }
-        }
-      }
-    }
-  `)
-  const GetStartDataPrefix = GetStartData.allDataJson.edges[0].node.getStart
+function GetStart(props) {
+  let [typeOfPage] = useState(props.typeOfPage)
+  let GetStartDataPrefix = GetStartDataPrimeDDS
+  if (typeOfPage === "parent") {
+    GetStartDataPrefix = GetStartDataPrimeDDS
+  } else {
+    GetStartDataPrefix = GetStartDataWhiteRock
+  }
   return (
     <section className="section section-lg bg-get-start">
       <div className="bg-overlay"></div>
