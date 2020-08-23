@@ -12,18 +12,18 @@
 .navbar-custom.navbar-white .navbar-nav li a:focus,
 .navbar-custom.navbar-white .navbar-nav li a:active,
 .play-btn,.blog-title:hover,.social-icon:hover i{
-    color: $color_blue_prime !important;
+    color: $color_blue_prime;
 }
 
 
 .section-title-border, .services-box:hover i, .bg-custom, .btn-custom,.features-item-list li:before,.process-left-icon-1 i,
 .process-left-icon-2 i{
-    background-color: $color_blue_prime !important;
+    background-color: $color_blue_prime;
 }
 
 
 .btn-custom,.play-btn{
-    border-color:$color_blue_prime !important;
+    border-color:$color_blue_prime;
 }
 
 .btn-custom:hover,
@@ -48,7 +48,7 @@
 .btn-custom:focus,
 .btn-custom:hover,
 .open > .dropdown-toggle.btn-custom{
-	border-color: $color_mine_shaft_approx !important;
+	border-color: $color_mine_shaft_approx;
 }
 
 .bg-overlay {

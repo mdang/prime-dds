@@ -1,4 +1,5 @@
 import React from "react"
+import SEO from '../components/seo'
 import "bootstrap/dist/css/bootstrap.css"
 
 import Layout from "../containers/Layout"
@@ -15,8 +16,9 @@ import Social from "../containers/Social"
 const IndexPage = () => {
   return (
     <Layout>
+      <SEO title="" description="" />
       <Content>
-        <Section />
+        <Section typeOfPage="clinic" />
         <Service />
         <AboutUs />
         <WebsiteDesc />

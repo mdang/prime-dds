@@ -1,5 +1,7 @@
 import React, { useState, Fragment } from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import NavBarDataPrimeDDS from "../../data/navbar/primeDDS"
+import NavBarDataWhiteRock from "../../data/navbar/whiteRock/index"
+import NavBarLinksDataPrimeDDS from "../../data/navbar/navbarLinks/primeDDS"
 import {
   Navbar,
   Nav,
@@ -12,46 +14,29 @@ import {
   Button,
 } from "reactstrap"
 import Image from "../../components/image/index"
-import logo from "../../assets/images/Logo.png"
-import logoPrimeDDS from '../../assets/images/logos/PrimeDental.svg'
 
-//stickey header
+import logo from "../../assets/images/Logo.png"
+import logoPrimeDDS from "../../assets/images/logos/PrimeDental.svg"
+
 import "react-sticky-header/styles.css"
 import StickyHeader from "react-sticky-header"
 
 function NavbarPage(props) {
-  const NavbarData = useStaticQuery(graphql`
-    query NavbarQuery {
-      allDataJson {
-        edges {
-          node {
-            navbar {
-              id
-              title
-            }
-          }
-        }
-      }
-      allDataJson {
-        edges {
-          node {
-            navbarLinks {
-              id
-              title
-            }
-          }
-        }
-      }
-    }
-  `)
-  const NavbarDataPrefix = NavbarData.allDataJson.edges[0].node.navbar
-  const NavbarLinksDataPrefix = NavbarData.allDataJson.edges[0].node.navbarLinks
+  const NavbarLinksDataPrefix = NavBarLinksDataPrimeDDS
 
   const [isOpenMenu, setIsOpen] = useState(false)
+
+  let NavbarDataPrefix = NavBarDataPrimeDDS
 
   let [typeOfPage] = useState(props.typeOfPage)
 
   const toggle = () => setIsOpen(!isOpenMenu)
+
+  if (typeOfPage === "parent") {
+    NavbarDataPrefix = NavBarDataPrimeDDS
+  } else {
+    NavbarDataPrefix = NavBarDataWhiteRock
+  }
 
   return (
     <Fragment>
@@ -65,7 +50,7 @@ function NavbarPage(props) {
             <Container>
               {typeOfPage === "parent" ? (
                 <NavbarBrand className="logo text-uppercase" href="/">
-                <Image
+                  <Image
                     Path={logoPrimeDDS}
                     Class="logo-img"
                     Alt={NavbarDataPrefix[0].title}
@@ -78,7 +63,7 @@ function NavbarPage(props) {
                     Class="logo-img"
                     Alt={NavbarDataPrefix[0].title}
                   />
-                </NavbarBrand> 
+                </NavbarBrand>
               )}
               <NavbarToggler onClick={toggle}>
                 <i className="mdi mdi-menu"></i>
