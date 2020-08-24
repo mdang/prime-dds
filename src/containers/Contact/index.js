@@ -1,4 +1,7 @@
 import React, { Fragment } from "react"
+import ContactDataWhiteRock from "../../data/contact/whiteRock"
+import ContactLocationDataWhiteRock from "../../data/contact/contactLocation/whiteRock"
+import ContactHoursDataWhiteRock from "../../data/contact/contactHours/whiteRock"
 import { Container, Row, Col } from "reactstrap"
 import Image from "../../components/image/index"
 import map from "../../assets/images/dorsin/map.png"
@@ -6,40 +9,37 @@ import map from "../../assets/images/dorsin/map.png"
 //Import Section Title
 import SectionTitle from "../common/section-title"
 
-function Contact() {
+function Contact(props) {
+  const ContactDataPrefix = ContactDataWhiteRock
+  const ContactLocationDataPrefix = ContactLocationDataWhiteRock
+  const ContactHoursDataPrefix = ContactHoursDataWhiteRock
   return (
     <Fragment>
       <section className="section " id="contact">
         <Container>
-          {/* section title */}
           <SectionTitle
-            title="GET IN TOUCH"
-            desc="We thrive when coming up with innovative ideas but also understand that a smart concept should be supported with measurable results."
+            title={ContactDataPrefix[0].title}
+            desc={ContactDataPrefix[1].title}
           />
 
           <Row>
             <Col lg={4}>
               <div className="mt-4 pt-4">
                 <p className="mt-4">
-                  <span className="h5">Office Address 1:</span>
+                  <span className="h5">Office Address:</span>
                   <br />{" "}
                   <span className="text-muted d-block mt-2">
-                    7324 Gaston Ave, Suite 121, Dallas, TX, 75214
+                    {ContactLocationDataPrefix[0].title}
                   </span>
                 </p>
                 <p className="mt-4">
                   <span className="h5">Working Hours:</span>
                   <br />{" "}
-                  <span className="text-muted d-block mt-2">Mon: 7am-4pm</span>
-                  <span className="text-muted d-block mt-2">
-                    Tues: 10am-7pm
-                  </span>
-                  <span className="text-muted d-block mt-2">Wed: Clsoed</span>
-                  <span className="text-muted d-block mt-2">
-                    Thur: 10am-7pm
-                  </span>
-                  <span className="text-muted d-block mt-2">Fri: 10am-7pm</span>
-                  <span className="text-muted d-block mt-2">Sat: 9am-3pm</span>
+                  {ContactHoursDataPrefix.map(item => (
+                    <span className="text-muted d-block mt-2">
+                      {item.title}
+                    </span>
+                  ))}
                 </p>
               </div>
             </Col>

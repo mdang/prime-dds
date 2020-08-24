@@ -5,7 +5,8 @@ const SectionData = [
   },
   {
     id: 2,
-    title: "Join our movement as we create the next generation of Private Practice",
+    title:
+      "Join our movement as we create the next generation of Private Practice",
   },
   {
     id: 3,

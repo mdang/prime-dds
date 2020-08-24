@@ -27,7 +27,6 @@ function Menu() {
   `)
 
   const escFunction = event => {
-
     if (event.keyCode === 27) {
       setIsOpen(false)
     }

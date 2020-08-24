@@ -1,5 +1,5 @@
 import React from "react"
-import SEO from '../components/seo'
+import SEO from "../components/seo"
 import "bootstrap/dist/css/bootstrap.css"
 
 import LayoutParent from "../containers/LayoutParent"

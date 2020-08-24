@@ -42,11 +42,11 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: 'https://mdang.github.io/prime-dds/',
-        policy: [{ userAgent: '*', disallow: '/' }]
-      }
-    }
+        host: "https://mdang.github.io/prime-dds/",
+        policy: [{ userAgent: "*", disallow: "/" }],
+      },
+    },
   ],
 }
