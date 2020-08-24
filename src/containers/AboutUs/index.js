@@ -5,7 +5,9 @@ import { Container, Row, Col } from "reactstrap"
 import Image from "../../components/image/index"
 import about from "../../assets/images/dorsin/about-img.png"
 
-function AboutUs() {
+function AboutUs(props) {
+  const AboutDataPrefix = AboutDataWhiteRock
+  const AboutListDataPrefix = AboutListDataWhiteRock
   return (
     <section className="section bg-light" id="features">
       <Container>
