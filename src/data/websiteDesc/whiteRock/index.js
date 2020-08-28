@@ -1,12 +1,12 @@
 const WebsiteDescData = [
   {
     id: 1,
-    title: "Staying safe.",
+    title: "Thank You! Free dental care for Healthcare Workers.",
   },
   {
     id: 2,
     title:
-      "Visiting our office has always been safe and now it’s safer than ever before. Learn about the enhanced safety measures we have put in place so you can feel comfortable visiting us.",
+      "All Texas healthcare workers including hospital staff, nurses, and doctors along with their immediate families are eligible to receive free dental exams, x-rays, whitening for life, and 40% off traditional orthodontic care for the remainder of 2020",
   },
   {
     id: 3,

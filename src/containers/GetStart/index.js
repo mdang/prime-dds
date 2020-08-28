@@ -24,13 +24,13 @@ function GetStart(props) {
             <p className="section-subtitle font-secondary text-white text-center padding-t-30">
               {GetStartDataPrefix[1].title}
             </p>
-            <a
+            {/* <a
               href="#"
               className="btn btn-bg-white waves-effect margin-t-20 mb-4"
             >
               {GetStartDataPrefix[2].title}{" "}
               <i className="mdi mdi-arrow-right"></i>{" "}
-            </a>
+            </a> */}
           </Col>
         </Row>
       </Container>

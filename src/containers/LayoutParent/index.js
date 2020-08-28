@@ -3,7 +3,7 @@ import Navbar from "../Navbar"
 import Footer from "../Footer"
 
 import "../../assets/scss/style2.scss"
-import "../../assets/scss/black.scss"
+// import "../../assets/scss/black.scss"
 
 const LayoutPartner = ({
   children,

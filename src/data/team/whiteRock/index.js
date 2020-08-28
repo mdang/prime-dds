@@ -1,10 +1,10 @@
 const TeamData = [
   {
-    title: "BEHIND THE PEOPLE",
+    title: "MEET OUR DENTISTS",
   },
   {
     title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed dui nec ipsum mollis venenatis.",
+      "Everyone at our comfortable, inviting practice works hard to make you smile. In addition, our friendly staff speaks both English and Spanish to better serve our Dallas neighbors. Think of White Rock Dental as your home for quality dental care.",
   },
 ]
 

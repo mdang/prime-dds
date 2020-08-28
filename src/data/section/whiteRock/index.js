@@ -1,15 +1,15 @@
 const SectionData = [
   {
     id: 1,
-    title: "We're Open",
+    title: "Welcome to White Rock Dental",
   },
   {
     id: 2,
-    title: "It’s okay. Smile.",
+    title: "We're open.",
   },
   {
     id: 3,
-    title: "Find Your Nearest Location",
+    title: "Find Us",
   },
 ]
 
