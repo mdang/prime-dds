@@ -15,7 +15,7 @@ import {
 } from "reactstrap"
 import Image from "../../components/image/index"
 
-import logo from "../../assets/images/Logo.png"
+import logoCrystalCreek from "../../assets/images/logos/crystalCreek.svg"
 import logoPrimeDDS from "../../assets/images/logos/PrimeDental.svg"
 
 import "react-sticky-header/styles.css"
@@ -59,7 +59,7 @@ function NavbarPage(props) {
               ) : (
                 <NavbarBrand className="logo text-uppercase" href="/">
                   <Image
-                    Path={logo}
+                    Path={logoCrystalCreek}
                     Class="logo-img"
                     Alt={NavbarDataPrefix[0].title}
                   />
