@@ -1,8 +1,7 @@
 import React from "react"
 import SEO from "../components/seo"
-import "bootstrap/dist/css/bootstrap.css"
 
-import LayoutParent from "../containers/LayoutParent"
+import Layout from "../containers/Layout"
 import Content from "../containers/Content"
 import Section from "./section"
 import Service from "../containers/Service"
@@ -15,7 +14,7 @@ import Social from "../containers/Social"
 
 const IndexPage = () => {
   return (
-    <LayoutParent>
+    <Layout typeOfPage="parent" themeColor="theme-color-black">
       <SEO title="" description="" />
       <Content>
         <Section typeOfPage="parent" />
@@ -27,7 +26,7 @@ const IndexPage = () => {
         <Contact />
         <Social />
       </Content>
-    </LayoutParent>
+    </Layout>
   )
 }
 

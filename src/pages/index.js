@@ -17,7 +17,7 @@ import Social from "../containers/Social"
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout typeOfPage="whiteRock" themeColor="theme-color-blue">
       <SEO title="" description="" />
       <Content>
         <Section typeOfPage="clinic" />

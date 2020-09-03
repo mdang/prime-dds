@@ -15,8 +15,14 @@ import {
 } from "reactstrap"
 import Image from "../../components/image/index"
 
+import logoArlingtonDental from "../../assets/images/logos/arlingtonDental.png"
+import logoCrownDental from "../../assets/images/logos/crownDental.png"
 import logoCrystalCreek from "../../assets/images/logos/crystalCreek.svg"
+import logoDenstar from "../../assets/images/logos/denstar.png"
+import logoFairview from "../../assets/images/logos/fairview.svg"
 import logoPrimeDDS from "../../assets/images/logos/PrimeDental.svg"
+import logoShare from "../../assets/images/logos/share.svg"
+import logoWhiteRock from "../../assets/images/logos/whiteRock.svg"
 
 import "react-sticky-header/styles.css"
 import StickyHeader from "react-sticky-header"
@@ -32,10 +38,10 @@ function NavbarPage(props) {
 
   const toggle = () => setIsOpen(!isOpenMenu)
 
-  if (typeOfPage === "parent") {
-    NavbarDataPrefix = NavBarDataPrimeDDS
-  } else {
+  if (typeOfPage === "whiteRock") {
     NavbarDataPrefix = NavBarDataWhiteRock
+  } else {
+    NavbarDataPrefix = NavBarDataPrimeDDS
   }
 
   return (
@@ -48,23 +54,29 @@ function NavbarPage(props) {
             className={"navbar-custom sticky sticky-dark " + props.navClass}
           >
             <Container>
-              {typeOfPage === "parent" ? (
-                <NavbarBrand className="logo text-uppercase" href="/">
-                  <Image
-                    Path={logoPrimeDDS}
-                    Class="logo-img"
-                    Alt={NavbarDataPrefix[0].title}
-                  />
-                </NavbarBrand>
-              ) : (
-                <NavbarBrand className="logo text-uppercase" href="/">
-                  <Image
-                    Path={logoCrystalCreek}
-                    Class="logo-img"
-                    Alt={NavbarDataPrefix[0].title}
-                  />
-                </NavbarBrand>
-              )}
+              <NavbarBrand className="logo text-uppercase" href="/">
+                <Image
+                  Path={
+                    typeOfPage === "arlingtonDental" ? 
+                    logoArlingtonDental :
+                    typeOfPage === "crownDental" ? 
+                    logoCrownDental :
+                    typeOfPage === "crystalCreek" ? 
+                    logoCrystalCreek :
+                    typeOfPage === "denstar" ? 
+                    logoDenstar :
+                    typeOfPage === "fairview" ? 
+                    logoFairview :
+                    typeOfPage === "share" ? 
+                    logoShare :
+                    typeOfPage === "whiteRock" ? 
+                    logoWhiteRock
+                    : logoPrimeDDS
+                  }
+                  Class="logo-img"
+                  Alt={NavbarDataPrefix[0].title}
+                />
+              </NavbarBrand>
               <NavbarToggler onClick={toggle}>
                 <i className="mdi mdi-menu"></i>
               </NavbarToggler>
