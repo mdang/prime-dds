@@ -1,22 +1,13 @@
 const ContactHoursData = [
   {
-    title: "Mon: 7am-4pm",
+    title: "Convenient Hours: 7am-7pm",
   },
   {
-    title: "Tues: 10am-7pm",
+    title: "Open Weekends",
   },
   {
-    title: "Wed: Closed",
-  },
-  {
-    title: "Thur: 10am-7pm",
-  },
-  {
-    title: "Fri: 10am-7pm",
-  },
-  {
-    title: "Sat: 9am-3pm",
-  },
+    title: "Available 24/7 for dental emergencies",
+  }
 ]
 
 export default ContactHoursData

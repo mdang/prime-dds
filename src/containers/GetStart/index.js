@@ -21,9 +21,7 @@ function GetStart(props) {
               {GetStartDataPrefix[0].title}
             </h1>
             <div className="section-title-border margin-t-20 bg-white"></div>
-            <p className="section-subtitle font-secondary text-white text-center padding-t-30">
-              {GetStartDataPrefix[1].title}
-            </p>
+            <div className="section-subtitle font-secondary text-white text-center padding-t-30" dangerouslySetInnerHTML={{__html: GetStartDataPrefix[1].title}} />
             {/* <a
               href="#"
               className="btn btn-bg-white waves-effect margin-t-20 mb-4"
