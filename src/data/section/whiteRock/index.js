@@ -5,7 +5,7 @@ const SectionData = [
   },
   {
     id: 2,
-    title: "We're open.",
+    title: "Open Saturdays and for emergencies",
   },
   {
     id: 3,

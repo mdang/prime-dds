@@ -2,7 +2,7 @@ const ContactData = [
   {
     id: 1,
     title:
-      "Have You Been Asking, “Where Is the Nearest Dentist Office?”",
+      "Location",
   },
   {
     id: 2,

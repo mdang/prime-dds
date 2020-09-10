@@ -19,7 +19,6 @@ function Contact(props) {
         <Container>
           <SectionTitle
             title={ContactDataPrefix[0].title}
-            desc={ContactDataPrefix[1].title}
           />
 
           <Row>

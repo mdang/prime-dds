@@ -1,6 +1,7 @@
 @import "./waves.scss";
 @import "./materialdesignicons.min.scss";
 @import "./pe-icon-7-stroke.scss";
+@import "./flaticon.scss";
 @import "./blue.scss";
 @import "./variable2.scss";
 
@@ -689,18 +690,42 @@ iframe {
 		font-size: 32px;
 		height: 68px;
 		width: 68px;
-		background-color: $white;
+		background-color: transparent;
 		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-		border-radius: 50%;
 		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
 		box-shadow: 0 0 1.25rem $color_pale_sky_10_approx !important;
 		line-height: 68px;
 		margin-bottom: 15px;
+		font-family: "Flaticon";
+		font-style: normal;
 	}
 
 	&:hover i {
-		background-color: $color_coral_red_approx !important;
-		color: $white !important;
+		background-color: transparent !important;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: all .3s ease-in-out;
+	}
+}
+
+.section-tri {
+	padding: 15px 10px 50px 10px;
+
+	i {
+		font-size: 50px;
+		height: 68px;
+		width: 68px;
+		background-color: transparent;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 1.25rem $color_pale_sky_10_approx !important;
+		line-height: 68px;
+		margin-bottom: 15px;
+		font-family: "Flaticon";
+		font-style: normal;
+	}
+
+	&:hover i {
+		background-color: transparent !important;
 		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
 		transition: all .3s ease-in-out;
 	}
@@ -807,10 +832,6 @@ iframe {
 }
 
 .bg-get-start {
-	background: $url_6;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
 	ul {
 		columns: 2;
 		text-align: left;

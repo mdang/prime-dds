@@ -1,61 +1,31 @@
 const ServiceBoxData = [
   {
-    icon: "pe-7s-diamond",
+    icon: "flaticon-052-tooth-31",
     title: "Braces & Orthodontics",
     desc:
       "Aliquam consectetur, metus nec imperdiet faucibus, sem ligula ultricies metus, vitae interdum nunc massa quis nunc.",
   },
   {
-    icon: "pe-7s-display2",
+    icon: "flaticon-075-tooth-16",
     title: "Cosmetic Dentistry",
     desc:
       "In feugiat tortor quam, ut scelerisque dui pretium vel. Nullam condimentum dapibus nisi, nec convallis ex pharetra sed. ",
   },
   {
-    icon: "pe-7s-piggy",
+    icon: "flaticon-041-implants-1",
     title: "Dental Implants",
     desc:
       "Nulla tempus tempus orci sed luctus. Cras dapibus ipsum ut ipsum tristique condimentum.",
   },
   {
-    icon: "pe-7s-diamond",
+    icon: "flaticon-091-crown",
     title: "Dentures & Crowns",
     desc:
       "Aliquam consectetur, metus nec imperdiet faucibus, sem ligula ultricies metus, vitae interdum nunc massa quis nunc.",
   },
   {
-    icon: "pe-7s-display2",
-    title: "Emergency Dentistry",
-    desc:
-      "In feugiat tortor quam, ut scelerisque dui pretium vel. Nullam condimentum dapibus nisi, nec convallis ex pharetra sed. ",
-  },
-  {
-    icon: "pe-7s-piggy",
-    title: "General Dentistry",
-    desc:
-      "Nulla tempus tempus orci sed luctus. Cras dapibus ipsum ut ipsum tristique condimentum.",
-  },
-  {
-    icon: "pe-7s-piggy",
+    icon: "flaticon-075-tooth-16",
     title: "Invisalign®",
-    desc:
-      "Nulla tempus tempus orci sed luctus. Cras dapibus ipsum ut ipsum tristique condimentum.",
-  },
-  {
-    icon: "pe-7s-diamond",
-    title: "Oral Surgery",
-    desc:
-      "Aliquam consectetur, metus nec imperdiet faucibus, sem ligula ultricies metus, vitae interdum nunc massa quis nunc.",
-  },
-  {
-    icon: "pe-7s-display2",
-    title: "Root Canals",
-    desc:
-      "In feugiat tortor quam, ut scelerisque dui pretium vel. Nullam condimentum dapibus nisi, nec convallis ex pharetra sed. ",
-  },
-  {
-    icon: "pe-7s-piggy",
-    title: "Teeth Whitening",
     desc:
       "Nulla tempus tempus orci sed luctus. Cras dapibus ipsum ut ipsum tristique condimentum.",
   },

@@ -21,14 +21,12 @@ const IndexPage = () => {
       <SEO title="" description="" />
       <Content>
         <Section typeOfPage="clinic" />
-        <Safe />
+        <GetStart />
         <TriColumn />
         <Team />
         <AboutUs />
-        <WebsiteDesc />
         <Service />
         <Contact />
-        <GetStart />
         <Social />
       </Content>
     </Layout>

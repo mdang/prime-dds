@@ -16,7 +16,6 @@ function Team() {
         {/* section title */}
         <SectionTitle
           title={TeamDataPrefix[0].title}
-          desc={TeamDataPrefix[1].title}
         />
 
         <Row className="margin-t-50">

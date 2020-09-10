@@ -29,15 +29,6 @@ function Section(props) {
               >
                 <h1 className="home-title">{SectionDataPrefix[0].title}</h1>
                 <p className="home-desc">{SectionDataPrefix[1].title}</p>
-                <p className="margin-t-30 margin-l-r-auto">
-                  <Button
-                    color="none"
-                    type="button"
-                    className="btn-custom navbar-btn btn-rounded waves-effect waves-light"
-                  >
-                    {SectionDataPrefix[2].title}
-                  </Button>
-                </p>
               </Col>
             </Row>
           </Container>

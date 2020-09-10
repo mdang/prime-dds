@@ -10,7 +10,7 @@ function TeamBox(props) {
     <Fragment>
       {props.teams.map((team, key) => (
         <Col key={key} lg={4} sm={6}>
-          <div className="team-box text-center hover-effect">
+          <div className="team-box hover-effect">
             <div className="team-wrapper">
               <div className="team-member">
                 <Image Path={team.profile} Class="img-fluid rounded" />

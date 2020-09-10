@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.css"
 import Layout from "../containers/Layout"
 import Content from "../containers/Content"
 import Section from "./section"
-import Safe from "../containers/Safe"
 import Service from "../containers/Service"
 import AboutUs from "../containers/AboutUs"
 import WebsiteDesc from "../containers/WebsiteDesc"
@@ -21,14 +20,12 @@ const IndexPage = () => {
       <SEO title="" description="" />
       <Content>
         <Section typeOfPage="clinic" />
-        <Safe />
+        <GetStart />
         <TriColumn />
         <Team />
         <AboutUs />
-        <WebsiteDesc />
         <Service />
         <Contact />
-        <GetStart />
         <Social />
       </Content>
     </Layout>

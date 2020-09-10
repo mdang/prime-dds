@@ -13,15 +13,14 @@ function GetStart(props) {
   }
   return (
     <section className="section section-lg bg-get-start">
-      <div className="bg-overlay"></div>
       <Container>
         <Row>
           <Col lg={{ size: 8, offset: 2 }} className="text-center">
-            <h1 className="get-started-title text-white">
+            <h1 className="get-started-title">
               {GetStartDataPrefix[0].title}
             </h1>
             <div className="section-title-border margin-t-20 bg-white"></div>
-            <div className="section-subtitle font-secondary text-white text-center padding-t-30" dangerouslySetInnerHTML={{__html: GetStartDataPrefix[1].title}} />
+            <div className="section-subtitle font-secondary text-muted text-center padding-t-30" dangerouslySetInnerHTML={{__html: GetStartDataPrefix[1].title}} />
             {/* <a
               href="#"
               className="btn btn-bg-white waves-effect margin-t-20 mb-4"
