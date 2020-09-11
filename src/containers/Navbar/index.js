@@ -83,7 +83,6 @@ function NavbarPage(props) {
 
               <Collapse id="navbarCollapse" isOpen={isOpenMenu} navbar>
                 <div className="nav-button ml-auto">
-                  {typeOfPage === "parent" ? (
                     <Nav navbar className="navbar-right">
                       {NavbarLinksDataPrefix.map((item, key) => (
                         <NavItem
@@ -97,19 +96,6 @@ function NavbarPage(props) {
                         </NavItem>
                       ))}
                     </Nav>
-                  ) : (
-                    <Nav navbar className="navbar-right">
-                      <li>
-                        <Button
-                          color="none"
-                          type="button"
-                          className="btn-custom navbar-btn btn-rounded waves-effect waves-light"
-                        >
-                          {NavbarDataPrefix[1].title}
-                        </Button>
-                      </li>
-                    </Nav>
-                  )}
                 </div>
               </Collapse>
             </Container>

@@ -379,7 +379,7 @@ iframe {
 
 	.navbar-nav li {
 		a {
-			color: $white_60;
+			color: $white;
 			font-size: 15px;
 			background-color: transparent !important;
 			padding: 15px 0;
@@ -388,7 +388,7 @@ iframe {
 			transition: all 0.4s;
 
 			&:hover {
-				color: $white;
+				color: $white_60;
 			}
 
 			&:focus {
