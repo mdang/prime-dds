@@ -24,6 +24,7 @@ const IndexPage = () => {
         <TriColumn />
         <Team />
         <AboutUs />
+        <WebsiteDesc />
         <Service />
         <Contact />
         <Social />

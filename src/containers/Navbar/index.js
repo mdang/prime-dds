@@ -81,7 +81,7 @@ function NavbarPage(props) {
                 <i className="mdi mdi-menu"></i>
               </NavbarToggler>
 
-              <Collapse id="navbarCollapse" isOpen={isOpenMenu} navbar>
+              {/* <Collapse id="navbarCollapse" isOpen={isOpenMenu} navbar>
                 <div className="nav-button ml-auto">
                     <Nav navbar className="navbar-right">
                       {NavbarLinksDataPrefix.map((item, key) => (
@@ -97,7 +97,7 @@ function NavbarPage(props) {
                       ))}
                     </Nav>
                 </div>
-              </Collapse>
+              </Collapse> */}
             </Container>
           </Navbar>
         }

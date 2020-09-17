@@ -20,15 +20,7 @@ function WebsiteDesc(props) {
             <h2 className="get-started-title text-white">
               {WebsiteDescDataPrefix[0].title}
             </h2>
-            <p className="section-subtitle font-secondary text-white text-center padding-t-30">
-              {WebsiteDescDataPrefix[1].title}
-            </p>
-            <a
-              href="#"
-              className="btn btn-bg-white margin-t-30 waves-effect waves-light mb-5"
-            >
-              {WebsiteDescDataPrefix[2].title}
-            </a>
+            <div className="section-subtitle font-secondary text-white text-center padding-t-30" dangerouslySetInnerHTML={{__html: WebsiteDescDataPrefix[1].title}} />
           </Col>
         </Row>
       </Container>
