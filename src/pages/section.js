@@ -27,7 +27,7 @@ function Section(props) {
                 lg={{ size: 8, offset: 2 }}
                 className="col-lg-8 offset-lg-2 text-white text-center"
               >
-                <h1 className="home-title">{SectionDataPrefix[0].title}</h1>
+                <h1 className="home-title" dangerouslySetInnerHTML={{__html: SectionDataPrefix[0].title}} />
                 <p className="home-desc">{SectionDataPrefix[1].title}</p>
               </Col>
             </Row>

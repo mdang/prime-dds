@@ -81,23 +81,21 @@ function NavbarPage(props) {
                 <i className="mdi mdi-menu"></i>
               </NavbarToggler>
 
-              {/* <Collapse id="navbarCollapse" isOpen={isOpenMenu} navbar>
+              <Collapse id="navbarCollapse" isOpen={isOpenMenu} navbar>
                 <div className="nav-button ml-auto">
                     <Nav navbar className="navbar-right">
-                      {NavbarLinksDataPrefix.map((item, key) => (
-                        <NavItem
-                          key={key}
-                          className={item.title === "Home" ? "active" : ""}
+                      <li>
+                        <Button
+                          color="none"
+                          type="button"
+                          className="btn-custom navbar-btn btn-rounded waves-effect waves-light"
                         >
-                          <NavLink href={"#test" + item.id}>
-                            {" "}
-                            {item.title}
-                          </NavLink>
-                        </NavItem>
-                      ))}
+                          {NavbarLinksDataPrefix[2].title}
+                        </Button>
+                      </li>
                     </Nav>
                 </div>
-              </Collapse> */}
+              </Collapse>
             </Container>
           </Navbar>
         }

@@ -1,15 +1,15 @@
 const AboutListData = [
   {
-    title: "Suspendisse potenti. Nunc blandit euismod nibh.",
+    title: "Quality, affordable dental care",
   },
   {
-    title: "Donec iaculis non orci non fringilla.",
+    title: "Convenient office hours for same-day and Saturday appointments",
   },
   {
-    title: "Duis cursus sollicitudin lacus et elementum.",
+    title: "Detailed explanation of treatment plans with financing options",
   },
   {
-    title: "Vivamus sit amet facilisis lectus.",
+    title: "An environment that is comfortable, clean, and safe",
   },
 ]
 

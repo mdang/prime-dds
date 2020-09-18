@@ -16,9 +16,7 @@ function GetStart(props) {
       <Container>
         <Row>
           <Col lg={{ size: 8, offset: 2 }} className="text-center">
-            <h1 className="get-started-title">
-              {GetStartDataPrefix[0].title}
-            </h1>
+            <h1 className="get-started-title" dangerouslySetInnerHTML={{__html: GetStartDataPrefix[0].title}} />
             <div className="section-title-border margin-t-20 bg-white"></div>
             <div className="section-subtitle font-secondary text-muted text-center padding-t-30" dangerouslySetInnerHTML={{__html: GetStartDataPrefix[1].title}} />
             {/* <a

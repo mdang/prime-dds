@@ -29,6 +29,12 @@ const ServiceBoxData = [
     desc:
       "Nulla tempus tempus orci sed luctus. Cras dapibus ipsum ut ipsum tristique condimentum.",
   },
+  {
+    icon: "flaticon-003-tooth-60",
+    title: "Teeth Whitening",
+    desc:
+      "Nulla tempus tempus orci sed luctus. Cras dapibus ipsum ut ipsum tristique condimentum.",
+  },
 ]
 
 export default ServiceBoxData

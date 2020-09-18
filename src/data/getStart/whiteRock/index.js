@@ -1,7 +1,7 @@
 const GetStartData = [
   {
     id: 1,
-    title: "Covid-19 Protocols: Promising a Safe and Clean Environment",
+    title: "Covid-19 Protocols:<br />Promising a Safe and Clean Environment",
   },
   {
     id: 2,

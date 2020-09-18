@@ -428,12 +428,16 @@ iframe {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	.bg-overlay {
+		opacity: 0.7
+	}
 }
 
 .home-title {
 	font-size: 64px;
 	line-height: 64px;
 	font-weight: bold;
+	text-shadow: #333 1px 0 10px;
 }
 
 .display-table-cell {
@@ -482,6 +486,7 @@ iframe {
 	max-width: 600px;
 	margin: 0 auto;
 	line-height: 1.2;
+	text-shadow: #333 1px 0 10px;
 }
 
 .home-half {
@@ -708,8 +713,11 @@ iframe {
 }
 
 .section-tri {
-	padding: 15px 10px 50px 10px;
-
+	padding: 50px 10px 50px 10px;
+	h2 {
+		font-size: 60px;
+		font-weight: bold;
+	}
 	i {
 		font-size: 50px;
 		height: 68px;
@@ -722,6 +730,7 @@ iframe {
 		margin-bottom: 15px;
 		font-family: "Flaticon";
 		font-style: normal;
+		margin-right: 20px;
 	}
 
 	&:hover i {
@@ -729,6 +738,8 @@ iframe {
 		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
 		transition: all .3s ease-in-out;
 	}
+
+
 }
 
 .features-img {
@@ -743,7 +754,6 @@ iframe {
 }
 
 .bg-web-desc {
-	background: $url_5;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -801,6 +811,8 @@ iframe {
 		max-width: 240px;
 		box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
 		padding: 10px;
+		margin: 0 auto;
+		display: block;
 	}
 }
 
