@@ -1,6 +1,6 @@
 import React from "react"
 import SocialDataPrimeDDS from "../../data/social/primeDDS"
-import SocialLinksDataPrimeDDS from "../../data/social/socialLinks/primeDDS"
+import SocialLinksDataPrimeDDS from "../../data/social/_socialLinks/primeDDS"
 import { Container, Row, Col } from "reactstrap"
 
 function Social(props) {

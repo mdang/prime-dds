@@ -1,6 +1,6 @@
 import React from "react"
 import AboutDataWhiteRock from "../../data/about/whiteRock"
-import AboutListDataWhiteRock from "../../data/about/aboutList/whiteRock"
+import AboutListDataWhiteRock from "../../data/about/_aboutList/whiteRock"
 import { Container, Row, Col } from "reactstrap"
 import Image from "../../components/image/index"
 import about from "../../assets/images/dorsin/about-img.png"

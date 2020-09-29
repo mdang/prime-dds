@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from "react"
 import NavBarDataPrimeDDS from "../../data/navbar/primeDDS"
 import NavBarDataWhiteRock from "../../data/navbar/whiteRock/index"
-import NavBarLinksDataPrimeDDS from "../../data/navbar/navbarLinks/primeDDS"
+import NavBarLinksDataPrimeDDS from "../../data/navbar/_navbarLinks/primeDDS"
 import {
   Navbar,
   Nav,

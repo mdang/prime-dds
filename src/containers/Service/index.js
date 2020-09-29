@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import ServiceDataPrimeDDS from "../../data/service/primeDDS"
 import ServiceDataWhiteRock from "../../data/service/whiteRock/index"
-import ServiceBoxDataPrimeDDS from "../../data/service/serviceBox/primeDDS"
-import ServiceBoxDataWhiteRock from "../../data/service/serviceBox/whiteRock/"
+import ServiceBoxDataPrimeDDS from "../../data/service/_serviceBox/primeDDS"
+import ServiceBoxDataWhiteRock from "../../data/service/_serviceBox/whiteRock/"
 import { Container, Row } from "reactstrap"
 
 //Import Section Title

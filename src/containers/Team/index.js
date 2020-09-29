@@ -1,6 +1,6 @@
 import React from "react"
 import TeamDataWhiteRock from "../../data/team/whiteRock"
-import TeamMembersDataWhiteRock from "../../data/team/teamMembers/whiteRock"
+import TeamMembersDataWhiteRock from "../../data/team/_teamMembers/whiteRock"
 import { Container, Row } from "reactstrap"
 import TeamBox from "./TeamBox"
 
