@@ -1,16 +1,40 @@
 import React, { useState } from "react"
-import { Container, Row, Col, Button } from "reactstrap"
+import { Container, Row, Col } from "reactstrap"
+import SectionDataArlingtonDental from "../data/section/arlingtonDental/index"
+import SectionDataCrownDental from "../data/section/crownDental/index"
+import SectionDataCrystalCreek from "../data/section/crystalCreek/index"
+import SectionDataDenstar from "../data/section/denstar/index"
+import SectionDataFairview from "../data/section/fairview/index"
 import SectionDataPrimeDDS from "../data/section/primeDDS"
+import SectionDataPrimeDentalGarland from "../data/section/primeDentalGarland/index"
+import SectionDataPrimeDentalGP from "../data/section/primeDentalGP/index"
+import SectionDataPrimeDentalPlano from "../data/section/primeDentalPlano/index"
 import SectionDataWhiteRock from "../data/section/whiteRock"
 
 function Section(props) {
   let SectionDataPrefix = SectionDataPrimeDDS
   let [typeOfPage] = useState(props.typeOfPage)
 
-  if (typeOfPage === "parent") {
-    SectionDataPrefix = SectionDataPrimeDDS
-  } else {
+  if (typeOfPage === "arlingtonDental") {
+    SectionDataPrefix = SectionDataArlingtonDental
+  } else if (typeOfPage === "crownDental") {
+    SectionDataPrefix = SectionDataCrownDental
+  } else if (typeOfPage === "crystalCreek") {
+    SectionDataPrefix = SectionDataCrystalCreek
+  } else if (typeOfPage === "denstar") {
+    SectionDataPrefix = SectionDataDenstar
+  } else if (typeOfPage === "fairview") {
+    SectionDataPrefix = SectionDataFairview
+  } else if (typeOfPage === "primeDentalGarland") {
+    SectionDataPrefix = SectionDataPrimeDentalGarland
+  } else if (typeOfPage === "primeDentalGP") {
+    SectionDataPrefix = SectionDataPrimeDentalGP
+  } else if (typeOfPage === "primeDentalPlano") {
+    SectionDataPrefix = SectionDataPrimeDentalPlano
+  } else if (typeOfPage === "whiteRock") {
     SectionDataPrefix = SectionDataWhiteRock
+  } else {
+    SectionDataPrefix = SectionDataPrimeDDS
   }
   return (
     <section

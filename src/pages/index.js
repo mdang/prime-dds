@@ -21,7 +21,7 @@ const IndexPage = () => {
       <Content>
         <Section typeOfPage="clinic" />
         <GetStart />
-        <TriColumn />
+        <TriColumn /> 
         <Team />
         <AboutUs />
         <WebsiteDesc />

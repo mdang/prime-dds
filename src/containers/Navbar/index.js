@@ -1,5 +1,13 @@
 import React, { useState, Fragment } from "react"
+import NavBarDataArlingtonDental from "../../data/navbar/arlingtonDental/index"
+import NavBarDataCrownDental from "../../data/navbar/crownDental/index"
+import NavBarDataCrystalCreek from "../../data/navbar/crystalCreek/index"
+import NavBarDataDenstar from "../../data/navbar/denstar/index"
+import NavBarDataFairview from "../../data/navbar/fairview/index"
 import NavBarDataPrimeDDS from "../../data/navbar/primeDDS"
+import NavBarDataPrimeDentalGarland from "../../data/navbar/primeDentalGarland/index"
+import NavBarDataPrimeDentalGP from "../../data/navbar/primeDentalGP/index"
+import NavBarDataPrimeDentalPlano from "../../data/navbar/primeDentalPlano/index"
 import NavBarDataWhiteRock from "../../data/navbar/whiteRock/index"
 import NavBarLinksDataPrimeDDS from "../../data/navbar/_navbarLinks/primeDDS"
 import {
@@ -7,8 +15,6 @@ import {
   Nav,
   NavbarBrand,
   NavbarToggler,
-  NavItem,
-  NavLink,
   Container,
   Collapse,
   Button,
@@ -38,7 +44,23 @@ function NavbarPage(props) {
 
   const toggle = () => setIsOpen(!isOpenMenu)
 
-  if (typeOfPage === "whiteRock") {
+  if (typeOfPage === "arlingtonDental") {
+    NavbarDataPrefix = NavBarDataArlingtonDental
+  } else if (typeOfPage === "crownDental") {
+    NavbarDataPrefix = NavBarDataCrownDental
+  } else if (typeOfPage === "crystalCreek") {
+    NavbarDataPrefix = NavBarDataCrystalCreek
+  } else if (typeOfPage === "denstar") {
+    NavbarDataPrefix = NavBarDataDenstar
+  } else if (typeOfPage === "fairview") {
+    NavbarDataPrefix = NavBarDataFairview
+  } else if (typeOfPage === "primeDentalGarland") {
+    NavbarDataPrefix = NavBarDataPrimeDentalGarland
+  } else if (typeOfPage === "primeDentalGP") {
+    NavbarDataPrefix = NavBarDataPrimeDentalGP
+  } else if (typeOfPage === "primeDentalPlano") {
+    NavbarDataPrefix = NavBarDataPrimeDentalPlano
+  } else if (typeOfPage === "whiteRock") {
     NavbarDataPrefix = NavBarDataWhiteRock
   } else {
     NavbarDataPrefix = NavBarDataPrimeDDS

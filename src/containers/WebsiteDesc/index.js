@@ -1,15 +1,39 @@
 import React, { useState } from "react"
+import WebsiteDescDataArlingtonDental from "../../data/websiteDesc/arlingtonDental/index"
+import WebsiteDescDataCrownDental from "../../data/websiteDesc/crownDental/index"
+import WebsiteDescDataCrystalCreek from "../../data/websiteDesc/crystalCreek/index"
+import WebsiteDescDataDenstar from "../../data/websiteDesc/denstar/index"
+import WebsiteDescDataFairview from "../../data/websiteDesc/fairview/index"
 import WebsiteDescDataPrimeDDS from "../../data/websiteDesc/primeDDS"
+import WebsiteDescDataPrimeDentalGarland from "../../data/websiteDesc/primeDentalGarland/index"
+import WebsiteDescDataPrimeDentalGP from "../../data/websiteDesc/primeDentalGP/index"
+import WebsiteDescDataPrimeDentalPlano from "../../data/websiteDesc/primeDentalPlano/index"
 import WebsiteDescDataWhiteRock from "../../data/websiteDesc/whiteRock/index"
 import { Container, Row, Col } from "reactstrap"
 
 function WebsiteDesc(props) {
   let [typeOfPage] = useState(props.typeOfPage)
   let WebsiteDescDataPrefix = WebsiteDescDataPrimeDDS
-  if (typeOfPage === "parent") {
-    WebsiteDescDataPrefix = WebsiteDescDataPrimeDDS
-  } else {
+  if (typeOfPage === "arlingtonDental") {
+    WebsiteDescDataPrefix = WebsiteDescDataArlingtonDental
+  } else if (typeOfPage === "crownDental") {
+    WebsiteDescDataPrefix = WebsiteDescDataCrownDental
+  } else if (typeOfPage === "crystalCreek") {
+    WebsiteDescDataPrefix = WebsiteDescDataCrystalCreek
+  } else if (typeOfPage === "denstar") {
+    WebsiteDescDataPrefix = WebsiteDescDataDenstar
+  } else if (typeOfPage === "fairview") {
+    WebsiteDescDataPrefix = WebsiteDescDataFairview
+  } else if (typeOfPage === "primeDentalGarland") {
+    WebsiteDescDataPrefix = WebsiteDescDataPrimeDentalGarland
+  } else if (typeOfPage === "primeDentalGP") {
+    WebsiteDescDataPrefix = WebsiteDescDataPrimeDentalGP
+  } else if (typeOfPage === "primeDentalPlano") {
+    WebsiteDescDataPrefix = WebsiteDescDataPrimeDentalPlano
+  } else if (typeOfPage === "whiteRock") {
     WebsiteDescDataPrefix = WebsiteDescDataWhiteRock
+  } else {
+    WebsiteDescDataPrefix = WebsiteDescDataPrimeDDS
   }
   return (
     <section className="section section-lg bg-web-desc">
