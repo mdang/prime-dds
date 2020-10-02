@@ -1,6 +1,8 @@
 const ContactLocationData = [
   {
-    title: "7324 Gaston Ave, Suite 121, Dallas, TX, 75214",
+    title: "2535 Firewheel Pkwy, Suite 500, Garland, TX, 75040",
+    lat: 32.937720,
+    lng: -96.605540
   },
 ]
 

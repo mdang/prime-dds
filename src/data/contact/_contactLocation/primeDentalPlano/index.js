@@ -1,6 +1,8 @@
 const ContactLocationData = [
   {
-    title: "7324 Gaston Ave, Suite 121, Dallas, TX, 75214",
+    title: "3920 McDermott Rd, Suite B, Plano, TX, 75025",
+    lat: 33.100790,
+    lng: -96.770430
   },
 ]
 

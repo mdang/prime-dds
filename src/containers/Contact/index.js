@@ -4,7 +4,6 @@ import ContactDataCrownDental from "../../data/contact/crownDental/index"
 import ContactDataCrystalCreek from "../../data/contact/crystalCreek/index"
 import ContactDataDenstar from "../../data/contact/denstar/index"
 import ContactDataFairview from "../../data/contact/fairview/index"
-import ContactDataPrimeDDS from "../../data/contact/primeDDS"
 import ContactDataPrimeDentalGarland from "../../data/contact/primeDentalGarland/index"
 import ContactDataPrimeDentalGP from "../../data/contact/primeDentalGP/index"
 import ContactDataPrimeDentalPlano from "../../data/contact/primeDentalPlano/index"
@@ -14,7 +13,6 @@ import ContactLocationDataCrownDental from "../../data/contact/_contactLocation/
 import ContactLocationDataCrystalCreek from "../../data/contact/_contactLocation/crystalCreek/index"
 import ContactLocationDataDenstar from "../../data/contact/_contactLocation/denstar/index"
 import ContactLocationDataFairview from "../../data/contact/_contactLocation/fairview/index"
-import ContactLocationDataPrimeDDS from "../../data/contact/_contactLocation/primeDDS"
 import ContactLocationDataPrimeDentalGarland from "../../data/contact/_contactLocation/primeDentalGarland/index"
 import ContactLocationDataPrimeDentalGP from "../../data/contact/_contactLocation/primeDentalGP/index"
 import ContactLocationDataPrimeDentalPlano from "../../data/contact/_contactLocation/primeDentalPlano/index"
@@ -24,12 +22,12 @@ import ContactHoursDataCrownDental from "../../data/contact/_contactHours/crownD
 import ContactHoursDataCrystalCreek from "../../data/contact/_contactHours/crystalCreek/index"
 import ContactHoursDataDenstar from "../../data/contact/_contactHours/denstar/index"
 import ContactHoursDataFairview from "../../data/contact/_contactHours/fairview/index"
-import ContactHoursDataPrimeDDS from "../../data/contact/_contactHours/primeDDS"
 import ContactHoursDataPrimeDentalGarland from "../../data/contact/_contactHours/primeDentalGarland/index"
 import ContactHoursDataPrimeDentalGP from "../../data/contact/_contactHours/primeDentalGP/index"
 import ContactHoursDataPrimeDentalPlano from "../../data/contact/_contactHours/primeDentalPlano/index"
 import ContactHoursDataWhiteRock from "../../data/contact/_contactHours/whiteRock"
 import { Container, Row, Col } from "reactstrap"
+import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
 import Image from "../../components/image/index"
 import map from "../../assets/images/dorsin/map.png"
 
@@ -38,9 +36,9 @@ import SectionTitle from "../common/section-title"
 
 function Contact(props) {
   let [typeOfPage] = useState(props.typeOfPage)
-  const ContactDataPrefix = ContactDataWhiteRock
-  const ContactLocationDataPrefix = ContactLocationDataWhiteRock
-  const ContactHoursDataPrefix = ContactHoursDataWhiteRock
+  let ContactDataPrefix = ContactDataWhiteRock
+  let ContactLocationDataPrefix = ContactLocationDataWhiteRock
+  let ContactHoursDataPrefix = ContactHoursDataWhiteRock
 
   if (typeOfPage === "arlingtonDental") {
     ContactDataPrefix = ContactDataArlingtonDental
@@ -79,6 +77,9 @@ function Contact(props) {
     ContactLocationDataPrefix = ContactLocationDataWhiteRock
     ContactHoursDataPrefix = ContactHoursDataWhiteRock
   } 
+
+  const position = [ContactLocationDataPrefix[0].lat, ContactLocationDataPrefix[0].lng];
+
   return (
     <Fragment>
       <section className="section " id="contact">
@@ -112,6 +113,12 @@ function Contact(props) {
               <div className="custom-form mt-4 pt-4">
                 <Image Path={map} Class="map-img" />
               </div>
+              {/* <Map center={position} zoom={20} dragging={false} scrollWheelZoom={false} touchZoom={false}>
+                <TileLayer
+                  attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+              </Map> */}
             </Col>
           </Row>
         </Container>

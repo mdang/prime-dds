@@ -25,8 +25,8 @@ import about from "../../assets/images/dorsin/about-img.png"
 
 function AboutUs(props) {
   let [typeOfPage] = useState(props.typeOfPage)
-  const AboutDataPrefix = AboutDataWhiteRock
-  const AboutListDataPrefix = AboutListDataWhiteRock
+  let AboutDataPrefix = AboutDataPrimeDDS
+  let AboutListDataPrefix = AboutListDataPrimeDDS
 
   if (typeOfPage === "arlingtonDental") {
     AboutDataPrefix = AboutDataArlingtonDental

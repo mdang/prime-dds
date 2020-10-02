@@ -1,4 +1,4 @@
-const TeamData = [
+const TeamDataWhiteRock = [
   {
     title: "MEET OUR DENTISTS",
   },
@@ -8,4 +8,4 @@ const TeamData = [
   },
 ]
 
-export default TeamData
+export default TeamDataWhiteRock

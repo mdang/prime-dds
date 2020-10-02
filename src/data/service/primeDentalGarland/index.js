@@ -6,7 +6,7 @@ const ServiceData = [
   {
     id: 2,
     title:
-      "At White Rock Dental, we offer a number of dental services to meet a wide variety of needs. We promise to address any concerns you might have and answer all of your questions prior to treatment.",
+      "At Prime Dental Garland, we offer a number of dental services to meet a wide variety of needs. We promise to address any concerns you might have and answer all of your questions prior to treatment.",
   },
 ]
 

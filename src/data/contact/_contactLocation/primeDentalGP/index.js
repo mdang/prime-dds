@@ -1,6 +1,8 @@
 const ContactLocationData = [
   {
-    title: "7324 Gaston Ave, Suite 121, Dallas, TX, 75214",
+    title: "580 W Camp Wisdom Rd, Suite 300, Grand Prairie, TX, 75052",
+    lat: 32.644420,
+    lng: -97.010100
   },
 ]
 

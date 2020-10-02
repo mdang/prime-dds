@@ -3,9 +3,6 @@ import { Col } from "reactstrap"
 import Image from "../../components/image/index"
 
 function TeamBox(props) {
-  const [readMore, setReadMore] = useState(false)
-  const linkName = readMore ? "Read Less << " : "Read More >> "
-  console.log("props ", props)
   return (
     <Fragment>
       {props.teams.map((team, key) => (
@@ -18,20 +15,6 @@ function TeamBox(props) {
               <h4 className="team-name">{team.name}</h4>
               <p className="text-uppercase team-designation">{team.title}</p>
             </div>
-
-            <a
-              className="read-more-link"
-              onClick={() => {
-                setReadMore(!readMore)
-              }}
-            >
-              {linkName}
-            </a>
-            {readMore && (
-              <p className="text-uppercase team-designation extra-content">
-                {team.bio}
-              </p>
-            )}
           </div>
         </Col>
       ))}

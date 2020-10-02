@@ -1,6 +1,6 @@
 const SocialData = [
   {
-    title: "(214) 348-2320",
+    title: "817-557-0095",
   },
   {
     title: "Support@info.com",

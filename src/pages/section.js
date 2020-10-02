@@ -12,7 +12,7 @@ import SectionDataPrimeDentalPlano from "../data/section/primeDentalPlano/index"
 import SectionDataWhiteRock from "../data/section/whiteRock"
 
 function Section(props) {
-  let SectionDataPrefix = SectionDataPrimeDDS
+  let SectionDataPrefix = SectionDataWhiteRock
   let [typeOfPage] = useState(props.typeOfPage)
 
   if (typeOfPage === "arlingtonDental") {

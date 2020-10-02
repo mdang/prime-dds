@@ -1,6 +1,8 @@
 const ContactLocationData = [
   {
-    title: "7324 Gaston Ave, Suite 121, Dallas, TX, 75214",
+    title: "1546 E Stacy Rd, Suite 130, Allen, TX, 75002",
+    lat: 33.128824,
+    lng: -96.630035
   },
 ]
 

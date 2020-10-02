@@ -1,6 +1,8 @@
 const ContactLocationData = [
   {
-    title: "7324 Gaston Ave, Suite 121, Dallas, TX, 75214",
+    title: "14075 Waterfall Way, Dallas, TX 75240",
+    lat: 32.93944803,
+    lng: -96.7640815
   },
 ]
 

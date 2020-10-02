@@ -1,6 +1,8 @@
 const ContactLocationData = [
   {
-    title: "7324 Gaston Ave, Suite 121, Dallas, TX, 75214",
+    title: "4654 S Cooper St, Suite 316, Arlington, TX, 76017",
+    lat: 32.672040,
+    lng: -97.135150
   },
 ]
 

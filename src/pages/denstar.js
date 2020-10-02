@@ -16,18 +16,20 @@ import Contact from "../containers/Contact"
 import Social from "../containers/Social"
 
 const IndexPage = () => {
+  const typeOfPage = "denstar";
   return (
-    <Layout typeOfPage="denstar" themeColor="theme-color-black">
+    <Layout typeOfPage={typeOfPage} themeColor="theme-color-black">
       <SEO title="" description="" />
-      <Content>
-        <Section typeOfPage="clinic" />
-        <GetStart />
-        <TriColumn />
-        <Team />
-        <AboutUs />
-        <Service />
-        <Contact />
-        <Social />
+      <Content typeOfPage={typeOfPage}>
+        <Section typeOfPage={typeOfPage} />
+        <GetStart typeOfPage={typeOfPage} />
+        <TriColumn typeOfPage={typeOfPage} /> 
+        <Team typeOfPage={typeOfPage} />
+        <AboutUs typeOfPage={typeOfPage} />
+        <WebsiteDesc typeOfPage={typeOfPage} />
+        <Service typeOfPage={typeOfPage} />
+        <Contact typeOfPage={typeOfPage} />
+        <Social typeOfPage={typeOfPage} />
       </Content>
     </Layout>
   )

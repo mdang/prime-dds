@@ -1,4 +1,4 @@
-const AboutData = [
+const AboutDataWhiteRock = [
   {
     id: 1,
     title:
@@ -11,4 +11,4 @@ const AboutData = [
   },
 ]
 
-export default AboutData
+export default AboutDataWhiteRock

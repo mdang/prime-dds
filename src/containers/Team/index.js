@@ -4,7 +4,6 @@ import TeamDataCrownDental from "../../data/team/crownDental/index"
 import TeamDataCrystalCreek from "../../data/team/crystalCreek/index"
 import TeamDataDenstar from "../../data/team/denstar/index"
 import TeamDataFairview from "../../data/team/fairview/index"
-import TeamDataPrimeDDS from "../../data/team/primeDDS"
 import TeamDataPrimeDentalGarland from "../../data/team/primeDentalGarland/index"
 import TeamDataPrimeDentalGP from "../../data/team/primeDentalGP/index"
 import TeamDataPrimeDentalPlano from "../../data/team/primeDentalPlano/index"
@@ -14,7 +13,6 @@ import TeamMembersDataCrownDental from "../../data/team/_teamMembers/crownDental
 import TeamMembersDataCrystalCreek from "../../data/team/_teamMembers/crystalCreek/index"
 import TeamMembersDataDenstar from "../../data/team/_teamMembers/denstar/index"
 import TeamMembersDataFairview from "../../data/team/_teamMembers/fairview/index"
-import TeamMembersDataPrimeDDS from "../../data/team/_teamMembers/primeDDS"
 import TeamMembersDataPrimeDentalGarland from "../../data/team/_teamMembers/primeDentalGarland/index"
 import TeamMembersDataPrimeDentalGP from "../../data/team/_teamMembers/primeDentalGP/index"
 import TeamMembersDataPrimeDentalPlano from "../../data/team/_teamMembers/primeDentalPlano/index"
@@ -27,8 +25,8 @@ import SectionTitle from "../common/section-title"
 
 function Team(props) {
   let [typeOfPage] = useState(props.typeOfPage)
-  const TeamDataPrefix = TeamDataWhiteRock
-  const TeamMembersDataPrefix = TeamMembersDataWhiteRock
+  let TeamDataPrefix = TeamDataWhiteRock
+  let TeamMembersDataPrefix = TeamMembersDataWhiteRock
 
   if (typeOfPage === "arlingtonDental") {
     TeamDataPrefix = TeamDataArlingtonDental
