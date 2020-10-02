@@ -8,6 +8,7 @@ import SocialDataPrimeDDS from "../../data/social/primeDDS"
 import SocialDataPrimeDentalGarland from "../../data/social/primeDentalGarland/index"
 import SocialDataPrimeDentalGP from "../../data/social/primeDentalGP/index"
 import SocialDataPrimeDentalPlano from "../../data/social/primeDentalPlano/index"
+import SocialDataShare from "../../data/social/share/index"
 import SocialDataWhiteRock from "../../data/social/whiteRock/index"
 import SocialLinksDataArlingtonDental from "../../data/social/_socialLinks/arlingtonDental/index"
 import SocialLinksDataCrownDental from "../../data/social/_socialLinks/crownDental/index"
@@ -18,6 +19,7 @@ import SocialLinksDataPrimeDDS from "../../data/social/_socialLinks/primeDDS"
 import SocialLinksDataPrimeDentalGarland from "../../data/social/_socialLinks/primeDentalGarland/index"
 import SocialLinksDataPrimeDentalGP from "../../data/social/_socialLinks/primeDentalGP/index"
 import SocialLinksDataPrimeDentalPlano from "../../data/social/_socialLinks/primeDentalPlano/index"
+import SocialLinksDataShare from "../../data/social/_socialLinks/share/index"
 import SocialLinksDataWhiteRock from "../../data/social/_socialLinks/whiteRock"
 import { Container, Row, Col } from "reactstrap"
 
@@ -50,6 +52,9 @@ function Social(props) {
   } else if (typeOfPage === "primeDentalPlano") {
     SocialDataPrefix = SocialDataPrimeDentalPlano
     SocialLinksDataPrefix = SocialLinksDataPrimeDentalPlano
+  } else if (typeOfPage === "share") {
+    SocialDataPrefix = SocialDataShare
+    SocialLinksDataPrefix = SocialLinksDataShare
   } else if (typeOfPage === "whiteRock") {
     SocialDataPrefix = SocialDataWhiteRock
     SocialLinksDataPrefix = SocialLinksDataWhiteRock

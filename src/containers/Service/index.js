@@ -4,7 +4,7 @@ import ServiceDataCrownDental from "../../data/service/crownDental/index"
 import ServiceDataCrystalCreek from "../../data/service/crystalCreek/index"
 import ServiceDataDenstar from "../../data/service/denstar/index"
 import ServiceDataFairview from "../../data/service/fairview/index"
-import ServiceDataPrimeDDS from "../../data/service/primeDDS"
+import ServiceDataShare from "../../data/service/share"
 import ServiceDataPrimeDentalGarland from "../../data/service/primeDentalGarland/index"
 import ServiceDataPrimeDentalGP from "../../data/service/primeDentalGP/index"
 import ServiceDataPrimeDentalPlano from "../../data/service/primeDentalPlano/index"
@@ -14,7 +14,7 @@ import ServiceBoxDataCrownDental from "../../data/service/_serviceBox/crownDenta
 import ServiceBoxDataCrystalCreek from "../../data/service/_serviceBox/crystalCreek/index"
 import ServiceBoxDataDenstar from "../../data/service/_serviceBox/denstar/index"
 import ServiceBoxDataFairview from "../../data/service/_serviceBox/fairview/index"
-import ServiceBoxDataPrimeDDS from "../../data/service/_serviceBox/primeDDS"
+import ServiceBoxDataShare from "../../data/service/_serviceBox/share"
 import ServiceBoxDataPrimeDentalGarland from "../../data/service/_serviceBox/primeDentalGarland/index"
 import ServiceBoxDataPrimeDentalGP from "../../data/service/_serviceBox/primeDentalGP/index"
 import ServiceBoxDataPrimeDentalPlano from "../../data/service/_serviceBox/primeDentalPlano/index"
@@ -58,6 +58,9 @@ function Service(props) {
   } else if (typeOfPage === "primeDentalPlano") {
     ServiceDataPrefix = ServiceDataPrimeDentalPlano
     ServiceBoxDataPrefix = ServiceBoxDataPrimeDentalPlano
+  } else if (typeOfPage === "share") {
+    ServiceDataPrefix = ServiceDataShare
+    ServiceBoxDataPrefix = ServiceBoxDataShare
   } else if (typeOfPage === "whiteRock") {
     ServiceDataPrefix = ServiceDataWhiteRock
     ServiceBoxDataPrefix = ServiceBoxDataWhiteRock

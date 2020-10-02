@@ -8,6 +8,7 @@ import TriColumnDataPrimeDDS from "../../data/triColumn/primeDDS"
 import TriColumnDataPrimeDentalGarland from "../../data/triColumn/primeDentalGarland/index"
 import TriColumnDataPrimeDentalGP from "../../data/triColumn/primeDentalGP/index"
 import TriColumnDataPrimeDentalPlano from "../../data/triColumn/primeDentalPlano/index"
+import TriColumnDataShare from "../../data/triColumn/share/index"
 import TriColumnDataWhiteRock from "../../data/triColumn/whiteRock/index"
 import { Container, Row, Col } from "reactstrap"
 
@@ -30,6 +31,8 @@ function TriColumn(props) {
     TriColumnDataPrefix = TriColumnDataPrimeDentalGP
   } else if (typeOfPage === "primeDentalPlano") {
     TriColumnDataPrefix = TriColumnDataPrimeDentalPlano
+  } else if (typeOfPage === "share") {
+    TriColumnDataPrefix = TriColumnDataShare
   } else if (typeOfPage === "whiteRock") {
     TriColumnDataPrefix = TriColumnDataWhiteRock
   } else {

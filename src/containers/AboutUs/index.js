@@ -8,6 +8,7 @@ import AboutDataPrimeDDS from "../../data/about/primeDDS"
 import AboutDataPrimeDentalGarland from "../../data/about/primeDentalGarland/index"
 import AboutDataPrimeDentalGP from "../../data/about/primeDentalGP/index"
 import AboutDataPrimeDentalPlano from "../../data/about/primeDentalPlano/index"
+import AboutDataShare from "../../data/about/share/index"
 import AboutDataWhiteRock from "../../data/about/whiteRock"
 import AboutListDataArlingtonDental from "../../data/about/_aboutList/arlingtonDental/index"
 import AboutListDataCrownDental from "../../data/about/_aboutList/crownDental/index"
@@ -18,6 +19,7 @@ import AboutListDataPrimeDDS from "../../data/about/_aboutList/primeDDS"
 import AboutListDataPrimeDentalGarland from "../../data/about/_aboutList/primeDentalGarland/index"
 import AboutListDataPrimeDentalGP from "../../data/about/_aboutList/primeDentalGP/index"
 import AboutListDataPrimeDentalPlano from "../../data/about/_aboutList/primeDentalPlano/index"
+import AboutListDataShare from "../../data/about/_aboutList/share/index"
 import AboutListDataWhiteRock from "../../data/about/_aboutList/whiteRock"
 import { Container, Row, Col } from "reactstrap"
 import Image from "../../components/image/index"
@@ -52,6 +54,9 @@ function AboutUs(props) {
   } else if (typeOfPage === "primeDentalPlano") {
     AboutDataPrefix = AboutDataPrimeDentalPlano
     AboutListDataPrefix = AboutListDataPrimeDentalPlano
+  } else if (typeOfPage === "primeDentalPlano") {
+    AboutDataPrefix = AboutDataShare
+    AboutListDataPrefix = AboutListDataShare
   } else if (typeOfPage === "whiteRock") {
     AboutDataPrefix = AboutDataWhiteRock
     AboutListDataPrefix = AboutListDataWhiteRock

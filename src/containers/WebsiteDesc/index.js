@@ -8,6 +8,7 @@ import WebsiteDescDataPrimeDDS from "../../data/websiteDesc/primeDDS"
 import WebsiteDescDataPrimeDentalGarland from "../../data/websiteDesc/primeDentalGarland/index"
 import WebsiteDescDataPrimeDentalGP from "../../data/websiteDesc/primeDentalGP/index"
 import WebsiteDescDataPrimeDentalPlano from "../../data/websiteDesc/primeDentalPlano/index"
+import WebsiteDescDataShare from '../../data/websiteDesc/share/index';
 import WebsiteDescDataWhiteRock from "../../data/websiteDesc/whiteRock/index"
 import { Container, Row, Col } from "reactstrap"
 
@@ -30,6 +31,8 @@ function WebsiteDesc(props) {
     WebsiteDescDataPrefix = WebsiteDescDataPrimeDentalGP
   } else if (typeOfPage === "primeDentalPlano") {
     WebsiteDescDataPrefix = WebsiteDescDataPrimeDentalPlano
+  } else if (typeOfPage === "share") {
+    WebsiteDescDataPrefix = WebsiteDescDataShare
   } else if (typeOfPage === "whiteRock") {
     WebsiteDescDataPrefix = WebsiteDescDataWhiteRock
   } else {

@@ -7,6 +7,7 @@ import ContactDataFairview from "../../data/contact/fairview/index"
 import ContactDataPrimeDentalGarland from "../../data/contact/primeDentalGarland/index"
 import ContactDataPrimeDentalGP from "../../data/contact/primeDentalGP/index"
 import ContactDataPrimeDentalPlano from "../../data/contact/primeDentalPlano/index"
+import ContactDataShare from "../../data/contact/share/index"
 import ContactDataWhiteRock from "../../data/contact/whiteRock"
 import ContactLocationDataArlingtonDental from "../../data/contact/_contactLocation/arlingtonDental/index"
 import ContactLocationDataCrownDental from "../../data/contact/_contactLocation/crownDental/index"
@@ -16,6 +17,7 @@ import ContactLocationDataFairview from "../../data/contact/_contactLocation/fai
 import ContactLocationDataPrimeDentalGarland from "../../data/contact/_contactLocation/primeDentalGarland/index"
 import ContactLocationDataPrimeDentalGP from "../../data/contact/_contactLocation/primeDentalGP/index"
 import ContactLocationDataPrimeDentalPlano from "../../data/contact/_contactLocation/primeDentalPlano/index"
+import ContactLocationDataShare from "../../data/contact/_contactLocation/share"
 import ContactLocationDataWhiteRock from "../../data/contact/_contactLocation/whiteRock"
 import ContactHoursDataArlingtonDental from "../../data/contact/_contactHours/arlingtonDental/index"
 import ContactHoursDataCrownDental from "../../data/contact/_contactHours/crownDental/index"
@@ -25,6 +27,7 @@ import ContactHoursDataFairview from "../../data/contact/_contactHours/fairview/
 import ContactHoursDataPrimeDentalGarland from "../../data/contact/_contactHours/primeDentalGarland/index"
 import ContactHoursDataPrimeDentalGP from "../../data/contact/_contactHours/primeDentalGP/index"
 import ContactHoursDataPrimeDentalPlano from "../../data/contact/_contactHours/primeDentalPlano/index"
+import ContactHoursDataShare from "../../data/contact/_contactHours/share"
 import ContactHoursDataWhiteRock from "../../data/contact/_contactHours/whiteRock"
 import { Container, Row, Col } from "reactstrap"
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
@@ -72,6 +75,10 @@ function Contact(props) {
     ContactDataPrefix = ContactDataPrimeDentalPlano
     ContactLocationDataPrefix = ContactLocationDataPrimeDentalPlano
     ContactHoursDataPrefix = ContactHoursDataPrimeDentalPlano
+  } else if (typeOfPage === "share") {
+    ContactDataPrefix = ContactDataShare
+    ContactLocationDataPrefix = ContactLocationDataShare
+    ContactHoursDataPrefix = ContactHoursDataShare
   } else if (typeOfPage === "whiteRock") {
     ContactDataPrefix = ContactDataWhiteRock
     ContactLocationDataPrefix = ContactLocationDataWhiteRock

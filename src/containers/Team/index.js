@@ -7,6 +7,7 @@ import TeamDataFairview from "../../data/team/fairview/index"
 import TeamDataPrimeDentalGarland from "../../data/team/primeDentalGarland/index"
 import TeamDataPrimeDentalGP from "../../data/team/primeDentalGP/index"
 import TeamDataPrimeDentalPlano from "../../data/team/primeDentalPlano/index"
+import TeamDataShare from "../../data/team/share/index"
 import TeamDataWhiteRock from "../../data/team/whiteRock"
 import TeamMembersDataArlingtonDental from "../../data/team/_teamMembers/arlingtonDental/index"
 import TeamMembersDataCrownDental from "../../data/team/_teamMembers/crownDental/index"
@@ -16,6 +17,7 @@ import TeamMembersDataFairview from "../../data/team/_teamMembers/fairview/index
 import TeamMembersDataPrimeDentalGarland from "../../data/team/_teamMembers/primeDentalGarland/index"
 import TeamMembersDataPrimeDentalGP from "../../data/team/_teamMembers/primeDentalGP/index"
 import TeamMembersDataPrimeDentalPlano from "../../data/team/_teamMembers/primeDentalPlano/index"
+import TeamMembersDataShare from "../../data/team/_teamMembers/share/index"
 import TeamMembersDataWhiteRock from "../../data/team/_teamMembers/whiteRock"
 import { Container, Row } from "reactstrap"
 import TeamBox from "./TeamBox"
@@ -52,6 +54,9 @@ function Team(props) {
   } else if (typeOfPage === "primeDentalPlano") {
     TeamDataPrefix = TeamDataPrimeDentalPlano
     TeamMembersDataPrefix = TeamMembersDataPrimeDentalPlano
+  } else if (typeOfPage === "share") {
+    TeamDataPrefix = TeamDataShare
+    TeamMembersDataPrefix = TeamMembersDataShare
   } else if (typeOfPage === "whiteRock") {
     TeamDataPrefix = TeamDataWhiteRock
     TeamMembersDataPrefix = TeamMembersDataWhiteRock

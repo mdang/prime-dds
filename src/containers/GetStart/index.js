@@ -8,6 +8,7 @@ import GetStartDataPrimeDDS from "../../data/getStart/primeDDS"
 import GetStartDataPrimeDentalGarland from "../../data/getStart/primeDentalGarland/index"
 import GetStartDataPrimeDentalGP from "../../data/getStart/primeDentalGP/index"
 import GetStartDataPrimeDentalPlano from "../../data/getStart/primeDentalPlano/index"
+import GetStartDataShare from "../../data/getStart/share/index"
 import GetStartDataWhiteRock from "../../data/getStart/whiteRock/index"
 import { Container, Row, Col } from "reactstrap"
 
@@ -30,6 +31,8 @@ function GetStart(props) {
     GetStartDataPrefix = GetStartDataPrimeDentalGP
   } else if (typeOfPage === "primeDentalPlano") {
     GetStartDataPrefix = GetStartDataPrimeDentalPlano
+  } else if (typeOfPage === "share") {
+    GetStartDataPrefix = GetStartDataShare
   } else if (typeOfPage === "whiteRock") {
     GetStartDataPrefix = GetStartDataWhiteRock
   } else {

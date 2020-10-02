@@ -8,6 +8,7 @@ import NavBarDataPrimeDDS from "../../data/navbar/primeDDS"
 import NavBarDataPrimeDentalGarland from "../../data/navbar/primeDentalGarland/index"
 import NavBarDataPrimeDentalGP from "../../data/navbar/primeDentalGP/index"
 import NavBarDataPrimeDentalPlano from "../../data/navbar/primeDentalPlano/index"
+import NavBarDataShare from "../../data/navbar/share/index"
 import NavBarDataWhiteRock from "../../data/navbar/whiteRock/index"
 import NavBarLinksDataPrimeDDS from "../../data/navbar/_navbarLinks/primeDDS"
 import {
@@ -60,6 +61,8 @@ function NavbarPage(props) {
     NavbarDataPrefix = NavBarDataPrimeDentalGP
   } else if (typeOfPage === "primeDentalPlano") {
     NavbarDataPrefix = NavBarDataPrimeDentalPlano
+  } else if (typeOfPage === "share") {
+    NavbarDataPrefix = NavBarDataShare
   } else if (typeOfPage === "whiteRock") {
     NavbarDataPrefix = NavBarDataWhiteRock
   } else {

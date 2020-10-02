@@ -9,6 +9,7 @@ import SectionDataPrimeDDS from "../data/section/primeDDS"
 import SectionDataPrimeDentalGarland from "../data/section/primeDentalGarland/index"
 import SectionDataPrimeDentalGP from "../data/section/primeDentalGP/index"
 import SectionDataPrimeDentalPlano from "../data/section/primeDentalPlano/index"
+import SectionDataShare from "../data/section/share/index"
 import SectionDataWhiteRock from "../data/section/whiteRock"
 
 function Section(props) {
@@ -31,6 +32,8 @@ function Section(props) {
     SectionDataPrefix = SectionDataPrimeDentalGP
   } else if (typeOfPage === "primeDentalPlano") {
     SectionDataPrefix = SectionDataPrimeDentalPlano
+  } else if (typeOfPage === "share") {
+    SectionDataPrefix = SectionDataShare
   } else if (typeOfPage === "whiteRock") {
     SectionDataPrefix = SectionDataWhiteRock
   } else {
