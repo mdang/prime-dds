@@ -54,7 +54,7 @@ function AboutUs(props) {
   } else if (typeOfPage === "primeDentalPlano") {
     AboutDataPrefix = AboutDataPrimeDentalPlano
     AboutListDataPrefix = AboutListDataPrimeDentalPlano
-  } else if (typeOfPage === "primeDentalPlano") {
+  } else if (typeOfPage === "share") {
     AboutDataPrefix = AboutDataShare
     AboutListDataPrefix = AboutListDataShare
   } else if (typeOfPage === "whiteRock") {
