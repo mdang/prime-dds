@@ -21,7 +21,7 @@ import AboutListDataPrimeDentalPlano from "../../data/about/_aboutList/primeDent
 import AboutListDataWhiteRock from "../../data/about/_aboutList/whiteRock"
 import { Container, Row, Col } from "reactstrap"
 import Image from "../../components/image/index"
-import about from "../../assets/images/dorsin/about-img.png"
+import about from "../../assets/images/dorsin/about-img.jpg"
 
 function AboutUs(props) {
   let [typeOfPage] = useState(props.typeOfPage)
