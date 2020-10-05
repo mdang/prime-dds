@@ -414,7 +414,13 @@ iframe {
 .navbar-nav {
 	margin-left: 50px;
 	border-bottom: none;
+	.contact-title {
+		margin-top:10px;
+		margin-right: 10px;
+	}
 }
+
+
 
 .navbar-toggle {
 	font-size: 24px;
@@ -1042,191 +1048,6 @@ iframe {
 	}
 }
 
-@media(max-width: 1024px) {
-	.navbar-custom {
-		margin-top: 0;
-		padding: 10px 0 !important;
-		background-color: $color_shark_approx !important;
-		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-		box-shadow: 0 10px 33px $black_10;
-		color: $white !important;
-
-		.navbar-nav {
-			margin-left: 0;
-
-			li {
-				a {
-					//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-					transition: all 0.4s;
-					margin: 0;
-				}
-
-				&.active a {
-					color: $white !important;
-					border-color: transparent;
-				}
-			}
-		}
-
-		> {
-			.container-fluid {
-				width: 100%;
-			}
-
-			.container {
-				width: 90%;
-			}
-		}
-
-		.navbar-brand {
-			line-height: 24px;
-		}
-	}
-
-	.home-half {
-		padding-bottom: 100px;
-		padding-top: 120px;
-
-		.slidero {
-			top: 80%;
-			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
-			transform: translateY(-50%);
-			position: absolute;
-			z-index: 100;
-			left: 0;
-			right: 0;
-		}
-	}
-
-	.home-padding-t-150 {
-		padding-top: 110px;
-	}
-
-	.navbar-white {
-		margin-top: 0;
-		padding: 10px 0 !important;
-		background-color: $white !important;
-		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-		box-shadow: 0 10px 33px $black_10;
-		color: $white !important;
-
-		.navbar-toggler {
-			color: $color_bright_gray_approx !important;
-		}
-	}
-
-	.navbar-toggler {
-		font-size: 24px;
-		margin-top: 0;
-		margin-bottom: 0;
-		color: $white !important;
-	}
-
-	.login-btn {
-		padding-left: 10px;
-	}
-
-	.bg-pattern-effect {
-		bottom: -4px;
-	}
-
-	.home-title {
-		font-size: 32px;
-		line-height: 48px;
-	}
-
-	.vertical-content {
-		display: flex;
-	}
-
-	.team-box {
-		margin-top: 45px;
-	}
-
-	.features-img {
-		margin-top: 30px;
-	}
-
-	.pricing-box {
-		margin-top: 30px;
-	}
-
-	.footer-alt .float-none {
-		float: none !important;
-		text-align: center;
-	}
-
-	.float-left.pull-none {
-		float: none !important;
-		text-align: center;
-	}
-
-	.float-right.pull-none {
-		float: none !important;
-		text-align: center;
-	}
-}
-
-@media(max-width: 991px) and(min-width: 200px) {
-	.plan-line:before {
-		content: "";
-		display: none;
-	}
-
-	.process-left-icon-1 i {
-		display: none;
-	}
-
-	.process-left-icon-2 i {
-		display: none;
-	}
-}
-
-@media(max-width: 768px) {
-	.wave-effect {
-		height: 50px;
-	}
-
-	.wave-one {
-		background-size: 100% 80px;
-	}
-
-	.wave-three {
-		background-size: 100% 80px;
-	}
-
-	.wave-two {
-		background-size: 100% 80px;
-	}
-
-	.bg-pattern-effect {
-		bottom: -7px;
-	}
-
-	.social {
-		margin-top: 0;
-	}
-
-	.social-icon {
-		margin-bottom: 5px;
-	}
-
-	.testimonial-box {
-		margin-top: 80px;
-	}
-
-	.contact-title {
-		text-align: left;
-	}
-}
-
-@media(max-height: 420px) {
-	.navbar-collapse {
-		max-height: 200px;
-		overflow-y: auto;
-	}
-}
-
 #style-switcher {
 	background: none repeat scroll 0 0 $white;
 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
@@ -1486,4 +1307,202 @@ ul.pattern {
 .extra-content {
 	text-align: left;
 	max-width: 250px;
+}
+
+@media(max-width: 1024px) {
+	.navbar-custom {
+		margin-top: 0;
+		padding: 10px 0 !important;
+		background-color: $color_shark_approx !important;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 10px 33px $black_10;
+		color: $white !important;
+
+		.navbar-nav {
+			margin-left: 0;
+
+			li {
+				a {
+					//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+					transition: all 0.4s;
+					margin: 0;
+				}
+
+				&.active a {
+					color: $white !important;
+					border-color: transparent;
+				}
+			}
+		}
+
+		> {
+			.container-fluid {
+				width: 100%;
+			}
+
+			.container {
+				width: 90%;
+			}
+		}
+
+		.navbar-brand {
+			line-height: 24px;
+		}
+	}
+
+	.home-half {
+		padding-bottom: 100px;
+		padding-top: 120px;
+
+		.slidero {
+			top: 80%;
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: translateY(-50%);
+			position: absolute;
+			z-index: 100;
+			left: 0;
+			right: 0;
+		}
+	}
+
+	.home-padding-t-150 {
+		padding-top: 110px;
+	}
+
+	.navbar-white {
+		margin-top: 0;
+		padding: 10px 0 !important;
+		background-color: $white !important;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 10px 33px $black_10;
+		color: $white !important;
+
+		.navbar-toggler {
+			color: $color_bright_gray_approx !important;
+		}
+	}
+
+	.navbar-toggler {
+		font-size: 24px;
+		margin-top: 0;
+		margin-bottom: 0;
+		color: $white !important;
+	}
+
+	.login-btn {
+		padding-left: 10px;
+	}
+
+	.bg-pattern-effect {
+		bottom: -4px;
+	}
+
+	.home-title {
+		font-size: 32px;
+		line-height: 48px;
+	}
+
+	.vertical-content {
+		display: flex;
+	}
+
+	.team-box {
+		margin-top: 45px;
+	}
+
+	.features-img {
+		margin-top: 30px;
+	}
+
+	.pricing-box {
+		margin-top: 30px;
+	}
+
+	.footer-alt .float-none {
+		float: none !important;
+		text-align: center;
+	}
+
+	.float-left.pull-none {
+		float: none !important;
+		text-align: center;
+	}
+
+	.float-right.pull-none {
+		float: none !important;
+		text-align: center;
+	}
+}
+
+@media(max-width: 991px) and(min-width: 200px) {
+	.plan-line:before {
+		content: "";
+		display: none;
+	}
+
+	.process-left-icon-1 i {
+		display: none;
+	}
+
+	.process-left-icon-2 i {
+		display: none;
+	}
+}
+
+@media(max-width: 768px) {
+	.wave-effect {
+		height: 50px;
+	}
+
+	.wave-one {
+		background-size: 100% 80px;
+	}
+
+	.wave-three {
+		background-size: 100% 80px;
+	}
+
+	.wave-two {
+		background-size: 100% 80px;
+	}
+
+	.bg-pattern-effect {
+		bottom: -7px;
+	}
+
+	.social {
+		margin-top: 0;
+	}
+
+	.social-icon {
+		margin-bottom: 5px;
+	}
+
+	.testimonial-box {
+		margin-top: 80px;
+	}
+
+	.contact-title {
+		text-align: left;
+	}
+}
+
+
+@media(max-width: 420px) {
+	.navbar-collapse {
+		flex-basis: 10%;
+	}
+	.map-img {
+		width: 100%;
+	}
+	.is-sticky .navbar-custom .navbar-brand img {
+		max-width: 150px;
+	}
+}
+
+@media(max-height: 420px) {
+	.navbar-collapse {
+		overflow-y: auto;
+
+	}
 }

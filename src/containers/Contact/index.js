@@ -30,9 +30,18 @@ import ContactHoursDataPrimeDentalPlano from "../../data/contact/_contactHours/p
 import ContactHoursDataShare from "../../data/contact/_contactHours/share"
 import ContactHoursDataWhiteRock from "../../data/contact/_contactHours/whiteRock"
 import { Container, Row, Col } from "reactstrap"
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
 import Image from "../../components/image/index"
-import map from "../../assets/images/dorsin/map.png"
+
+import MapArlingtonDental from "../../assets/images/map/arlingtonDental.png"
+import MapCrownDental from "../../assets/images/map/crownDental.png"
+import MapCrystalCreek from "../../assets/images/map/crystalCreek.png"
+import MapDenstar from "../../assets/images/map/denstar.png"
+import MapFairview from "../../assets/images/map/fairview.png"
+import MapPrimeDentalGarland from "../../assets/images/map/primeDentalGarland.png"
+import MapPrimeDentalGP from "../../assets/images/map/primeDentalGP.png"
+import MapPrimeDentalPlano from "../../assets/images/map/primeDentalPlano.png"
+import MapShare from "../../assets/images/map/share.png"
+import MapWhiteRock from "../../assets/images/map/whiteRock.png"
 
 //Import Section Title
 import SectionTitle from "../common/section-title"
@@ -42,50 +51,59 @@ function Contact(props) {
   let ContactDataPrefix = ContactDataWhiteRock
   let ContactLocationDataPrefix = ContactLocationDataWhiteRock
   let ContactHoursDataPrefix = ContactHoursDataWhiteRock
+  let MapPrefix = MapWhiteRock
 
   if (typeOfPage === "arlingtonDental") {
     ContactDataPrefix = ContactDataArlingtonDental
     ContactLocationDataPrefix = ContactLocationDataArlingtonDental
     ContactHoursDataPrefix = ContactHoursDataArlingtonDental
+    MapPrefix = MapArlingtonDental
   } else if (typeOfPage === "crownDental") {
     ContactDataPrefix = ContactDataCrownDental
     ContactLocationDataPrefix = ContactLocationDataCrownDental
     ContactHoursDataPrefix = ContactHoursDataCrownDental
+    MapPrefix = MapCrownDental
   } else if (typeOfPage === "crystalCreek") {
     ContactDataPrefix = ContactDataCrystalCreek
     ContactLocationDataPrefix = ContactLocationDataCrystalCreek
     ContactHoursDataPrefix = ContactHoursDataCrystalCreek
+    MapPrefix = MapCrystalCreek
   } else if (typeOfPage === "denstar") {
     ContactDataPrefix = ContactDataDenstar
     ContactLocationDataPrefix = ContactLocationDataDenstar
     ContactHoursDataPrefix = ContactHoursDataDenstar
+    MapPrefix = MapDenstar
   } else if (typeOfPage === "fairview") {
     ContactDataPrefix = ContactDataFairview
     ContactLocationDataPrefix = ContactLocationDataFairview
     ContactHoursDataPrefix = ContactHoursDataFairview
+    MapPrefix = MapFairview
   } else if (typeOfPage === "primeDentalGarland") {
     ContactDataPrefix = ContactDataPrimeDentalGarland
     ContactLocationDataPrefix = ContactLocationDataPrimeDentalGarland
     ContactHoursDataPrefix = ContactHoursDataPrimeDentalGarland
+    MapPrefix = MapPrimeDentalGarland
   } else if (typeOfPage === "primeDentalGP") {
     ContactDataPrefix = ContactDataPrimeDentalGP
     ContactLocationDataPrefix = ContactLocationDataPrimeDentalGP
     ContactHoursDataPrefix = ContactHoursDataPrimeDentalGP
+    MapPrefix = MapPrimeDentalGP
   } else if (typeOfPage === "primeDentalPlano") {
     ContactDataPrefix = ContactDataPrimeDentalPlano
     ContactLocationDataPrefix = ContactLocationDataPrimeDentalPlano
     ContactHoursDataPrefix = ContactHoursDataPrimeDentalPlano
+    MapPrefix = MapPrimeDentalPlano
   } else if (typeOfPage === "share") {
     ContactDataPrefix = ContactDataShare
     ContactLocationDataPrefix = ContactLocationDataShare
     ContactHoursDataPrefix = ContactHoursDataShare
+    MapPrefix = MapShare
   } else if (typeOfPage === "whiteRock") {
     ContactDataPrefix = ContactDataWhiteRock
     ContactLocationDataPrefix = ContactLocationDataWhiteRock
     ContactHoursDataPrefix = ContactHoursDataWhiteRock
+    MapPrefix = MapWhiteRock
   } 
-
-  const position = [ContactLocationDataPrefix[0].lat, ContactLocationDataPrefix[0].lng];
 
   return (
     <Fragment>
@@ -101,9 +119,9 @@ function Contact(props) {
                 <p className="mt-4">
                   <span className="h5">Office Address:</span>
                   <br />{" "}
-                  <span className="text-muted d-block mt-2">
+                  <address className="text-muted d-block mt-2">
                     {ContactLocationDataPrefix[0].title}
-                  </span>
+                  </address>
                 </p>
                 <p className="mt-4">
                   <span className="h5">Working Hours:</span>
@@ -118,14 +136,8 @@ function Contact(props) {
             </Col>
             <Col lg={8}>
               <div className="custom-form mt-4 pt-4">
-                <Image Path={map} Class="map-img" />
+                <Image Path={MapPrefix} Class="map-img" />
               </div>
-              {/* <Map center={position} zoom={20} dragging={false} scrollWheelZoom={false} touchZoom={false}>
-                <TileLayer
-                  attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-              </Map> */}
             </Col>
           </Row>
         </Container>

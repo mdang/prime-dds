@@ -11,11 +11,22 @@ import NavBarDataPrimeDentalPlano from "../../data/navbar/primeDentalPlano/index
 import NavBarDataShare from "../../data/navbar/share/index"
 import NavBarDataWhiteRock from "../../data/navbar/whiteRock/index"
 import NavBarLinksDataPrimeDDS from "../../data/navbar/_navbarLinks/primeDDS"
+
+import SocialDataArlingtonDental from "../../data/social/arlingtonDental/index"
+import SocialDataCrownDental from "../../data/social/crownDental/index"
+import SocialDataCrystalCreek from "../../data/social/crystalCreek/index"
+import SocialDataDenstar from "../../data/social/denstar/index"
+import SocialDataFairview from "../../data/social/fairview/index"
+import SocialDataPrimeDentalGarland from "../../data/social/primeDentalGarland/index"
+import SocialDataPrimeDentalGP from "../../data/social/primeDentalGP/index"
+import SocialDataPrimeDentalPlano from "../../data/social/primeDentalPlano/index"
+import SocialDataShare from "../../data/social/share/index"
+import SocialDataWhiteRock from "../../data/social/whiteRock/index"
+
 import {
   Navbar,
   Nav,
   NavbarBrand,
-  NavbarToggler,
   Container,
   Collapse,
   Button,
@@ -35,9 +46,10 @@ import "react-sticky-header/styles.css"
 import StickyHeader from "react-sticky-header"
 
 function NavbarPage(props) {
-  const NavbarLinksDataPrefix = NavBarLinksDataPrimeDDS
+  let NavbarLinksDataPrefix = NavBarLinksDataPrimeDDS
+  let SocialDataPrefix = SocialDataWhiteRock
 
-  const [isOpenMenu, setIsOpen] = useState(false)
+  const [isOpenMenu, setIsOpen] = useState(true)
 
   let NavbarDataPrefix = NavBarDataPrimeDDS
 
@@ -47,27 +59,35 @@ function NavbarPage(props) {
 
   if (typeOfPage === "arlingtonDental") {
     NavbarDataPrefix = NavBarDataArlingtonDental
+    SocialDataPrefix = SocialDataArlingtonDental
   } else if (typeOfPage === "crownDental") {
     NavbarDataPrefix = NavBarDataCrownDental
+    SocialDataPrefix = SocialDataCrownDental
   } else if (typeOfPage === "crystalCreek") {
     NavbarDataPrefix = NavBarDataCrystalCreek
+    SocialDataPrefix = SocialDataCrystalCreek
   } else if (typeOfPage === "denstar") {
     NavbarDataPrefix = NavBarDataDenstar
+    SocialDataPrefix = SocialDataDenstar
   } else if (typeOfPage === "fairview") {
     NavbarDataPrefix = NavBarDataFairview
+    SocialDataPrefix = SocialDataFairview
   } else if (typeOfPage === "primeDentalGarland") {
     NavbarDataPrefix = NavBarDataPrimeDentalGarland
+    SocialDataPrefix = SocialDataPrimeDentalGarland
   } else if (typeOfPage === "primeDentalGP") {
     NavbarDataPrefix = NavBarDataPrimeDentalGP
+    SocialDataPrefix = SocialDataPrimeDentalGP
   } else if (typeOfPage === "primeDentalPlano") {
     NavbarDataPrefix = NavBarDataPrimeDentalPlano
+    SocialDataPrefix = SocialDataPrimeDentalPlano
   } else if (typeOfPage === "share") {
     NavbarDataPrefix = NavBarDataShare
+    SocialDataPrefix = SocialDataShare
   } else if (typeOfPage === "whiteRock") {
     NavbarDataPrefix = NavBarDataWhiteRock
-  } else {
-    NavbarDataPrefix = NavBarDataPrimeDDS
-  }
+    SocialDataPrefix = SocialDataWhiteRock
+  } 
 
   return (
     <Fragment>
@@ -102,13 +122,13 @@ function NavbarPage(props) {
                   Alt={NavbarDataPrefix[0].title}
                 />
               </NavbarBrand>
-              <NavbarToggler onClick={toggle}>
-                <i className="mdi mdi-menu"></i>
-              </NavbarToggler>
 
               <Collapse id="navbarCollapse" isOpen={isOpenMenu} navbar>
                 <div className="nav-button ml-auto">
                     <Nav navbar className="navbar-right">
+                      <li className="contact-title text-white">
+                        <i className="pe-7s-call"></i> &nbsp; {SocialDataPrefix[0].title}
+                      </li>
                       <li>
                         <Button
                           color="none"

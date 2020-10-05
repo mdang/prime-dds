@@ -65,12 +65,12 @@ function TriColumn(props) {
             <p className="section-subtitle-cta text-muted font-secondary padding-t-30">
               {TriColumnDataPrefix[1].subheadline}
             </p>
-            <a
+            {/* <a
               href="#"
               className="btn btn-custom margin-t-30 waves-effect waves-light mb-5"
             >
               {TriColumnDataPrefix[1].button}
-            </a>
+            </a> */}
           </Col>
           <Col lg={4}>
             <i className={TriColumnDataPrefix[2].icon + " text-muted padding-t-30"}></i>
