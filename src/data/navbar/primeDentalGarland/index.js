@@ -1,11 +1,15 @@
 const NavBarData = [
   {
     id: 1,
-    title: "White Rock Dental Implants & Orthodontics",
+    title: "Prime Dental Garland",
   },
   {
     id: 2,
     title: "Book Now",
+  },
+  {
+    id: 3,
+    title: "#",
   },
 ]
 

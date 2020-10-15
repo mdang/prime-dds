@@ -63,7 +63,7 @@ function Social(props) {
     <section className="cta bg-light">
       <Container>
         <Row>
-          <Col lg={6}>
+          {/* <Col lg={6}>
             <ul className="list-inline social margin-t-20">
               {SocialLinksDataPrefix.map(item => (
                 <li className="list-inline-item">
@@ -73,8 +73,8 @@ function Social(props) {
                 </li>
               ))}
             </ul>
-          </Col>
-          <Col lg={6} className="margin-t-30 text-right">
+          </Col> */}
+          <Col lg={12} className="margin-t-30 text-right">
           <p className="margin-b-0 contact-title">
               <i className="pe-7s-call"></i> &nbsp; {SocialDataPrefix[0].title}
             </p>

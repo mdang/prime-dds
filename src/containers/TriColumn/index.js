@@ -51,7 +51,7 @@ function TriColumn(props) {
               {TriColumnDataPrefix[0].subheadline}
             </p>
             <a
-              href="#"
+              href={TriColumnDataPrefix[0].link}
               className="btn btn-custom margin-t-30 waves-effect waves-light mb-5"
             >
               {TriColumnDataPrefix[0].button}
@@ -78,7 +78,7 @@ function TriColumn(props) {
               {TriColumnDataPrefix[2].title}
             </h2>
             <a
-              href="#"
+              href={TriColumnDataPrefix[2].link}
               className="btn btn-custom margin-t-30 waves-effect waves-light mb-5"
             >
               {TriColumnDataPrefix[2].button}

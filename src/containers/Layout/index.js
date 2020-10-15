@@ -19,7 +19,7 @@ const Layout = ({ typeOfPage, themeColor, children, onHideNav, onShowNav, showNa
       showNav={showNav}
     />
     <div>{children}</div>
-    <Footer />
+    <Footer typeOfPage={typeOfPage} />
   </>
 )
 

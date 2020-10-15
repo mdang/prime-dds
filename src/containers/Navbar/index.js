@@ -29,7 +29,6 @@ import {
   NavbarBrand,
   Container,
   Collapse,
-  Button,
 } from "reactstrap"
 import Image from "../../components/image/index"
 
@@ -130,13 +129,12 @@ function NavbarPage(props) {
                         <i className="pe-7s-call"></i> &nbsp; {SocialDataPrefix[0].title}
                       </li>
                       <li>
-                        <Button
-                          color="none"
-                          type="button"
-                          className="btn-custom navbar-btn btn-rounded waves-effect waves-light"
-                        >
-                          {NavbarLinksDataPrefix[2].title}
-                        </Button>
+                      <a
+                        href={NavbarDataPrefix[2].title}
+                        className="btn btn-custom margin-t-30 waves-effect waves-light mb-5"
+                      >
+                        {NavbarLinksDataPrefix[2].title}
+                      </a>
                       </li>
                     </Nav>
                 </div>

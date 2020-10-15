@@ -1,22 +1,20 @@
 import React, { Component } from "react"
-import { Container, Row, Col, Form } from "reactstrap"
 
 //Import Footer link
 import FooterLinks from "./footer-links"
 
-class Footer extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <footer className="footer">
-    
+function Footer(props) {
+  return (
+  <React.Fragment>
+    <footer className="footer">
 
-        {/* Render footer links */}
-        <FooterLinks />
-        </footer>
-      </React.Fragment>
-    )
-  }
+
+    {/* Render footer links */}
+    <FooterLinks typeOfPage={props.typeOfPage} />
+    </footer>
+  </React.Fragment>
+  )
+
 }
 
 export default Footer

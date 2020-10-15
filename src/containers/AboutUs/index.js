@@ -74,12 +74,12 @@ function AboutUs(props) {
                   <li className="">{item.title}</li>
                 ))}
               </ul>
-              <a
+              {/* <a
                 href="#"
                 className="btn btn-custom margin-t-30 waves-effect waves-light"
               >
                 Call Now <i className="mdi mdi-arrow-right"></i>
-              </a>
+              </a> */}
             </div>
           </Col>
           <Col lg={7}>
