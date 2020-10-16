@@ -53,6 +53,7 @@ function TriColumn(props) {
             <a
               href={TriColumnDataPrefix[0].link}
               className="btn btn-custom margin-t-30 waves-effect waves-light mb-5"
+              target="_blank"
             >
               {TriColumnDataPrefix[0].button}
             </a>
@@ -80,6 +81,7 @@ function TriColumn(props) {
             <a
               href={TriColumnDataPrefix[2].link}
               className="btn btn-custom margin-t-30 waves-effect waves-light mb-5"
+              target="_blank"
             >
               {TriColumnDataPrefix[2].button}
             </a>
