@@ -1513,6 +1513,15 @@ ul.pattern {
 		margin: 10px 0 0 0;
 		float: right;
 	}
+	.section-tri {
+		padding-top:0;
+		.col-lg-4 {
+			padding-top: 50px;
+			&:first-child {
+				padding-top: 0;
+			}
+		}
+	}
 }
 
 @media(max-height: 420px) {
