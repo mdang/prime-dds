@@ -7,6 +7,7 @@ function Image(props) {
       className={props.Class}
       title={props.Title}
       alt={props.Alt}
+      loading="lazy"
     />
   )
 }
