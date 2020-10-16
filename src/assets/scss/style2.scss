@@ -1496,7 +1496,7 @@ ul.pattern {
 }
 
 
-@media(max-width: 420px) {
+@media(max-width: 450px) {
 	.navbar-collapse {
 		flex-basis: 10%;
 	}
@@ -1508,6 +1508,10 @@ ul.pattern {
 	}
 	.section-lg {
 		padding: 50px 0;
+	}
+	.navbar-custom .navbar-nav li a {
+		margin: 10px 0 0 0;
+		float: right;
 	}
 }
 

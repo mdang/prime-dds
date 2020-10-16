@@ -28,7 +28,6 @@ import {
   Nav,
   NavbarBrand,
   Container,
-  Collapse,
 } from "reactstrap"
 import Image from "../../components/image/index"
 
@@ -118,27 +117,25 @@ function NavbarPage(props) {
                 />
               </NavbarBrand>
 
-              <Collapse id="navbarCollapse" navbar>
-                <div className="nav-button ml-auto">
-                    <Nav navbar className="navbar-right">
-                      <li className="contact-title text-white">
-                        <i className="pe-7s-call"></i> &nbsp; {SocialDataPrefix[0].title}
+              <div className="nav-button ml-auto">
+                  <Nav navbar className="navbar-right">
+                    <li className="contact-title text-white">
+                      <i className="pe-7s-call"></i> &nbsp; {SocialDataPrefix[0].title}
+                    </li>
+                    {NavbarDataPrefix[2].title && 
+                      <li>
+                        <a
+                          href={NavbarDataPrefix[2].title}
+                          className="btn btn-custom margin-t-30 waves-effect waves-light mb-5"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {NavbarLinksDataPrefix[2].title}
+                        </a>
                       </li>
-                      {NavbarDataPrefix[2].title && 
-                        <li>
-                          <a
-                            href={NavbarDataPrefix[2].title}
-                            className="btn btn-custom margin-t-30 waves-effect waves-light mb-5"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            {NavbarLinksDataPrefix[2].title}
-                          </a>
-                        </li>
-                      }
-                    </Nav>
-                </div>
-              </Collapse>
+                    }
+                  </Nav>
+              </div>
             </Container>
           </Navbar>
         }
