@@ -79,14 +79,16 @@ function TriColumn(props) {
             <h2 className="get-started-title">
               {TriColumnDataPrefix[2].title}
             </h2>
-            <a
+            {TriColumnDataPrefix[2].link && 
+              <a
               href={TriColumnDataPrefix[2].link}
               className="btn btn-custom margin-t-30 waves-effect waves-light mb-5"
               target="_blank"
               rel="noreferrer"
             >
-              {TriColumnDataPrefix[2].button}
-            </a>
+                {TriColumnDataPrefix[2].button}
+              </a>
+            }
           </Col>
         </Row>
       </Container>

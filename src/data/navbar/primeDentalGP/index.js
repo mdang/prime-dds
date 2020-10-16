@@ -8,8 +8,7 @@ const NavBarData = [
     title: "Book Now",
   },
   {
-    id: 3,
-    title: "#",
+    id: 3
   },
 ]
 

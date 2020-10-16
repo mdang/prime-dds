@@ -17,8 +17,7 @@ const TriColumnData = [
     title: "Saturday & emergency appointments available.",
     subheadline: "Proin sed dui nec ipsum mollis venenatis nec id dui.",
     icon: "flaticon-097-calendar",
-    button: "Book Now",
-    link: "#"
+    button: "Book Now"
   },
 ]
 

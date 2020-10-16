@@ -128,16 +128,18 @@ function NavbarPage(props) {
                       <li className="contact-title text-white">
                         <i className="pe-7s-call"></i> &nbsp; {SocialDataPrefix[0].title}
                       </li>
-                      <li>
-                      <a
-                        href={NavbarDataPrefix[2].title}
-                        className="btn btn-custom margin-t-30 waves-effect waves-light mb-5"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        {NavbarLinksDataPrefix[2].title}
-                      </a>
-                      </li>
+                      {NavbarDataPrefix[2].title && 
+                        <li>
+                          <a
+                            href={NavbarDataPrefix[2].title}
+                            className="btn btn-custom margin-t-30 waves-effect waves-light mb-5"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {NavbarLinksDataPrefix[2].title}
+                          </a>
+                        </li>
+                      }
                     </Nav>
                 </div>
               </Collapse>

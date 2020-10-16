@@ -12,7 +12,7 @@ const TeamMembersData = [
     bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consectetur neque ab porro quasi culpa nulla rerum quis minus voluptatibus sed hic ad quo sint, libero commodi officia aliquam! Maxime."
   },
   {
-    profile: "https://via.placeholder.com/300",
+    profile: "../team/female-placeholder.jpg",
     name: "Dr. Nancy Mizuno",
     title: "Dentist",
     bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consectetur neque ab porro quasi culpa nulla rerum quis minus voluptatibus sed hic ad quo sint, libero commodi officia aliquam! Maxime."
