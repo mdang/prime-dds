@@ -16,8 +16,9 @@ import Social from "../containers/Social"
 
 const IndexPage = () => {
   const typeOfPage = "crystalCreek";
+  const siteTitle = "Crystal Creek Dental"
   return (
-    <Layout typeOfPage={typeOfPage} themeColor="theme-color-blue">
+    <Layout typeOfPage={typeOfPage} siteTitle={siteTitle} themeColor="theme-color-blue">
       <SEO title="" description="" />
       <Content typeOfPage={typeOfPage}>
         <Section typeOfPage={typeOfPage} />

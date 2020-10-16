@@ -8,8 +8,8 @@ import "../../assets/scss/black.scss"
 
 const Layout = ({ typeOfPage, themeColor, children, onHideNav, onShowNav, showNav, siteTitle }) => (
   <>
-    <Helmet>
-      <html className={themeColor}  lang="en" />
+    <Helmet defer={false} defaultTitle={siteTitle} >
+      <html className={themeColor} lang="en" />
     </Helmet>
     <Navbar
       typeOfPage={typeOfPage}

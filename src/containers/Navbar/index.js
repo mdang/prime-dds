@@ -133,6 +133,7 @@ function NavbarPage(props) {
                         href={NavbarDataPrefix[2].title}
                         className="btn btn-custom margin-t-30 waves-effect waves-light mb-5"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         {NavbarLinksDataPrefix[2].title}
                       </a>
