@@ -10,54 +10,54 @@ import SocialDataPrimeDentalGP from "../../data/social/primeDentalGP/index"
 import SocialDataPrimeDentalPlano from "../../data/social/primeDentalPlano/index"
 import SocialDataShare from "../../data/social/share/index"
 import SocialDataWhiteRock from "../../data/social/whiteRock/index"
-import SocialLinksDataArlingtonDental from "../../data/social/_socialLinks/arlingtonDental/index"
-import SocialLinksDataCrownDental from "../../data/social/_socialLinks/crownDental/index"
-import SocialLinksDataCrystalCreek from "../../data/social/_socialLinks/crystalCreek/index"
-import SocialLinksDataDenstar from "../../data/social/_socialLinks/denstar/index"
-import SocialLinksDataFairview from "../../data/social/_socialLinks/fairview/index"
-import SocialLinksDataPrimeDDS from "../../data/social/_socialLinks/primeDDS"
-import SocialLinksDataPrimeDentalGarland from "../../data/social/_socialLinks/primeDentalGarland/index"
-import SocialLinksDataPrimeDentalGP from "../../data/social/_socialLinks/primeDentalGP/index"
-import SocialLinksDataPrimeDentalPlano from "../../data/social/_socialLinks/primeDentalPlano/index"
-import SocialLinksDataShare from "../../data/social/_socialLinks/share/index"
-import SocialLinksDataWhiteRock from "../../data/social/_socialLinks/whiteRock"
+// import SocialLinksDataArlingtonDental from "../../data/social/_socialLinks/arlingtonDental/index"
+// import SocialLinksDataCrownDental from "../../data/social/_socialLinks/crownDental/index"
+// import SocialLinksDataCrystalCreek from "../../data/social/_socialLinks/crystalCreek/index"
+// import SocialLinksDataDenstar from "../../data/social/_socialLinks/denstar/index"
+// import SocialLinksDataFairview from "../../data/social/_socialLinks/fairview/index"
+// import SocialLinksDataPrimeDDS from "../../data/social/_socialLinks/primeDDS"
+// import SocialLinksDataPrimeDentalGarland from "../../data/social/_socialLinks/primeDentalGarland/index"
+// import SocialLinksDataPrimeDentalGP from "../../data/social/_socialLinks/primeDentalGP/index"
+// import SocialLinksDataPrimeDentalPlano from "../../data/social/_socialLinks/primeDentalPlano/index"
+// import SocialLinksDataShare from "../../data/social/_socialLinks/share/index"
+// import SocialLinksDataWhiteRock from "../../data/social/_socialLinks/whiteRock"
 import { Container, Row, Col } from "reactstrap"
 
 function Social(props) {
   let [typeOfPage] = useState(props.typeOfPage)
   let SocialDataPrefix = SocialDataPrimeDDS
-  let SocialLinksDataPrefix = SocialLinksDataPrimeDDS
+  // let SocialLinksDataPrefix = SocialLinksDataPrimeDDS
 
   if (typeOfPage === "arlingtonDental") {
     SocialDataPrefix = SocialDataArlingtonDental
-    SocialLinksDataPrefix = SocialLinksDataArlingtonDental
+    // SocialLinksDataPrefix = SocialLinksDataArlingtonDental
   } else if (typeOfPage === "crownDental") {
     SocialDataPrefix = SocialDataCrownDental
-    SocialLinksDataPrefix = SocialLinksDataCrownDental
+    // SocialLinksDataPrefix = SocialLinksDataCrownDental
   } else if (typeOfPage === "crystalCreek") {
     SocialDataPrefix = SocialDataCrystalCreek
-    SocialLinksDataPrefix = SocialLinksDataCrystalCreek
+    // SocialLinksDataPrefix = SocialLinksDataCrystalCreek
   } else if (typeOfPage === "denstar") {
     SocialDataPrefix = SocialDataDenstar
-    SocialLinksDataPrefix = SocialLinksDataDenstar
+    // SocialLinksDataPrefix = SocialLinksDataDenstar
   } else if (typeOfPage === "fairview") {
     SocialDataPrefix = SocialDataFairview
-    SocialLinksDataPrefix = SocialLinksDataFairview
+    // SocialLinksDataPrefix = SocialLinksDataFairview
   } else if (typeOfPage === "primeDentalGarland") {
     SocialDataPrefix = SocialDataPrimeDentalGarland
-    SocialLinksDataPrefix = SocialLinksDataPrimeDentalGarland
+    // SocialLinksDataPrefix = SocialLinksDataPrimeDentalGarland
   } else if (typeOfPage === "primeDentalGP") {
     SocialDataPrefix = SocialDataPrimeDentalGP
-    SocialLinksDataPrefix = SocialLinksDataPrimeDentalGP
+    // SocialLinksDataPrefix = SocialLinksDataPrimeDentalGP
   } else if (typeOfPage === "primeDentalPlano") {
     SocialDataPrefix = SocialDataPrimeDentalPlano
-    SocialLinksDataPrefix = SocialLinksDataPrimeDentalPlano
+    // SocialLinksDataPrefix = SocialLinksDataPrimeDentalPlano
   } else if (typeOfPage === "share") {
     SocialDataPrefix = SocialDataShare
-    SocialLinksDataPrefix = SocialLinksDataShare
+    // SocialLinksDataPrefix = SocialLinksDataShare
   } else if (typeOfPage === "whiteRock") {
     SocialDataPrefix = SocialDataWhiteRock
-    SocialLinksDataPrefix = SocialLinksDataWhiteRock
+    // SocialLinksDataPrefix = SocialLinksDataWhiteRock
   }
   return (
     <section className="cta bg-light">

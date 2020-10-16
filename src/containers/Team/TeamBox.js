@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react"
+import React, { Fragment } from "react"
 import { Col } from "reactstrap"
 import Image from "../../components/image/index"
 

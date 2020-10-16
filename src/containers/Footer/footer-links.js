@@ -1,6 +1,5 @@
 import React, {useState} from "react"
 import { Container, Row, Col } from "reactstrap"
-import { useStaticQuery, graphql } from "gatsby"
 import NavBarDataArlingtonDental from "../../data/navbar/arlingtonDental/index"
 import NavBarDataCrownDental from "../../data/navbar/crownDental/index"
 import NavBarDataCrystalCreek from "../../data/navbar/crystalCreek/index"

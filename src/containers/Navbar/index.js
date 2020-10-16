@@ -48,13 +48,9 @@ function NavbarPage(props) {
   let NavbarLinksDataPrefix = NavBarLinksDataPrimeDDS
   let SocialDataPrefix = SocialDataWhiteRock
 
-  const [isOpenMenu, setIsOpen] = useState(true)
-
   let NavbarDataPrefix = NavBarDataPrimeDDS
 
   let [typeOfPage] = useState(props.typeOfPage)
-
-  const toggle = () => setIsOpen(!isOpenMenu)
 
   if (typeOfPage === "arlingtonDental") {
     NavbarDataPrefix = NavBarDataArlingtonDental
@@ -122,7 +118,7 @@ function NavbarPage(props) {
                 />
               </NavbarBrand>
 
-              <Collapse id="navbarCollapse" isOpen={isOpenMenu} navbar>
+              <Collapse id="navbarCollapse" navbar>
                 <div className="nav-button ml-auto">
                     <Nav navbar className="navbar-right">
                       <li className="contact-title text-white">
