@@ -74,9 +74,15 @@ function Social(props) {
               ))}
             </ul>
           </Col> */}
-          <Col lg={12} className="margin-t-30 text-right">
+          <Col lg={8} className="margin-t-30 text-right">
           <p className="margin-b-0 contact-title">
-              <i className="pe-7s-call"></i> &nbsp; {SocialDataPrefix[0].title}
+              <i className="pe-7s-call"></i> &nbsp; <a href={"tel:" + SocialDataPrefix[0].title}>{SocialDataPrefix[0].title}</a>
+            </p>
+          </Col>
+          <Col lg={4} className="margin-t-30 text-right">
+            <p className="contact-title">
+              <i className="pe-7s-mail-open"></i>&nbsp;{" "}
+              <a href={"mailto:" + SocialDataPrefix[1].title}>{SocialDataPrefix[1].title}</a>
             </p>
           </Col>
         </Row>

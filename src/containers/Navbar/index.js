@@ -120,7 +120,7 @@ function NavbarPage(props) {
               <div className="nav-button ml-auto">
                   <Nav navbar className="navbar-right">
                     <li className="contact-title text-white">
-                      <i className="pe-7s-call"></i> &nbsp; {SocialDataPrefix[0].title}
+                      <a href={"tel:" + SocialDataPrefix[0].title}>{SocialDataPrefix[0].title}</a>
                     </li>
                     {NavbarDataPrefix[2].title && 
                       <li>

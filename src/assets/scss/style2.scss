@@ -417,6 +417,9 @@ iframe {
 	.contact-title {
 		margin-top:25px;
 		margin-right: 25px;
+		a {
+			color: $white;
+		}
 	}
 }
 
@@ -960,6 +963,9 @@ iframe {
 
 .contact-title {
 	font-size: 20px;
+	a {
+		color: #212529;
+	}
 }
 
 .contact-detail {

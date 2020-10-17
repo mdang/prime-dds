@@ -3,7 +3,7 @@ const SocialData = [
     title: "817-329-6000",
   },
   {
-    title: "Support@info.com",
+    title: "share@primedds.com",
   },
 ]
 
