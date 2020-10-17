@@ -16,7 +16,7 @@ import Social from "../containers/Social"
 
 const IndexPage = () => {
   const typeOfPage = "arlingtonDental";
-  const siteTitle = "Arlington Dental"
+  const siteTitle = "Dental Associates of Arlington"
   return (
     <Layout typeOfPage={typeOfPage} siteTitle={siteTitle} themeColor="theme-color-black">
       <SEO title="" description="" />

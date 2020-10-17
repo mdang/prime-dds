@@ -1,7 +1,7 @@
 const SectionData = [
   {
     id: 1,
-    title: "Welcome to<br />Arlington Dental",
+    title: "Welcome to<br />Dental Associates of Arlington",
   },
   {
     id: 2,

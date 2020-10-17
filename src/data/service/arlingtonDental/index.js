@@ -6,7 +6,7 @@ const ServiceData = [
   {
     id: 2,
     title:
-      "At Arlington Dental, we offer a number of dental services to meet a wide variety of needs. We promise to address any concerns you might have and answer all of your questions prior to treatment.",
+      "At Dental Associates of Arlington, we offer a number of dental services to meet a wide variety of needs. We promise to address any concerns you might have and answer all of your questions prior to treatment.",
   },
 ]
 
