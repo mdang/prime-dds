@@ -94,7 +94,7 @@ function NavbarPage(props) {
           >
             <Container>
               <NavbarBrand className="logo text-uppercase" href="/">
-                <Image
+                <h1><Image
                   Path={
                     typeOfPage === "arlingtonDental" ? 
                     logoArlingtonDental :
@@ -114,7 +114,7 @@ function NavbarPage(props) {
                   }
                   Class="logo-img"
                   Alt={NavbarDataPrefix[0].title}
-                />
+                /></h1>
               </NavbarBrand>
 
               <div className="nav-button ml-auto">

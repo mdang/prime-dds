@@ -10,7 +10,7 @@ function TeamBox(props) {
           <div className="team-box hover-effect">
             <div className="team-wrapper">
               <div className="team-member">
-                <Image Path={team.profile} Class="img-fluid rounded" />
+                <Image Path={team.profile} Alt={team.name} Class="img-fluid rounded" />
               </div>
               <h4 className="team-name">{team.name}</h4>
               <p className="text-uppercase team-designation">{team.title}</p>
