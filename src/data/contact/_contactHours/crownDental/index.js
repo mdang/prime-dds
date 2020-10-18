@@ -1,21 +1,21 @@
 const ContactHoursData = [
   {
-    title: "Mon: 7am-4pm",
+    title: "Mon: 8am-5pm",
   },
   {
-    title: "Tues: 10am-7pm",
+    title: "Tues: 8am-5pm",
   },
   {
     title: "Wed: Closed",
   },
   {
-    title: "Thur: 10am-7pm",
+    title: "Thur: 8am-5pm",
   },
   {
-    title: "Fri: 10am-7pm",
+    title: "Fri: 8am-3pm",
   },
   {
-    title: "Sat: 9am-3pm",
+    title: "Sat: 8am-3pm",
   },
 ]
 

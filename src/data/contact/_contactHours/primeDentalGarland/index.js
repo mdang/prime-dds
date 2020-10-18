@@ -1,9 +1,9 @@
 const ContactHoursData = [
   {
-    title: "Mon: 7am-4pm",
+    title: "Mon: 10am-7pm",
   },
   {
-    title: "Tues: 10am-7pm",
+    title: "Tues: Closed",
   },
   {
     title: "Wed: Closed",
@@ -12,7 +12,7 @@ const ContactHoursData = [
     title: "Thur: 10am-7pm",
   },
   {
-    title: "Fri: 10am-7pm",
+    title: "Fri: Closed",
   },
   {
     title: "Sat: 9am-3pm",

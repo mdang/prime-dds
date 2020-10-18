@@ -1,15 +1,15 @@
 const ContactHoursData = [
   {
-    title: "Mon: 7am-4pm",
+    title: "Mon: Closed",
   },
   {
-    title: "Tues: 10am-7pm",
+    title: "Tues: Closed",
   },
   {
     title: "Wed: Closed",
   },
   {
-    title: "Thur: 10am-7pm",
+    title: "Thur: Closed",
   },
   {
     title: "Fri: 10am-7pm",
