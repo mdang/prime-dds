@@ -67,7 +67,7 @@ function AboutUs(props) {
         <Row className="vertical-content">
           <Col lg={5}>
             <div className="features-box">
-              <h3>{AboutDataPrefix[0].title}</h3>
+              <h2>{AboutDataPrefix[0].title}</h2>
               <p className="text-muted web-desc">{AboutDataPrefix[1].title}</p>
               <ul className="text-muted list-unstyled margin-t-30 features-item-list">
                 {AboutListDataPrefix.map(item => (
