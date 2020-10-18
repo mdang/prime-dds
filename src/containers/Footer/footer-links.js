@@ -42,7 +42,7 @@ function FooterLinks(props) {
         <Row>
           <Col lg={12}>
             <div className="float-left pull-none ">
-              <p className="copy-rights text-muted">
+              <p className="copy-rights text-white">
                 &copy; {new Date().getFullYear()} {NavbarDataPrefix[0].title}
               </p>
             </div>

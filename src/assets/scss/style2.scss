@@ -1130,11 +1130,11 @@ iframe {
 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
 	box-shadow: 0 10px 33px $black_10;
 
-	.navbar-brand {
-		img {
-			max-width: 100px;
-		}
-	}
+	// .navbar-brand {
+	// 	img {
+	// 		max-width: 100px;
+	// 	}
+	// }
 }
 
 .nav .open>a {
@@ -1509,9 +1509,9 @@ ul.pattern {
 	.map-img {
 		width: 100%;
 	}
-	.is-sticky .navbar-custom .navbar-brand img {
-		max-width: 150px;
-	}
+	// .is-sticky .navbar-custom .navbar-brand img {
+	// 	max-width: 150px;
+	// }
 	.section-lg {
 		padding: 50px 0;
 	}
