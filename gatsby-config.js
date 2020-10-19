@@ -1,10 +1,10 @@
 module.exports = {
-  // pathPrefix: `/prime-dds`,
+  pathPrefix: `/prime-dds`,
   siteMetadata: {
     title: "Prime DDS",
     author: "Prime DDS",
     description: "Dentist offices",
-    // siteUrl: "https://mdang.github.io/prime-dds/",
+    siteUrl: "https://mdang.github.io/prime-dds/",
   },
   plugins: [
     `gatsby-transformer-json`,
@@ -47,12 +47,12 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    // {
-    //   resolve: "gatsby-plugin-robots-txt",
-    //   options: {
-    //     host: "https://mdang.github.io/prime-dds/",
-    //     policy: [{ userAgent: "*", disallow: "/" }],
-    //   },
-    // },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://mdang.github.io/prime-dds/",
+        policy: [{ userAgent: "*", disallow: "/" }],
+      },
+    },
   ],
 }
