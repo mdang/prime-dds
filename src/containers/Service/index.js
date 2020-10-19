@@ -31,8 +31,6 @@ function Service(props) {
 
   let [typeOfPage] = useState(props.typeOfPage)
 
-  console.log('typeOfPage props ', props);
-  console.log('typeOfPage ', typeOfPage);
 
   if (typeOfPage === "arlingtonDental") {
     ServiceDataPrefix = ServiceDataArlingtonDental
