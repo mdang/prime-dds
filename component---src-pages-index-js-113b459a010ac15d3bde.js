@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{RXBc:function(e,t,o){"use strict";o.r(t);var n=o("q1tI"),c=o.n(n),a=(o("+eM2"),o("ow1t"));t.default=function(){return c.a.createElement(a.a,{typeOfPage:"whiteRock",themeColor:"theme-color-blue"})}}}]);
+//# sourceMappingURL=component---src-pages-index-js-113b459a010ac15d3bde.js.map
