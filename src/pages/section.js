@@ -62,9 +62,6 @@ function Section(props) {
         </div>
       </div>
       <div className="wave-effect wave-anim">
-        <div className="waves-shape shape-one">
-          <div className="wave wave-one"></div>
-        </div>
         <div className="waves-shape shape-two">
           <div className="wave wave-two"></div>
         </div>
