@@ -12,7 +12,7 @@ module.exports = {
       resolve: `gatsby-plugin-gtag`,
       options: {
         // ** Share Dentistry
-        trackingId: `UA-180936970-1`,
+        // trackingId: `UA-180936970-1`,
         // ** Denstar Dental
         // trackingId: `UA-180936970-2'`,
         // ** Crystal Creek Dental
@@ -25,8 +25,8 @@ module.exports = {
         // trackingId: `UA-180936970-6'`,
         // ** Prime Dental Plano
         // trackingId: `UA-180936970-7'`,
-        // ** White Rock Dental
-        // trackingId: `UA-180936970-8'`,
+        // ** Fairview Dental
+        trackingId: `UA-180936970-8'`,
       },
     },
     {
