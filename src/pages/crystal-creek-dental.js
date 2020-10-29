@@ -16,8 +16,9 @@ import Social from "../containers/Social"
 const IndexPage = () => {
   const typeOfPage = "crystalCreek";
   const siteTitle = "Crystal Creek Dental"
+  const siteDesc = "Dentist office serving the Plano, Frisco, The Colony, and Allen, Texas area."
   return (
-    <Layout typeOfPage={typeOfPage} siteTitle={siteTitle} themeColor="theme-color-blue">
+    <Layout typeOfPage={typeOfPage} siteTitle={siteTitle} siteDesc={siteDesc} themeColor="theme-color-blue">
       <Content typeOfPage={typeOfPage}>
         <Section typeOfPage={typeOfPage} />
         <GetStart typeOfPage={typeOfPage} />

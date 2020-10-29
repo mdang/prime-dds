@@ -16,8 +16,9 @@ import Social from "../containers/Social"
 const IndexPage = () => {
   const typeOfPage = "denstar";
   const siteTitle = "Denstar Dental Center"
+  const siteDesc = "Dentist office serving the North Dallas, Addison, and Richardson, Texas area."
   return (
-    <Layout typeOfPage={typeOfPage} siteTitle={siteTitle} themeColor="theme-color-black">
+    <Layout typeOfPage={typeOfPage} siteTitle={siteTitle} siteDesc={siteDesc} themeColor="theme-color-black">
       <Content typeOfPage={typeOfPage}>
         <Section typeOfPage={typeOfPage} />
         <GetStart typeOfPage={typeOfPage} />
