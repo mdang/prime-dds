@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://mdang.github.io/sitemap.xml
+Host: https://mdang.github.io
