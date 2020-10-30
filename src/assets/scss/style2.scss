@@ -720,6 +720,12 @@ iframe {
 		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
 		transition: all .3s ease-in-out;
 	}
+
+	h3 {
+		font-size: 16px;
+		margin:0;
+		padding:0;
+	}
 }
 
 .section-tri {
@@ -821,6 +827,7 @@ iframe {
 	padding-top: 20px;
 	margin-bottom: 7px;
 	text-align: left;
+	font-weight:bold;
 }
 
 .team-designation {
@@ -967,6 +974,11 @@ iframe {
 	a {
 		color: #212529;
 	}
+}
+
+address {
+	font-size: 20px;
+	line-height: 1.3;
 }
 
 .contact-detail {

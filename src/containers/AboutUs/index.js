@@ -84,7 +84,7 @@ function AboutUs(props) {
           </Col>
           <Col lg={7}>
             <div className="features-img features-right text-right">
-              <Image Path={about} Class="about-img" />
+              <Image Path={about} Class="about-img" Alt="A smiling woman with a toothbrush" />
             </div>
           </Col>
         </Row>

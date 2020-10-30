@@ -12,7 +12,7 @@ function TeamBox(props) {
               <div className="team-member">
                 <Image Path={team.profile} Alt={team.name} Class="img-fluid rounded" />
               </div>
-              <h4 className="team-name">{team.name}</h4>
+              <h3 className="team-name">{team.name}</h3>
               <p className="text-uppercase team-designation">{team.title}</p>
             </div>
           </div>
