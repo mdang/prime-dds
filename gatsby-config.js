@@ -4,7 +4,7 @@ module.exports = {
     title: "Prime DDS",
     author: "Prime DDS",
     description: "Dentist offices",
-    siteUrl: "https://mdang.github.io/prime-dds/",
+    siteUrl: "https://allenfairviewdentistry.com/"
   },
   plugins: [
     `gatsby-transformer-json`,
@@ -44,6 +44,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -73,6 +74,6 @@ module.exports = {
       options: {
         policy: [{ userAgent: "*", allow: "/" }],
       },
-    },
+    }
   ],
 }
