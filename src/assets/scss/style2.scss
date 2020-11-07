@@ -877,6 +877,7 @@ iframe {
 	ul {
 		columns: 2;
 		text-align: left;
+		column-gap: 40px;
 	}
 }
 
@@ -1145,7 +1146,7 @@ address {
 
 	.navbar-brand {
 		img {
-			max-height: 125px;
+			max-height: 100px;
 			max-width: 125px;
 		}
 	}
@@ -1475,6 +1476,10 @@ ul.pattern {
 		height: 50px;
 	}
 
+	.navbar-custom {
+		box-shadow: none;
+	}
+
 	.wave-one {
 		background-size: 100% 80px;
 	}
@@ -1533,6 +1538,16 @@ ul.pattern {
 	.navbar-custom .navbar-nav li a {
 		margin: 10px 0 0 0;
 		float: right;
+	}
+	.home-title {
+		margin-top: 90px;
+	}
+	.col-sm-4 {
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+	}
+	.section {
+		padding-bottom: 50px;
 	}
 	.section-tri {
 		padding-top:0;

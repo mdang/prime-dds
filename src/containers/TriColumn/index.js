@@ -42,7 +42,7 @@ function TriColumn(props) {
     <section className="section section-lg section-tri">
       <Container>
         <Row>
-          <Col lg={4}>
+          <Col md={4} lg={4}>
             <div className="get-started-title-rating">{TriColumnDataPrefix[0].rating}</div>
             <h2 className="get-started-title">
               {TriColumnDataPrefix[0].title}
@@ -59,7 +59,7 @@ function TriColumn(props) {
               {TriColumnDataPrefix[0].button}
             </a>
           </Col>
-          <Col lg={4}>
+          <Col md={4} lg={4}>
           <i className={TriColumnDataPrefix[1].icon + " text-muted padding-t-30"}></i>
             <h2 className="get-started-title-cta">
               {TriColumnDataPrefix[1].title}
@@ -74,7 +74,7 @@ function TriColumn(props) {
               {TriColumnDataPrefix[1].button}
             </a> */}
           </Col>
-          <Col lg={4}>
+          <Col md={4} lg={4}>
             <i className={TriColumnDataPrefix[2].icon + " text-muted padding-t-30"}></i>
             <h2 className="get-started-title">
               {TriColumnDataPrefix[2].title}
