@@ -15,8 +15,8 @@ import Social from "../containers/Social"
 
 const IndexPage = () => {
   const typeOfPage = "fairview";
-  const siteTitle = "Fairview Dental"
-  const siteDesc = "Dentist office serving the Allen, McKinney, and Plano, Texas area."
+  const siteTitle = "Fairview Dental | Dentist Office in Allen, TX"
+  const siteDesc = "General & cosmetic. Serving also the McKinney, and Plano, Texas area."
   return (
     <Layout typeOfPage={typeOfPage} siteTitle={siteTitle} siteDesc={siteDesc} themeColor="theme-color-blue">
       <Content typeOfPage={typeOfPage}>

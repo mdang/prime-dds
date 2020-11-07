@@ -15,8 +15,8 @@ import Social from "../containers/Social"
 
 const IndexPage = () => {
   const typeOfPage = "crownDental";
-  const siteTitle = "DFW Crown Dental"
-  const siteDesc = "Dentist office serving the South Dallas, Cedar Crest, and Oak Cliff, Texas area."
+  const siteTitle = "DFW Crown Dental | Dentist Office in Dallas, TX"
+  const siteDesc = "General & cosmetic. Serving also the South Dallas, Cedar Crest, and Oak Cliff, Texas area."
   return (
     <Layout typeOfPage={typeOfPage} siteTitle={siteTitle} siteDesc={siteDesc} themeColor="theme-color-black">
       <Content typeOfPage={typeOfPage}>

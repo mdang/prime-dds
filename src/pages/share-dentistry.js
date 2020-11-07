@@ -15,8 +15,8 @@ import Social from "../containers/Social"
 
 const IndexPage = () => {
   const typeOfPage = "share";
-  const siteTitle = "Share Dentistry"
-  const siteDesc = "Dentist office serving the Grapevine, Irving, DFW Airport, and Coppell, Texas area."
+  const siteTitle = "Share Dentistry | Dentist Office in Grapevine, TX"
+  const siteDesc = "General & cosmetic. Serving also the Irving, DFW Airport, and Coppell, Texas area."
   return (
     <Layout typeOfPage={typeOfPage} siteTitle={siteTitle} siteDesc={siteDesc} themeColor="theme-color-black">
       <Content typeOfPage={typeOfPage}>

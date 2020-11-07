@@ -15,8 +15,8 @@ import Social from "../containers/Social"
 
 const IndexPage = () => {
   const typeOfPage = "primeDentalGarland";
-  const siteTitle = "Prime Dental Garland"
-  const siteDesc = "Dentist office serving the Garland, Firewheel, and Sachse, Texas area."
+  const siteTitle = "Prime Dental Garland | Dentist Office in Garland, TX"
+  const siteDesc = "General & cosmetic. Serving also the Firewheel and Sachse, Texas area."
   return (
     <Layout typeOfPage={typeOfPage} siteTitle={siteTitle} siteDesc={siteDesc} themeColor="theme-color-black">
       <Content typeOfPage={typeOfPage}>
