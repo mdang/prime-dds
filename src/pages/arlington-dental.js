@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.css"
 
 import Layout from "../containers/Layout"
 import Content from "../containers/Content"
-import Section from "./section"
+import Section from "../containers/Section"
 import Service from "../containers/Service"
 import AboutUs from "../containers/AboutUs"
 import WebsiteDesc from "../containers/WebsiteDesc"
