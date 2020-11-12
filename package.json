@@ -13,7 +13,6 @@
     "gatsby-plugin-manifest": "^2.5.2",
     "gatsby-plugin-offline": "^3.3.2",
     "gatsby-plugin-react-helmet": "^3.3.14",
-    "gatsby-plugin-react-leaflet": "^2.0.13",
     "gatsby-plugin-robots-txt": "^1.5.3",
     "gatsby-plugin-sass": "^2.4.2",
     "gatsby-plugin-sharp": "^2.7.1",
@@ -22,25 +21,17 @@
     "gatsby-transformer-json": "^2.4.15",
     "gatsby-transformer-sharp": "^2.5.21",
     "gh-pages": "^3.1.0",
-    "leaflet": "^1.7.1",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
-    "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-countup": "^4.3.3",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
     "react-icons-kit": "^1.3.1",
-    "react-leaflet": "^2.8.0",
-    "react-slick": "^0.27.12",
-    "react-spinners-kit": "^1.9.1",
     "react-sticky-header": "^0.2.0",
-    "react-sweet-progress": "^1.1.2",
-    "react-tabs": "^3.1.1",
-    "reactstrap": "^8.7.1",
-    "slick-carousel": "^1.8.1"
+    "reactstrap": "^8.7.1"
   },
   "devDependencies": {
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.13",
     "prettier": "2.0.5"
   },
   "keywords": [
