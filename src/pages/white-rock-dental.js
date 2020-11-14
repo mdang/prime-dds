@@ -16,7 +16,7 @@ import Social from "../containers/Social"
 const IndexPage = () => {
   const typeOfPage = "whiteRock";
   const siteTitle = "White Rock Dental | Dentist Office in Dallas, TX"
-  const siteDesc = "General & cosmetic. Serving the Deep Ellum, and Dallas Arboretum, Texas area."
+  const siteDesc = "General & cosmetic. Serving also the White Rock, Deep Ellum and Dallas Arboretum, Texas area."
   return (
     <Layout typeOfPage={typeOfPage} siteTitle={siteTitle} siteDesc={siteDesc} themeColor="theme-color-blue">
       <Content typeOfPage={typeOfPage}>
