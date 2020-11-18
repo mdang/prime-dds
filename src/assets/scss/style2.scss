@@ -450,6 +450,33 @@ iframe {
 	}
 }
 
+.crownDental {
+	&.bg-home {
+		background: url(../images/dorsin/header1.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+.denstar {
+	&.bg-home {
+		background: url(../images/dorsin/header2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+.share {
+	&.bg-home {
+		background: url(../images/dorsin/header3.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
 .home-title {
 	font-size: 64px;
 	line-height: 64px;

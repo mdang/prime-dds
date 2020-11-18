@@ -25,10 +25,16 @@ import { Container, Row, Col } from "reactstrap"
 import Image from "../../components/image/index"
 import about from "../../assets/images/dorsin/about-img.jpg"
 
+import about1 from "../../assets/images/dorsin/depend1.jpg"
+import about2 from "../../assets/images/dorsin/depend2.jpg"
+import about3 from "../../assets/images/dorsin/depend3.jpg"
+
 function AboutUs(props) {
   let [typeOfPage] = useState(props.typeOfPage)
   let AboutDataPrefix = AboutDataPrimeDDS
   let AboutListDataPrefix = AboutListDataPrimeDDS
+
+  let AboutImage = about;
 
   if (typeOfPage === "arlingtonDental") {
     AboutDataPrefix = AboutDataArlingtonDental
@@ -36,12 +42,14 @@ function AboutUs(props) {
   } else if (typeOfPage === "crownDental") {
     AboutDataPrefix = AboutDataCrownDental
     AboutListDataPrefix = AboutListDataCrownDental
+    AboutImage = about1
   } else if (typeOfPage === "crystalCreek") {
     AboutDataPrefix = AboutDataCrystalCreek
     AboutListDataPrefix = AboutListDataCrystalCreek
   } else if (typeOfPage === "denstar") {
     AboutDataPrefix = AboutDataDenstar
     AboutListDataPrefix = AboutListDataDenstar
+    AboutImage = about2
   } else if (typeOfPage === "fairview") {
     AboutDataPrefix = AboutDataFairview
     AboutListDataPrefix = AboutListDataFairview
@@ -57,6 +65,7 @@ function AboutUs(props) {
   } else if (typeOfPage === "share") {
     AboutDataPrefix = AboutDataShare
     AboutListDataPrefix = AboutListDataShare
+    AboutImage = about3
   } else if (typeOfPage === "whiteRock") {
     AboutDataPrefix = AboutDataWhiteRock
     AboutListDataPrefix = AboutListDataWhiteRock
@@ -84,7 +93,7 @@ function AboutUs(props) {
           </Col>
           <Col lg={7}>
             <div className="features-img features-right text-right">
-              <Image Path={about} Class="about-img" Alt="A smiling woman with a toothbrush" />
+              <Image Path={AboutImage} Class="about-img" Alt="A smiling woman with a toothbrush" />
             </div>
           </Col>
         </Row>

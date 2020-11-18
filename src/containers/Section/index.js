@@ -41,7 +41,7 @@ function Section(props) {
   }
   return (
     <section
-      className="section bg-home home-half"
+      className={`${typeOfPage} section bg-home home-half`}
       id="home"
       data-image-src="images/bg-home.jpg"
     >
