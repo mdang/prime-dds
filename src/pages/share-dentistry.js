@@ -11,6 +11,7 @@ import Team from "../containers/Team"
 import TriColumn from "../containers/TriColumn"
 import GetStart from "../containers/GetStart"
 import Contact from "../containers/Contact"
+import Process from "../containers/Process"
 import Social from "../containers/Social"
 
 const IndexPage = () => {
@@ -27,6 +28,7 @@ const IndexPage = () => {
         <AboutUs typeOfPage={typeOfPage} />
         <WebsiteDesc typeOfPage={typeOfPage} />
         <Service typeOfPage={typeOfPage} />
+        <Process typeOfPage={typeOfPage} />
         <Contact typeOfPage={typeOfPage} />
         <Social typeOfPage={typeOfPage} />
       </Content>

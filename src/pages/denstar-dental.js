@@ -12,6 +12,7 @@ import TriColumn from "../containers/TriColumn"
 import GetStart from "../containers/GetStart"
 import Contact from "../containers/Contact"
 import Social from "../containers/Social"
+import Process from "../containers/Process"
 
 const IndexPage = () => {
   const typeOfPage = "denstar";
@@ -27,6 +28,7 @@ const IndexPage = () => {
         <AboutUs typeOfPage={typeOfPage} />
         <WebsiteDesc typeOfPage={typeOfPage} />
         <Service typeOfPage={typeOfPage} />
+        <Process typeOfPage={typeOfPage} />
         <Contact typeOfPage={typeOfPage} />
         <Social typeOfPage={typeOfPage} />
       </Content>

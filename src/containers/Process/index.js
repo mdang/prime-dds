@@ -1,33 +1,12 @@
 import React, { Component } from "react"
 import { Container, Row, Col } from "reactstrap"
+import Image from "../../components/image/index"
 
 //Import Section Title
 import SectionTitle from "../common/section-title"
-import ProcessBox from "./ProcessBox"
+import calendar from "../../assets/images/dorsin/calendar.jpg"
 
 class Process extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      processes: [
-        {
-          icon: "pe-7s-pen",
-          title: "Tell us what you need",
-          desc: "The Big Oxmox advised her not to do so.",
-        },
-        {
-          icon: "pe-7s-id",
-          title: "Get free quotes",
-          desc: "Little Blind Text didn’t listen.",
-        },
-        {
-          icon: "pe-7s-target",
-          title: "Deliver high quality product",
-          desc: "When she reached the first hills.",
-        },
-      ],
-    }
-  }
 
   render() {
     return (
@@ -36,28 +15,22 @@ class Process extends Component {
           <Container>
             {/* section title */}
             <SectionTitle
-              title="WORK PROCESS"
-              desc="In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts."
+              title="Our Dentists are Available on Saturdays"
+              desc="Toothache on a Saturday?  Busy during the weekdays?  Look no further!  Our dentists are available to you on Saturdays for your convenience."
             />
 
-            <Row>
-              <Col lg={6} className="text-center process-left-icon-1">
-                <i className="pe-7s-angle-right"></i>
+            <Row className="margin-t-30 vertical-content">
+              <Col lg={5}>
+                <div className="features-box">
+                  <h2>Saturday Dentist Appointments for Convenience</h2>
+                  <p className="text-muted web-desc">We understand that your schedule is busy and seeing a dentist could be inconvenient.  This is why our team of dentists are dedicated to working around your schedule.  We are available for you on Saturdays when it is convenient for you and your family so you do not have to take time away from your weekly obligations.  Whether you need an exam and cleaning or an emergency procedure, we promise to be accommodating of your time.</p>
+                </div>
               </Col>
-              <Col lg={6} className="text-center process-left-icon-2">
-                <i className="pe-7s-angle-right"></i>
+              <Col lg={7}>
+                <div className="features-img features-right text-right">
+                  <Image Path={calendar} Class="about-img" Alt="Calendar image" />
+                </div>
               </Col>
-            </Row>
-            <Row className="margin-t-50">
-              <ProcessBox processes={this.state.processes} />
-              <div className="text-center mx-auto">
-                <a
-                  href="#"
-                  className="btn btn-custom waves-light waves-effect margin-t-50"
-                >
-                  Get Started <i className="mdi mdi-arrow-right"></i>
-                </a>
-              </div>
             </Row>
           </Container>
         </section>
