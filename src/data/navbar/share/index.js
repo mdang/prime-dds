@@ -5,11 +5,11 @@ const NavBarData = [
   },
   {
     id: 2,
-    title: "Book Now",
+    title: "Email us",
   },
   {
     id: 3,
-    title: "https://www.localmed.com/offices/9vfgqmjut6k5kv5_026b3ce/",
+    title: "mailto:grapevine@sharedentistry.net",
   },
 ]
 

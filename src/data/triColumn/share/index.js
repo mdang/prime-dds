@@ -17,8 +17,8 @@ const TriColumnData = [
     title: "Saturday & emergency appointments available.",
     subheadline: "Proin sed dui nec ipsum mollis venenatis nec id dui.",
     icon: "flaticon-097-calendar",
-    button: "Book Now",
-    link: "https://www.localmed.com/offices/9vfgqmjut6k5kv5_026b3ce/"
+    button: "Email us",
+    link: "mailto:grapevine@sharedentistry.net"
   },
 ]
 

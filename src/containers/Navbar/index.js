@@ -11,6 +11,7 @@ import NavBarDataPrimeDentalPlano from "../../data/navbar/primeDentalPlano/index
 import NavBarDataShare from "../../data/navbar/share/index"
 import NavBarDataWhiteRock from "../../data/navbar/whiteRock/index"
 import NavBarLinksDataPrimeDDS from "../../data/navbar/_navbarLinks/primeDDS"
+import NavBarLinksDataShare from "../../data/navbar/_navbarLinks/share"
 
 import SocialDataArlingtonDental from "../../data/social/arlingtonDental/index"
 import SocialDataCrownDental from "../../data/social/crownDental/index"
@@ -77,6 +78,7 @@ function NavbarPage(props) {
     SocialDataPrefix = SocialDataPrimeDentalPlano
   } else if (typeOfPage === "share") {
     NavbarDataPrefix = NavBarDataShare
+    NavbarLinksDataPrefix = NavBarLinksDataShare
     SocialDataPrefix = SocialDataShare
   } else if (typeOfPage === "whiteRock") {
     NavbarDataPrefix = NavBarDataWhiteRock
