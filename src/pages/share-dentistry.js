@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import "bootstrap/dist/css/bootstrap.css"
 
 import Layout from "../containers/Layout"
@@ -14,11 +14,20 @@ import Contact from "../containers/Contact"
 import Process from "../containers/Process"
 import Social from "../containers/Social"
 
+import LoadingScreen from "../containers/LoadingScreen"
+
 const IndexPage = () => {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 5255)
+  }, [])
   const typeOfPage = "share";
   const siteTitle = "Share Dentistry | Dentist Office in Grapevine, TX"
   const siteDesc = "General & cosmetic. Serving also the Irving, DFW Airport, and Coppell, Texas area."
   return (
+    <>
+    {loading === false ? (
     <Layout typeOfPage={typeOfPage} siteTitle={siteTitle} siteDesc={siteDesc} themeColor="theme-color-blue">
       <Content typeOfPage={typeOfPage}>
         <Section typeOfPage={typeOfPage} />
@@ -32,7 +41,10 @@ const IndexPage = () => {
         <Contact typeOfPage={typeOfPage} />
         <Social typeOfPage={typeOfPage} />
       </Content>
-    </Layout>
+    </Layout>) : (
+        <LoadingScreen />
+      )}
+    </>
   )
 }
 

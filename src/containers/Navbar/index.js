@@ -41,10 +41,6 @@ import logoPrimeDDS from "../../assets/images/logos/PrimeDental.svg"
 import logoShare from "../../assets/images/logos/share.svg"
 import logoWhiteRock from "../../assets/images/logos/whiteRock.svg"
 
-import videoShareMP4 from "../../assets/images/logos/shareDentistry.mp4"
-import videoShareWebM from "../../assets/images/logos/shareDentistry.webm"
-import videoSharePoster from "../../assets/images/logos/shareDentistry.png"
-
 import "react-sticky-header/styles.css"
 import StickyHeader from "react-sticky-header"
 
@@ -100,7 +96,7 @@ function NavbarPage(props) {
           >
             <Container>
               <NavbarBrand className="logo text-uppercase" href="/">
-                <h1>{typeOfPage !== "share" ? <Image
+                <h1><Image
                   Path={
                     typeOfPage === "arlingtonDental" ? 
                     logoArlingtonDental :
@@ -120,18 +116,9 @@ function NavbarPage(props) {
                   }
                   Class="logo-img"
                   Alt={NavbarDataPrefix[0].title}
-                /> : 
-                <>
-                <video loop={false} autoplay="autoplay" id="vid" muted>
-                
-                    <source src={videoShareMP4} type="video/mp4" />
-                    <source src={videoShareWebM} type="video/webm" />
-                    
-                    Share Dentistry
-                </video>
-                </>
-                }</h1>
+                /></h1>
               </NavbarBrand>
+
               <div className="nav-button ml-auto">
                   <Nav navbar className="navbar-right">
                     <li className="contact-title text-white">
