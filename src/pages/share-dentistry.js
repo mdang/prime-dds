@@ -19,7 +19,7 @@ const IndexPage = () => {
   const siteTitle = "Share Dentistry | Dentist Office in Grapevine, TX"
   const siteDesc = "General & cosmetic. Serving also the Irving, DFW Airport, and Coppell, Texas area."
   return (
-    <Layout typeOfPage={typeOfPage} siteTitle={siteTitle} siteDesc={siteDesc} themeColor="theme-color-black">
+    <Layout typeOfPage={typeOfPage} siteTitle={siteTitle} siteDesc={siteDesc} themeColor="theme-color-blue">
       <Content typeOfPage={typeOfPage}>
         <Section typeOfPage={typeOfPage} />
         <GetStart typeOfPage={typeOfPage} />

@@ -357,6 +357,11 @@ iframe {
 			max-height: 150px;
 		}
 
+		video {
+			max-width: 150px;
+			width: 100%;
+		}
+
 		h1 {
 			margin:0;
 			padding:0;
@@ -1181,6 +1186,9 @@ address {
 	.navbar-brand {
 		img {
 			max-height: 85px;
+			max-width: 125px;
+		}
+		video {
 			max-width: 125px;
 		}
 	}
