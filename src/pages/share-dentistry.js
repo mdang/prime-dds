@@ -27,7 +27,7 @@ const IndexPage = () => {
   const siteDesc = "General & cosmetic. Serving also the Irving, DFW Airport, and Coppell, Texas area."
   return (
     <>
-    {loading === false ? (
+    {loading === true && (<LoadingScreen loading={loading} />) }
     <Layout typeOfPage={typeOfPage} siteTitle={siteTitle} siteDesc={siteDesc} themeColor="theme-color-blue">
       <Content typeOfPage={typeOfPage}>
         <Section typeOfPage={typeOfPage} />
@@ -41,9 +41,7 @@ const IndexPage = () => {
         <Contact typeOfPage={typeOfPage} />
         <Social typeOfPage={typeOfPage} />
       </Content>
-    </Layout>) : (
-        <LoadingScreen />
-      )}
+    </Layout>
     </>
   )
 }
