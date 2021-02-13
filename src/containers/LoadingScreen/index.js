@@ -9,12 +9,18 @@ function LoadingScreen(props, loading) {
   return (
   <React.Fragment>
     <section className="loading-screen" role="alert" aria-live="polite" aria-busy="true">
-        <video loop={false} autoplay="autoplay" id="vid" muted playsinline  poster={videoSharePoster}>
-            <source src={videoShareMP4} type="video/mp4" />
-            <source src={videoShareWebM} type="video/webm" />
-
+      <div dangerouslySetInnerHTML={{ __html: `
+        <video
+          loop
+          muted
+          autoplay
+          playsinline
+          poster="${videoSharePoster}">
+            <source src="${videoShareMP4}" type="video/mp4" />
+            <source src="${videoShareWebM}" type="video/webm" />
             Loading...
-        </video>
+          </video>,
+      ` }}></div>
     </section>
   </React.Fragment>
   )
