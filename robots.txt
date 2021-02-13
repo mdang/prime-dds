@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://allenfairviewdentistry.com/sitemap.xml
-Host: https://allenfairviewdentistry.com
+Sitemap: https://sharedentistry.net/sitemap.xml
+Host: https://sharedentistry.net
