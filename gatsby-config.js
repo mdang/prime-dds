@@ -1,10 +1,10 @@
 module.exports = {
   pathPrefix: `/prime-dds`,
   siteMetadata: {
-    title: "Prime DDS",
-    author: "Prime DDS",
+    title: "Share Dentistry",
+    author: "Share Dentistry",
     description: "Dentist offices",
-    siteUrl: "https://allenfairviewdentistry.com/"
+    siteUrl: "https://sharedentistry.net/"
   },
   plugins: [
     `gatsby-transformer-json`,
@@ -12,7 +12,7 @@ module.exports = {
       resolve: `gatsby-plugin-gtag`,
       options: {
         // ** Share Dentistry
-        // trackingId: `UA-180936970-1`,
+        trackingId: `UA-180936970-1`,
         // ** Denstar Dental
         // trackingId: `UA-180936970-2'`,
         // ** Crystal Creek Dental
@@ -26,7 +26,7 @@ module.exports = {
         // ** Prime Dental Plano
         // trackingId: `UA-180936970-7'`,
         // ** Fairview Dental
-        trackingId: `UA-180936970-8'`,
+        // trackingId: `UA-180936970-8'`,
       },
     },
     {
