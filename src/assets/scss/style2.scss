@@ -1383,11 +1383,17 @@ ul.pattern {
 	top: 0;
 	left: 0;
 	z-index: 9999;
-	transition: opacity 0.3s linear;
+	opacity: 1;
+	animation: fade 3s linear;
 	video {
 		max-width: 150px;
 	}
 	
+  }
+
+  @keyframes fade {
+	100% { opacity: 0 }
+	50% { opacity: 1 }
   }
 
 @media(max-width: 1024px) {

@@ -20,7 +20,7 @@ const IndexPage = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 5255)
+    setTimeout(() => setLoading(false), 2500)
   }, [])
   const typeOfPage = "share";
   const siteTitle = "Share Dentistry | Dentist Office in Grapevine, TX"

@@ -9,7 +9,7 @@ const NavBarLinksdata = [
   },
   {
     id: 2,
-    title: "Email Us",
+    title: "Book Now",
   },
 ]
 

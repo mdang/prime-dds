@@ -5,11 +5,11 @@ const NavBarData = [
   },
   {
     id: 2,
-    title: "Email us",
+    title: "Book Appointment Now",
   },
   {
     id: 3,
-    title: "mailto:grapevine@sharedentistry.net",
+    title: "https://www.patientviewer.com/?RSID=3132363033&CID=30&C=1343",
   },
 ]
 

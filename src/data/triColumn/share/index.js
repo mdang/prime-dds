@@ -17,8 +17,8 @@ const TriColumnData = [
     title: "Saturday & emergency appointments available.",
     subheadline: "Proin sed dui nec ipsum mollis venenatis nec id dui.",
     icon: "flaticon-097-calendar",
-    button: "Email us",
-    link: "mailto:grapevine@sharedentistry.net"
+    button: "Book Appointment Now",
+    link: "https://www.patientviewer.com/?RSID=3132363033&CID=30&C=1343"
   },
 ]
 
